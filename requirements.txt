@@ -1,0 +1,2 @@
+lxml==4.9.4
+toon-python==0.1.0
