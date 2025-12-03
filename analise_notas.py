@@ -2,6 +2,7 @@ import json
 import os
 from datetime import datetime
 from typing import List, Dict, Any, Union, Tuple
+from toon_python import encode
 
 # ==============================================================================
 # Funções Auxiliares (Mantidas para Normalização e Estruturação)
@@ -188,6 +189,44 @@ def analyze_tax_data_by_company(input_path: str, output_path: str):
     print("✅ Análise concluída com sucesso! (Saída formatada por CNPJ)")
 
 
+
+def convert_json_to_toon(json_path: str, toon_output_path: str):
+
+    print(f"\n🔄 Convertendo JSON para TOON: {json_path}")
+    
+    if not os.path.exists(json_path):
+        print(f"❌ Erro: Arquivo JSON não encontrado em {json_path}")
+        return
+    
+    try:
+        # Lê o arquivo JSON
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        # Converte para TOON usando a biblioteca toon-python
+        toon_data = encode(data)
+        
+        # Salva o arquivo TOON (encode retorna string, precisa converter para bytes)
+        with open(toon_output_path, 'w', encoding='utf-8') as f:
+            f.write(toon_data)
+        
+        # Calcula economia de espaço
+        json_size = os.path.getsize(json_path)
+        toon_size = os.path.getsize(toon_output_path)
+        economy_percent = ((json_size - toon_size) / json_size) * 100
+        
+        print(f"✅ Conversão TOON concluída!")
+        print(f"   📊 Tamanho JSON: {json_size:,} bytes")
+        print(f"   📊 Tamanho TOON: {toon_size:,} bytes")
+        print(f"   💾 Economia: {economy_percent:.1f}%")
+        print(f"   📁 Arquivo salvo em: {toon_output_path}")
+        
+    except Exception as e:
+        print(f"❌ Erro na conversão TOON: {e}")
+        import traceback
+        traceback.print_exc()
+
+
 # ==============================================================================
 # Execução do Script Principal
 # ==============================================================================
@@ -196,6 +235,7 @@ if __name__ == '__main__':
     # DEFINE OS PATHS AQUI
     INPUT_FILE_PATH = 'output/notas_processadas_unificado.json' # Arquivo de entrada do script anterior
     OUTPUT_FILE_PATH = 'output/analise_por_empresa_unificado.json'
+    TOON_OUTPUT_PATH = 'output/analise_por_empresa_unificado.toon'
     
     # Garante que a pasta 'output' existe
     if not os.path.exists(os.path.dirname(OUTPUT_FILE_PATH)):
@@ -203,3 +243,6 @@ if __name__ == '__main__':
 
     # Executa a função principal de análise
     analyze_tax_data_by_company(INPUT_FILE_PATH, OUTPUT_FILE_PATH)
+    
+    # Converte o resultado JSON para TOON para economizar tokens
+    convert_json_to_toon(OUTPUT_FILE_PATH, TOON_OUTPUT_PATH)
