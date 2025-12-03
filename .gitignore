@@ -1,6 +1,6 @@
 # Virtual Environment
 .venv/
-venv/
+venv
 env/
 ENV/
 
@@ -42,3 +42,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+#Pastas
+reading_notes/unificado
