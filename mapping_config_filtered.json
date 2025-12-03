@@ -51,7 +51,12 @@
     },
     "EMIT_UF": {
         "descricao": "UF do emitente",
-        "caminho_xml": "infNFe/enderEmit/UF",
+        "caminho_xml": "infNFe/emit/enderEmit/UF",
+        "secao": "Emissor"
+    },
+    "EMIT_MUN": {
+        "descricao": "Município do emitente",
+        "caminho_xml": "infNFe/emit/enderEmit/xMun",
         "secao": "Emissor"
     },
     "DEST_CNPJ": {
@@ -77,6 +82,11 @@
     "DEST_UF": {
         "descricao": "UF do destinatário",
         "caminho_xml": "infNFe/dest/enderDest/UF",
+        "secao": "Destinatário"
+    },
+    "DEST_MUN": {
+        "descricao": "Município do destinatário",
+        "caminho_xml": "infNFe/dest/enderDest/xMun",
         "secao": "Destinatário"
     },
     "ITEM_NUMERO": {
