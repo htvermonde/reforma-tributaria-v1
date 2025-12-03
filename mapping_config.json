@@ -1,0 +1,447 @@
+{
+    "MODELO": {
+        "descricao": "Modelo do documento fiscal (55 = NF-e, 65 = NFC-e, 57 = CT-e)",
+        "caminho_xml": "infNFe/ide/mod",
+        "secao": "Serviço x Mercadoria x CT-e"
+    },
+    "NATUREZA_OPERACAO": {
+        "descricao": "Natureza da operação (Nat. da operação)",
+        "caminho_xml": "infNFe/ide/natOp",
+        "secao": "Serviço x Mercadoria x CT-e"
+    },
+    "TIPO_NF": {
+        "descricao": "Tipo de nota (0 = Entrada, 1 = Saída)",
+        "caminho_xml": "infNFe/ide/tpNF",
+        "secao": "Serviço x Mercadoria x CT-e"
+    },
+    "CONSUMIDOR_FINAL": {
+        "descricao": "Indicador de operação para consumidor final",
+        "caminho_xml": "infNFe/ide/indFinal",
+        "secao": "Serviço x Mercadoria x CT-e"
+    },
+    "SERIE": {
+        "descricao": "Série da NF",
+        "caminho_xml": "infNFe/ide/serie",
+        "secao": "Serviço x Mercadoria x CT-e"
+    },
+    "NUMERO_NF": {
+        "descricao": "Número da NF",
+        "caminho_xml": "infNFe/ide/nNF",
+        "secao": "Serviço x Mercadoria x CT-e"
+    },
+    "DATA_EMISSAO": {
+        "descricao": "Data/hora de emissão da NF",
+        "caminho_xml": "infNFe/ide/dhEmi ou infNFe/ide/dEmi",
+        "secao": "Serviço x Mercadoria x CT-e"
+    },
+    "TIPO_DOCUMENTO": {
+        "descricao": "Tipo do documento (mercadoria, serviço, CT-e)",
+        "caminho_xml": "Combinação de infNFe/ide/mod, infNFe/det/prod/NCM, infNFe/det/imposto/ISSQN + namespace",
+        "secao": "Serviço x Mercadoria x CT-e"
+    },
+    "NAMESPACE_RAIZ": {
+        "descricao": "Namespace do XML (identifica layout NF-e x NFSe)",
+        "caminho_xml": "RAIZ/@xmlns (ex: http://www.portalfiscal.inf.br/nfe)",
+        "secao": "Serviço x Mercadoria x CT-e"
+    },
+    "EMIT_CNPJ": {
+        "descricao": "CNPJ do emitente",
+        "caminho_xml": "infNFe/emit/CNPJ",
+        "secao": "Emissor"
+    },
+    "EMIT_RAZAO_SOCIAL": {
+        "descricao": "Razão social do emitente",
+        "caminho_xml": "infNFe/emit/xNome",
+        "secao": "Emissor"
+    },
+    "EMIT_NOME_FANTASIA": {
+        "descricao": "Nome fantasia do emitente",
+        "caminho_xml": "infNFe/emit/xFant",
+        "secao": "Emissor"
+    },
+    "EMIT_UF": {
+        "descricao": "UF do emitente",
+        "caminho_xml": "infNFe/enderEmit/UF",
+        "secao": "Emissor"
+    },
+    "EMIT_IE": {
+        "descricao": "Inscrição estadual do emitente",
+        "caminho_xml": "infNFe/emit/IE",
+        "secao": "Emissor"
+    },
+    "EMIT_MUNICIPIO": {
+        "descricao": "Município do emitente",
+        "caminho_xml": "infNFe/enderEmit/xMun",
+        "secao": "Emissor"
+    },
+    "EMIT_CEP": {
+        "descricao": "CEP do emitente",
+        "caminho_xml": "infNFe/enderEmit/CEP",
+        "secao": "Emissor"
+    },
+    "DEST_CNPJ": {
+        "descricao": "CNPJ do destinatário",
+        "caminho_xml": "infNFe/dest/CNPJ",
+        "secao": "Destinatário"
+    },
+    "DEST_CPF": {
+        "descricao": "CPF do destinatário",
+        "caminho_xml": "infNFe/dest/CPF",
+        "secao": "Destinatário"
+    },
+    "DEST_RAZAO_SOCIAL": {
+        "descricao": "Razão social / nome do destinatário",
+        "caminho_xml": "infNFe/dest/xNome",
+        "secao": "Destinatário"
+    },
+    "DEST_UF": {
+        "descricao": "UF do destinatário",
+        "caminho_xml": "infNFe/dest/enderDest/UF",
+        "secao": "Destinatário"
+    },
+    "DEST_IE": {
+        "descricao": "Inscrição estadual do destinatário",
+        "caminho_xml": "infNFe/dest/IE",
+        "secao": "Destinatário"
+    },
+    "DEST_IND_IE_DEST": {
+        "descricao": "Indicador de IE do destinatário (contribuinte / não contribuinte)",
+        "caminho_xml": "infNFe/dest/indIEDest",
+        "secao": "Destinatário"
+    },
+    "DEST_MUNICIPIO": {
+        "descricao": "Município do destinatário",
+        "caminho_xml": "infNFe/dest/enderDest/xMun",
+        "secao": "Destinatário"
+    },
+    "DEST_CEP": {
+        "descricao": "CEP do destinatário",
+        "caminho_xml": "infNFe/dest/enderDest/CEP",
+        "secao": "Destinatário"
+    },
+    "ITEM_NUMERO": {
+        "descricao": "Número do item na NF",
+        "caminho_xml": "infNFe/det/@nItem",
+        "secao": "Item - Produto"
+    },
+    "ITEM_CPROD": {
+        "descricao": "Código do produto (cProd)",
+        "caminho_xml": "infNFe/det/prod/cProd",
+        "secao": "Item - Produto"
+    },
+    "ITEM_XPROD": {
+        "descricao": "Descrição do produto",
+        "caminho_xml": "infNFe/det/prod/xProd",
+        "secao": "Item - Produto"
+    },
+    "ITEM_NCM": {
+        "descricao": "NCM do item",
+        "caminho_xml": "infNFe/det/prod/NCM",
+        "secao": "Item - Produto"
+    },
+    "ITEM_CFOP": {
+        "descricao": "CFOP do item",
+        "caminho_xml": "infNFe/det/prod/CFOP",
+        "secao": "Item - Produto"
+    },
+    "ITEM_UNIDADE": {
+        "descricao": "Unidade comercial do item (uCom)",
+        "caminho_xml": "infNFe/det/prod/uCom",
+        "secao": "Item - Produto"
+    },
+    "ITEM_QTDE": {
+        "descricao": "Quantidade comercial (qCom)",
+        "caminho_xml": "infNFe/det/prod/qCom",
+        "secao": "Item - Produto"
+    },
+    "ITEM_VUN": {
+        "descricao": "Valor unitário (vUnCom)",
+        "caminho_xml": "infNFe/det/prod/vUnCom",
+        "secao": "Item - Produto"
+    },
+    "ITEM_VPROD": {
+        "descricao": "Valor total do produto (vProd)",
+        "caminho_xml": "infNFe/det/prod/vProd",
+        "secao": "Item - Produto"
+    },
+    "ITEM_ICMS_BLOCO": {
+        "descricao": "Bloco de ICMS do item",
+        "caminho_xml": "infNFe/det/imposto/ICMS",
+        "secao": "Item - ICMS"
+    },
+    "ITEM_ICMS_TIPO_GRUPO": {
+        "descricao": "Tipo de ICMS (ICMS00, ICMS10, ICMS20, ICMSSN101 etc.)",
+        "caminho_xml": "infNFe/det/imposto/ICMS/*",
+        "secao": "Item - ICMS"
+    },
+    "ITEM_ICMS_ORIGEM": {
+        "descricao": "Origem da mercadoria (orig)",
+        "caminho_xml": "infNFe/det/imposto/ICMS/*/orig",
+        "secao": "Item - ICMS"
+    },
+    "ITEM_ICMS_CST": {
+        "descricao": "CST do ICMS (regime normal)",
+        "caminho_xml": "infNFe/det/imposto/ICMS/*/CST",
+        "secao": "Item - ICMS"
+    },
+    "ITEM_ICMS_CSOSN": {
+        "descricao": "CSOSN do ICMS (Simples Nacional)",
+        "caminho_xml": "infNFe/det/imposto/ICMS/*/CSOSN",
+        "secao": "Item - ICMS"
+    },
+    "ITEM_ICMS_VBC": {
+        "descricao": "Base de cálculo do ICMS",
+        "caminho_xml": "infNFe/det/imposto/ICMS/*/vBC",
+        "secao": "Item - ICMS"
+    },
+    "ITEM_ICMS_PICMS": {
+        "descricao": "Alíquota de ICMS (%)",
+        "caminho_xml": "infNFe/det/imposto/ICMS/*/pICMS",
+        "secao": "Item - ICMS"
+    },
+    "ITEM_ICMS_VICMS": {
+        "descricao": "Valor de ICMS",
+        "caminho_xml": "infNFe/det/imposto/ICMS/*/vICMS",
+        "secao": "Item - ICMS"
+    },
+    "ITEM_ICMS_VBCST": {
+        "descricao": "Base de cálculo do ICMS ST",
+        "caminho_xml": "infNFe/det/imposto/ICMS/*/vBCST",
+        "secao": "Item - ICMS"
+    },
+    "ITEM_ICMS_PICMSST": {
+        "descricao": "Alíquota de ICMS ST (%)",
+        "caminho_xml": "infNFe/det/imposto/ICMS/*/pICMSST",
+        "secao": "Item - ICMS"
+    },
+    "ITEM_ICMS_VICMSST": {
+        "descricao": "Valor de ICMS ST",
+        "caminho_xml": "infNFe/det/imposto/ICMS/*/vICMSST",
+        "secao": "Item - ICMS"
+    },
+    "ITEM_TEM_ICMS": {
+        "descricao": "Indica se o item possui ICMS",
+        "caminho_xml": "presença de infNFe/det/imposto/ICMS",
+        "secao": "Item - ICMS"
+    },
+    "ITEM_TEM_ST": {
+        "descricao": "Indica se o item possui ICMS ST",
+        "caminho_xml": "presença de vBCST ou vICMSST no grupo de ICMS",
+        "secao": "Item - ICMS"
+    },
+    "ITEM_IPI_BLOCO": {
+        "descricao": "Bloco de IPI do item",
+        "caminho_xml": "infNFe/det/imposto/IPI",
+        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+    },
+    "ITEM_IPI_CST": {
+        "descricao": "CST do IPI (tributado ou isento)",
+        "caminho_xml": "infNFe/det/imposto/IPI/*/CST",
+        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+    },
+    "ITEM_IPI_VBC": {
+        "descricao": "Base de cálculo do IPI",
+        "caminho_xml": "infNFe/det/imposto/IPI/*/vBC",
+        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+    },
+    "ITEM_IPI_PIPI": {
+        "descricao": "Alíquota de IPI (%)",
+        "caminho_xml": "infNFe/det/imposto/IPI/*/pIPI",
+        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+    },
+    "ITEM_IPI_VIPI": {
+        "descricao": "Valor de IPI",
+        "caminho_xml": "infNFe/det/imposto/IPI/*/vIPI",
+        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+    },
+    "ITEM_TEM_IPI": {
+        "descricao": "Indica se o item possui IPI",
+        "caminho_xml": "presença de infNFe/det/imposto/IPI",
+        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+    },
+    "ITEM_COFINS_BLOCO": {
+        "descricao": "Bloco de COFINS do item",
+        "caminho_xml": "infNFe/det/imposto/COFINS",
+        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+    },
+    "ITEM_COFINS_CST": {
+        "descricao": "CST de COFINS",
+        "caminho_xml": "infNFe/det/imposto/COFINS/*/CST",
+        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+    },
+    "ITEM_COFINS_VBC": {
+        "descricao": "Base de cálculo de COFINS",
+        "caminho_xml": "infNFe/det/imposto/COFINS/*/vBC",
+        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+    },
+    "ITEM_COFINS_PCOFINS": {
+        "descricao": "Alíquota de COFINS (%)",
+        "caminho_xml": "infNFe/det/imposto/COFINS/*/pCOFINS",
+        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+    },
+    "ITEM_COFINS_VCOFINS": {
+        "descricao": "Valor de COFINS",
+        "caminho_xml": "infNFe/det/imposto/COFINS/*/vCOFINS",
+        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+    },
+    "ITEM_TEM_COFINS": {
+        "descricao": "Indica se o item possui COFINS",
+        "caminho_xml": "presença de infNFe/det/imposto/COFINS",
+        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+    },
+    "ITEM_PIS_BLOCO": {
+        "descricao": "Bloco de PIS do item",
+        "caminho_xml": "infNFe/det/imposto/PIS",
+        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+    },
+    "ITEM_ISSQN_BLOCO": {
+        "descricao": "Bloco de ISSQN do item",
+        "caminho_xml": "infNFe/det/imposto/ISSQN",
+        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+    },
+    "ITEM_TEM_ISSQN": {
+        "descricao": "Indica se o item possui ISSQN",
+        "caminho_xml": "presença de infNFe/det/imposto/ISSQN",
+        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+    },
+    "ITEM_OUTRO_IMPOSTO": {
+        "descricao": "Outros impostos no item (II, etc.)",
+        "caminho_xml": "filhos de infNFe/det/imposto/* ≠ ICMS, IPI, PIS, COFINS",
+        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+    },
+    "ITEM_ICMS_UFDEST_BLOCO": {
+        "descricao": "Bloco de ICMSUFDest (DIFAL por item)",
+        "caminho_xml": "infNFe/det/imposto/ICMSUFDest",
+        "secao": "Item - DIFAL"
+    },
+    "ITEM_ICMS_UFDEST_VBCUFDEST": {
+        "descricao": "Base de cálculo do ICMS UF destino (DIFAL)",
+        "caminho_xml": "infNFe/det/imposto/ICMSUFDest/vBCUFDest",
+        "secao": "Item - DIFAL"
+    },
+    "ITEM_ICMS_UFDEST_PICMSUFDEST": {
+        "descricao": "Alíquota ICMS – UF destino (%)",
+        "caminho_xml": "infNFe/det/imposto/ICMSUFDest/pICMSUFDest",
+        "secao": "Item - DIFAL"
+    },
+    "ITEM_ICMS_UFDEST_VICMSUFDEST": {
+        "descricao": "Valor ICMS – UF destino",
+        "caminho_xml": "infNFe/det/imposto/ICMSUFDest/vICMSUFDest",
+        "secao": "Item - DIFAL"
+    },
+    "ITEM_TEM_DIFAL": {
+        "descricao": "Indica se o item possui DIFAL",
+        "caminho_xml": "presença de infNFe/det/imposto/ICMSUFDest",
+        "secao": "Item - DIFAL"
+    },
+    "DIFAL_CONS_FINAL": {
+        "descricao": "Indicador de consumidor final (para regra de DIFAL)",
+        "caminho_xml": "infNFe/ide/indFinal",
+        "secao": "DIFAL - Dados Gerais"
+    },
+    "DIFAL_EMIT_UF": {
+        "descricao": "UF do emitente (para DIFAL)",
+        "caminho_xml": "infNFe/emit/enderEmit/UF",
+        "secao": "DIFAL - Dados Gerais"
+    },
+    "DIFAL_DEST_UF": {
+        "descricao": "UF do destinatário (para DIFAL)",
+        "caminho_xml": "infNFe/dest/enderDest/UF",
+        "secao": "DIFAL - Dados Gerais"
+    },
+    "DIFAL_DEST_IND_IE_DEST": {
+        "descricao": "Indicador de IE do destinatário (não contribuinte)",
+        "caminho_xml": "infNFe/dest/indIEDest",
+        "secao": "DIFAL - Dados Gerais"
+    },
+    "TOTAL_VBC": {
+        "descricao": "Total da base de cálculo do ICMS",
+        "caminho_xml": "infNFe/total/ICMSTot/vBC",
+        "secao": "Totalizadores"
+    },
+    "TOTAL_VICMS": {
+        "descricao": "Total de ICMS",
+        "caminho_xml": "infNFe/total/ICMSTot/vICMS",
+        "secao": "Totalizadores"
+    },
+    "TOTAL_VBCST": {
+        "descricao": "Total da base de ICMS ST",
+        "caminho_xml": "infNFe/total/ICMSTot/vBCST",
+        "secao": "Totalizadores"
+    },
+    "TOTAL_VICMSST": {
+        "descricao": "Total de ICMS ST",
+        "caminho_xml": "infNFe/total/ICMSTot/vICMSST",
+        "secao": "Totalizadores"
+    },
+    "TOTAL_VPROD": {
+        "descricao": "Total dos produtos",
+        "caminho_xml": "infNFe/total/ICMSTot/vProd",
+        "secao": "Totalizadores"
+    },
+    "TOTAL_VIPI": {
+        "descricao": "Total de IPI",
+        "caminho_xml": "infNFe/total/ICMSTot/vIPI",
+        "secao": "Totalizadores"
+    },
+    "TOTAL_VPIS": {
+        "descricao": "Total de PIS",
+        "caminho_xml": "infNFe/total/ICMSTot/vPIS",
+        "secao": "Totalizadores"
+    },
+    "TOTAL_VCOFINS": {
+        "descricao": "Total de COFINS",
+        "caminho_xml": "infNFe/total/ICMSTot/vCOFINS",
+        "secao": "Totalizadores"
+    },
+    "TOTAL_VNF": {
+        "descricao": "Valor total da NF (vNF)",
+        "caminho_xml": "infNFe/total/ICMSTot/vNF",
+        "secao": "Totalizadores"
+    },
+    "TOTAL_RETTRIB_BLOCO": {
+        "descricao": "Bloco de retenções de tributos",
+        "caminho_xml": "infNFe/total/retTrib",
+        "secao": "Totalizadores"
+    },
+    "TRANSP_BLOCO": {
+        "descricao": "Bloco de transporte da NF",
+        "caminho_xml": "infNFe/transp",
+        "secao": "Transporte"
+    },
+    "TRANSP_MOD_FRETE": {
+        "descricao": "Modalidade de frete (por conta de quem é o frete)",
+        "caminho_xml": "infNFe/transp/modFrete",
+        "secao": "Transporte"
+    },
+    "TRANSP_CNPJ_TRANSPORTADOR": {
+        "descricao": "CNPJ do transportador",
+        "caminho_xml": "infNFe/transp/transporta/CNPJ",
+        "secao": "Transporte"
+    },
+    "TRANSP_RAZAO_TRANSPORTADOR": {
+        "descricao": "Nome/Razão social do transportador",
+        "caminho_xml": "infNFe/transp/transporta/xNome",
+        "secao": "Transporte"
+    },
+    "TRANSP_VEIC_PLACA": {
+        "descricao": "Placa do veículo",
+        "caminho_xml": "infNFe/transp/veicTransp/placa",
+        "secao": "Transporte"
+    },
+    "TRANSP_VEIC_UF": {
+        "descricao": "UF do veículo",
+        "caminho_xml": "infNFe/transp/veicTransp/UF",
+        "secao": "Transporte"
+    },
+    "INF_COMPLEMENTARES": {
+        "descricao": "Informações complementares ao contribuinte",
+        "caminho_xml": "infNFe/infAdic/infCpl",
+        "secao": "Adicionais"
+    },
+    "INF_FISCO": {
+        "descricao": "Informações adicionais ao Fisco",
+        "caminho_xml": "infNFe/infAdic/infFisco",
+        "secao": "Adicionais"
+    }
+}

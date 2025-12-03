@@ -1,0 +1,736 @@
+[
+    {
+        "empresa_cnpj": "80795727000656",
+        "periodo": {
+            "inicio": "2023-01-16",
+            "fim": "2024-06-19"
+        },
+        "notas": [
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "0",
+                    "natureza_operacao": "DEVOLUCAO",
+                    "emit_uf": null,
+                    "dest_uf": "MG"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "27101921",
+                        "cfop": "1661",
+                        "icms_cst": "60",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    },
+                    {
+                        "n_item": "2",
+                        "ncm": "27101259",
+                        "cfop": "1661",
+                        "icms_cst": "60",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "VENDA NO ESTADO",
+                    "emit_uf": null,
+                    "dest_uf": "MG"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "27101259",
+                        "cfop": "5655",
+                        "icms_cst": "61",
+                        "pis_cst": "04",
+                        "cofins_cst": "04"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "DEVOLUCAO DE EMPRESTIMO",
+                    "emit_uf": null,
+                    "dest_uf": "MG"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "27101921",
+                        "cfop": "5949",
+                        "icms_cst": "61",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "TRANSFERENCIA",
+                    "emit_uf": null,
+                    "dest_uf": "SP"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "38260000",
+                        "cfop": "6659",
+                        "icms_cst": "61",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "DEVOLUCAO DE COMPRA  UTILIZACAO NA PREST DE SERVIC",
+                    "emit_uf": null,
+                    "dest_uf": "MG"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "85444900",
+                        "cfop": "5210",
+                        "icms_cst": "00",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    }
+                ],
+                "count": 2
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "REMESSA P/ARMAZENAGEM",
+                    "emit_uf": null,
+                    "dest_uf": "MG"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "38260000",
+                        "cfop": "5663",
+                        "icms_cst": "61",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "REMESSA P/ARMAZENAGEM",
+                    "emit_uf": null,
+                    "dest_uf": "MG"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "27101259",
+                        "cfop": "5663",
+                        "icms_cst": "61",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    },
+                    {
+                        "n_item": "2",
+                        "ncm": "27101921",
+                        "cfop": "5663",
+                        "icms_cst": "61",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    },
+                    {
+                        "n_item": "3",
+                        "ncm": "27101921",
+                        "cfop": "5663",
+                        "icms_cst": "61",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "VENDA NO ESTADO",
+                    "emit_uf": null,
+                    "dest_uf": "MG"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "27101259",
+                        "cfop": "5656",
+                        "icms_cst": "61",
+                        "pis_cst": "04",
+                        "cofins_cst": "04"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "RETORNO DE COMODATO",
+                    "emit_uf": null,
+                    "dest_uf": "MG"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "85072010",
+                        "cfop": "5909",
+                        "icms_cst": "41",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    },
+                    {
+                        "n_item": "2",
+                        "ncm": "85369020",
+                        "cfop": "5909",
+                        "icms_cst": "41",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    },
+                    {
+                        "n_item": "3",
+                        "ncm": "85311090",
+                        "cfop": "5909",
+                        "icms_cst": "41",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    },
+                    {
+                        "n_item": "4",
+                        "ncm": "85177900",
+                        "cfop": "5909",
+                        "icms_cst": "41",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    },
+                    {
+                        "n_item": "5",
+                        "ncm": "85291090",
+                        "cfop": "5909",
+                        "icms_cst": "41",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    },
+                    {
+                        "n_item": "6",
+                        "ncm": "85044021",
+                        "cfop": "5909",
+                        "icms_cst": "41",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    },
+                    {
+                        "n_item": "7",
+                        "ncm": "85291090",
+                        "cfop": "5909",
+                        "icms_cst": "41",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "RETORNO DE COMODATO",
+                    "emit_uf": null,
+                    "dest_uf": "SC"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "85176199",
+                        "cfop": "6909",
+                        "icms_cst": "40",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "VENDA NO ESTADO",
+                    "emit_uf": null,
+                    "dest_uf": "MG"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "27101921",
+                        "cfop": "5655",
+                        "icms_cst": "61",
+                        "pis_cst": "04",
+                        "cofins_cst": "04"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "VENDA NO ESTADO",
+                    "emit_uf": null,
+                    "dest_uf": "MG"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "22071090",
+                        "cfop": "5655",
+                        "icms_cst": "10",
+                        "pis_cst": "03",
+                        "cofins_cst": "03"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "REMESSA P/ARMAZENAGEM",
+                    "emit_uf": null,
+                    "dest_uf": "MG"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "22071090",
+                        "cfop": "5663",
+                        "icms_cst": "00",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "OUTRAS SAIDAS NAO ESPEC.",
+                    "emit_uf": null,
+                    "dest_uf": "PR"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "40121200",
+                        "cfop": "6949",
+                        "icms_cst": "00",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    },
+                    {
+                        "n_item": "2",
+                        "ncm": "40121200",
+                        "cfop": "6949",
+                        "icms_cst": "00",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    }
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "empresa_cnpj": "80795727000141",
+        "periodo": {
+            "inicio": "2024-01-26",
+            "fim": "2024-06-11"
+        },
+        "notas": [
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "DEVOLUCAO UTIL PREST SER",
+                    "emit_uf": null,
+                    "dest_uf": "PR"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "96121000",
+                        "cfop": "5210",
+                        "icms_cst": "00",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "VENDA MATERIAL OBSOLETO",
+                    "emit_uf": null,
+                    "dest_uf": "PR"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "00000000",
+                        "cfop": "5949",
+                        "icms_cst": "00",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "DEVOLUCAO UTIL PREST SER",
+                    "emit_uf": null,
+                    "dest_uf": "SC"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "87089300",
+                        "cfop": "6210",
+                        "icms_cst": "00",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "OUTRAS SAIDAS NAO ESPEC.",
+                    "emit_uf": null,
+                    "dest_uf": "MG"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "40112090",
+                        "cfop": "6949",
+                        "icms_cst": "00",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    },
+                    {
+                        "n_item": "2",
+                        "ncm": "40112090",
+                        "cfop": "6949",
+                        "icms_cst": "00",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    },
+                    {
+                        "n_item": "3",
+                        "ncm": "40112090",
+                        "cfop": "6949",
+                        "icms_cst": "00",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    },
+                    {
+                        "n_item": "4",
+                        "ncm": "40112090",
+                        "cfop": "6949",
+                        "icms_cst": "00",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    }
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "empresa_cnpj": "80795727001385",
+        "periodo": {
+            "inicio": "2024-02-28",
+            "fim": "2024-05-15"
+        },
+        "notas": [
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "DEVOL. MAT. USO CONSUMO",
+                    "emit_uf": null,
+                    "dest_uf": "ES"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "84716052",
+                        "cfop": "6556",
+                        "icms_cst": "00",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "OUTRAS SAIDAS NAO ESPEC.",
+                    "emit_uf": null,
+                    "dest_uf": "SP"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "31021010",
+                        "cfop": "6949",
+                        "icms_cst": "00",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    }
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "empresa_cnpj": "80795727000222",
+        "periodo": {
+            "inicio": "2024-04-26",
+            "fim": "2024-04-26"
+        },
+        "notas": [
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "TRANSFERENCIA",
+                    "emit_uf": null,
+                    "dest_uf": "SC"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "22071090",
+                        "cfop": "6659",
+                        "icms_cst": "00",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    }
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "empresa_cnpj": "80795727000907",
+        "periodo": {
+            "inicio": "2024-01-25",
+            "fim": "2024-01-25"
+        },
+        "notas": [
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "DEVOL. MATL. USO CONSUMO",
+                    "emit_uf": null,
+                    "dest_uf": "SP"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "39232190",
+                        "cfop": "6556",
+                        "icms_cst": "00",
+                        "pis_cst": "07",
+                        "cofins_cst": "07"
+                    }
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "empresa_cnpj": "26127890000190",
+        "periodo": {
+            "inicio": "2024-02-22",
+            "fim": "2024-05-24"
+        },
+        "notas": [
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "Remessa para deposito fechado ou armazem geral",
+                    "emit_uf": null,
+                    "dest_uf": "PR"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "38249985",
+                        "cfop": "5905",
+                        "icms_cst": "50",
+                        "pis_cst": "08",
+                        "cofins_cst": "08"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "DEVOLUCAO USO E CONSUMO",
+                    "emit_uf": null,
+                    "dest_uf": "PR"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "39173290",
+                        "cfop": "5556",
+                        "icms_cst": "00",
+                        "pis_cst": "49",
+                        "cofins_cst": "49"
+                    },
+                    {
+                        "n_item": "2",
+                        "ncm": "76090000",
+                        "cfop": "5556",
+                        "icms_cst": "00",
+                        "pis_cst": "49",
+                        "cofins_cst": "49"
+                    },
+                    {
+                        "n_item": "3",
+                        "ncm": "76090000",
+                        "cfop": "5556",
+                        "icms_cst": "00",
+                        "pis_cst": "49",
+                        "cofins_cst": "49"
+                    },
+                    {
+                        "n_item": "4",
+                        "ncm": "76090000",
+                        "cfop": "5556",
+                        "icms_cst": "00",
+                        "pis_cst": "49",
+                        "cofins_cst": "49"
+                    },
+                    {
+                        "n_item": "5",
+                        "ncm": "76090000",
+                        "cfop": "5556",
+                        "icms_cst": "00",
+                        "pis_cst": "49",
+                        "cofins_cst": "49"
+                    },
+                    {
+                        "n_item": "6",
+                        "ncm": "39173290",
+                        "cfop": "5556",
+                        "icms_cst": "00",
+                        "pis_cst": "49",
+                        "cofins_cst": "49"
+                    },
+                    {
+                        "n_item": "7",
+                        "ncm": "73269090",
+                        "cfop": "5413",
+                        "icms_cst": "60",
+                        "pis_cst": "49",
+                        "cofins_cst": "49"
+                    },
+                    {
+                        "n_item": "8",
+                        "ncm": "73269090",
+                        "cfop": "5413",
+                        "icms_cst": "60",
+                        "pis_cst": "49",
+                        "cofins_cst": "49"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "Remessa de Amostra Gratis",
+                    "emit_uf": null,
+                    "dest_uf": "SP"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "38249985",
+                        "cfop": "6911",
+                        "icms_cst": "40",
+                        "pis_cst": "08",
+                        "cofins_cst": "08"
+                    }
+                ],
+                "count": 1
+            },
+            {
+                "cabecalho_fiscal": {
+                    "modelo": "55",
+                    "tipo_nf": "1",
+                    "natureza_operacao": "VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS",
+                    "emit_uf": null,
+                    "dest_uf": "GO"
+                },
+                "itens_fiscais": [
+                    {
+                        "n_item": "1",
+                        "ncm": "38249985",
+                        "cfop": "6102",
+                        "icms_cst": "00",
+                        "pis_cst": "01",
+                        "cofins_cst": "01"
+                    }
+                ],
+                "count": 1
+            }
+        ]
+    }
+]

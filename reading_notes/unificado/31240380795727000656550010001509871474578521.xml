@@ -1,0 +1,268 @@
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+    <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+        <infNFe versao="4.00" Id="NFe31240380795727000656550010001509871474578521">
+            <ide>
+                <cUF>31</cUF>
+                <cNF>47457852</cNF>
+                <natOp>VENDA NO ESTADO</natOp>
+                <mod>55</mod>
+                <serie>1</serie>
+                <nNF>150987</nNF>
+                <dhEmi>2024-03-27T07:28:59-03:00</dhEmi>
+                <dhSaiEnt>2024-03-27T07:28:59-03:00</dhSaiEnt>
+                <tpNF>1</tpNF>
+                <idDest>1</idDest>
+                <cMunFG>3106705</cMunFG>
+                <tpImp>2</tpImp>
+                <tpEmis>1</tpEmis>
+                <cDV>1</cDV>
+                <tpAmb>1</tpAmb>
+                <finNFe>1</finNFe>
+                <indFinal>0</indFinal>
+                <indPres>9</indPres>
+                <indIntermed>0</indIntermed>
+                <procEmi>0</procEmi>
+                <verProc>Sign@ture 3.0</verProc>
+            </ide>
+            <emit>
+                <CNPJ>80795727000656</CNPJ>
+                <xNome>POTENCIAL PETROLEO LTDA</xNome>
+                <enderEmit>
+                    <xLgr>ROD BR-381 FERNAO DIAS</xLgr>
+                    <nro>484106</nro>
+                    <xCpl>QD 05 LOTE 01 SALA 10</xCpl>
+                    <xBairro>JD PIEMONT SUL</xBairro>
+                    <cMun>3106705</cMun>
+                    <xMun>BETIM</xMun>
+                    <UF>MG</UF>
+                    <CEP>32669895</CEP>
+                    <cPais>1058</cPais>
+                    <xPais>BRASIL</xPais>
+                    <fone>3140637995</fone>
+                </enderEmit>
+                <IE>0010457890045</IE>
+                <CRT>3</CRT>
+            </emit>
+            <dest>
+                <CNPJ>18087825000150</CNPJ>
+                <xNome>POSTO SAO PEDRO LTDA</xNome>
+                <enderDest>
+                    <xLgr>PRACA DOUTOR ANTONIO DA CUNHA</xLgr>
+                    <nro>118</nro>
+                    <xBairro>CENTRO</xBairro>
+                    <cMun>3164100</cMun>
+                    <xMun>SAO PEDRO DO SUACUI</xMun>
+                    <UF>MG</UF>
+                    <CEP>39784000</CEP>
+                    <cPais>1058</cPais>
+                    <xPais>BRASIL</xPais>
+                    <fone>3334341119</fone>
+                </enderDest>
+                <indIEDest>1</indIEDest>
+                <IE>6401202150051</IE>
+            </dest>
+            <entrega>
+                <CNPJ>18087825000150</CNPJ>
+                <xNome>POSTO SAO PEDRO LTDA</xNome>
+                <xLgr>PRACA DOUTOR ANTONIO DA CUNHA</xLgr>
+                <nro>SNR</nro>
+                <xBairro>CENTRO</xBairro>
+                <cMun>3164100</cMun>
+                <xMun>SAO PEDRO DO SUACUI</xMun>
+                <UF>MG</UF>
+                <CEP>39784000</CEP>
+                <cPais>1058</cPais>
+                <xPais>BRASIL</xPais>
+                <fone>3334341119</fone>
+                <IE>6401202150051</IE>
+            </entrega>
+            <autXML>
+                <CNPJ>04026798000100</CNPJ>
+            </autXML>
+            <det nItem="1">
+                <prod>
+                    <cProd>102003004000003</cProd>
+                    <cEAN>SEM GTIN</cEAN>
+                    <xProd>ONU 1170 ETANOL (ALCOOL HIDRATADO) ANIDRO (3) GE II</xProd>
+                    <NCM>22071090</NCM>
+                    <CEST>0600101</CEST>
+                    <indEscala>S</indEscala>
+                    <CFOP>5655</CFOP>
+                    <uCom>L</uCom>
+                    <qCom>3000.000</qCom>
+                    <vUnCom>3.12200</vUnCom>
+                    <vProd>9366.00</vProd>
+                    <cEANTrib>SEM GTIN</cEANTrib>
+                    <uTrib>L</uTrib>
+                    <qTrib>3000.000</qTrib>
+                    <vUnTrib>3.12200</vUnTrib>
+                    <indTot>1</indTot>
+                    <nItemPed>00000</nItemPed>
+                    <comb>
+                        <cProdANP>810101001</cProdANP>
+                        <descANP>ALCOOL ETILICO HIDRATADO COMUM</descANP>
+                        <UFCons>MG</UFCons>
+                    </comb>
+                </prod>
+                <imposto>
+                    <ICMS>
+                        <ICMS10>
+                            <orig>0</orig>
+                            <CST>10</CST>
+                            <modBC>1</modBC>
+                            <vBC>9366.00</vBC>
+                            <pICMS>13.08</pICMS>
+                            <vICMS>1225.07</vICMS>
+                            <modBCST>5</modBCST>
+                            <pRedBCST>26.43</pRedBCST>
+                            <vBCST>11841.43</vBCST>
+                            <pICMSST>13.08</pICMSST>
+                            <vICMSST>323.79</vICMSST>
+                        </ICMS10>
+                    </ICMS>
+                    <PIS>
+                        <PISQtde>
+                            <CST>03</CST>
+                            <qBCProd>3000.0000</qBCProd>
+                            <vAliqProd>0.0198</vAliqProd>
+                            <vPIS>59.40</vPIS>
+                        </PISQtde>
+                    </PIS>
+                    <COFINS>
+                        <COFINSQtde>
+                            <CST>03</CST>
+                            <qBCProd>3000.0000</qBCProd>
+                            <vAliqProd>0.0911</vAliqProd>
+                            <vCOFINS>273.30</vCOFINS>
+                        </COFINSQtde>
+                    </COFINS>
+                </imposto>
+                <obsItem />
+            </det>
+            <total>
+                <ICMSTot>
+                    <vBC>9366.00</vBC>
+                    <vICMS>1225.07</vICMS>
+                    <vICMSDeson>0.00</vICMSDeson>
+                    <vFCP>0</vFCP>
+                    <vBCST>11841.43</vBCST>
+                    <vST>323.79</vST>
+                    <vFCPST>0</vFCPST>
+                    <vFCPSTRet>0.00</vFCPSTRet>
+                    <qBCMono>0.00</qBCMono>
+                    <vICMSMono>0.00</vICMSMono>
+                    <qBCMonoReten>0.00</qBCMonoReten>
+                    <vICMSMonoReten>0.00</vICMSMonoReten>
+                    <vProd>9366.00</vProd>
+                    <vFrete>0.00</vFrete>
+                    <vSeg>0.00</vSeg>
+                    <vDesc>0.00</vDesc>
+                    <vII>0</vII>
+                    <vIPI>0.00</vIPI>
+                    <vIPIDevol>0</vIPIDevol>
+                    <vPIS>59.40</vPIS>
+                    <vCOFINS>273.30</vCOFINS>
+                    <vOutro>0.00</vOutro>
+                    <vNF>9689.79</vNF>
+                </ICMSTot>
+            </total>
+            <transp>
+                <modFrete>1</modFrete>
+                <transporta>
+                    <CNPJ>42106462000138</CNPJ>
+                    <xNome>POSTO JACURI LTDA</xNome>
+                    <IE>0040568850033</IE>
+                    <xEnder>RUA JOAO LOPES JUNIOR</xEnder>
+                    <xMun>JOSE RAYDAN</xMun>
+                    <UF>MG</UF>
+                </transporta>
+                <vol>
+                    <qVol>3000</qVol>
+                    <esp>LITROS</esp>
+                    <marca>POTENCIAL</marca>
+                    <nVol>O.C. 453595/1</nVol>
+                    <pesoL>2430.300</pesoL>
+                    <pesoB>2430.300</pesoB>
+                </vol>
+            </transp>
+            <cobr>
+                <fat>
+                    <nFat>0000150987</nFat>
+                    <vOrig>9689.79</vOrig>
+                    <vDesc>0.00</vDesc>
+                    <vLiq>9689.79</vLiq>
+                </fat>
+                <dup>
+                    <nDup>001</nDup>
+                    <dVenc>2024-04-01</dVenc>
+                    <vDup>9689.79</vDup>
+                </dup>
+            </cobr>
+            <pag>
+                <detPag>
+                    <tPag>15</tPag>
+                    <vPag>9689.79</vPag>
+                </detPag>
+            </pag>
+            <infAdic>
+                <infCpl>DECLARO QUE OS PRODUTOS PERIGOSOS ESTAO ADEQUADAMENTE CLASSIFICADOS,
+                    EMBALADOS, IDENTIFICADOS, E ESTIVADOS PARA SUPORTAR OS RISCOS DAS OPERACOES DE
+                    TRANSPORTE E QUE ATENDEM AS EXIGENCIAS DA REGULAMENTACAO. MOTORISTA SEBASTIAO
+                    ABREU FRANCISCO, CPF: 05253382682, PLACAS: RVD3J60-RVD3J60-.DISPENSA DE
+                    RECOLHIMENTO ANTECIPADO DO ICMS SOBRE O AEHC - RE/PTA N.16.000178019.89,
+                    CONFORME ARTIGO 85, IV, LETRA G DA PARTE GERAL E ARTIGO 46, INCISO I, LETRA B,
+                    ITEM 1 E PARAG. 2. INCISO I DO ANEXO XV DO RICMS/2002/MG.SAIDA DO PRODUTO
+                    ARMAZENADO NA BASE DA FIC DISTRIBUIDORA DE DERIVADOS DE PETROLEO LTDA. EST.
+                    CONTORNO DA PETROBRAS, 1.250 - VILA ESPERANCA - CEP: 32.501-970 - BETIM/MG.AS
+                    FISPQ DE TODOS OS PRODUTOS ESTAO DISPONIVEIS NO SITE - WWW.POTENCIAL.NET.BR.GRP.
+                    EMBLG. II.RECEBEMOS ENVELOPE DE SEGURANCA PARA AMOSTRA TESTEMUNHA CF RESOLUCAO
+                    ANP N.44.NR. ENV. - B3: 6374595||BOLETIM DE CONFORMIDADE No.
+                    458/2024||||||||PROCON BETIM - RUA SAO PEDRO, 42 - CEP 32560-180 - FONE (31)
+                    3531-1188 - FAX (31) 3594-1250 - www.betim.mg.gov.br PROCOM ASSEMBLEIA
+                    LEGISLATIVA - RUA CURITIBA, 2002 - BAIRRO LOURDES - BELO HORIZONTE/MG - CEP
+                    30170-122 - FONE (31) 3293-9299 - FAX (31) 3292-7125 - www.almg.gov.br||FORMA DE
+                    COBRANCA : BLOQUETO</infCpl>
+            </infAdic>
+            <infRespTec>
+                <CNPJ>11643219000125</CNPJ>
+                <xContato>Horacio Menin</xContato>
+                <email>Suporte.br@gosocket.net</email>
+                <fone>1155552012</fone>
+            </infRespTec>
+        </infNFe>
+        <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+            <SignedInfo>
+                <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+                <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+                <Reference URI="#NFe31240380795727000656550010001509871474578521">
+                    <Transforms>
+                        <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+                        <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+                    </Transforms>
+                    <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+                    <DigestValue>Tl7jBTjBQelmG/J+MP4q6eOvzAg=</DigestValue>
+                </Reference>
+            </SignedInfo>
+            <SignatureValue>
+                NMRy6xrB9gtrvWea+4QXn/TuLCFva8o6pE+CTOy56m36uRTTHBFiDhdgxnEW3lQycQevjt3tHqUyz+vJJrTs2yhiLp7XpvxprBdyFqhU2OAeBQH5CpVL8ao9GifsfMvoMmNJLpOZRdz0nKov0jTgIGaJqqKywM61VGqxMVZMToLfqTw03g65uhK+HBvgIjg0nJNu1WohDMIsWZ0o7A5S1yb4kNi9Temlmpi0x83cS1dm+fA7X+Nzpc0g93T/gr+EqK6jSqmI1ok9qF5O4SwifwNQv5O9MtSbj8nll++hAXQAnqzNHGjSXSuZ0RhiQnjUsIU0cmpfu9mUJFX4BnTpaA==</SignatureValue>
+            <KeyInfo>
+                <X509Data>
+                    <X509Certificate>
+                        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</X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </Signature>
+    </NFe>
+    <protNFe versao="4.00">
+        <infProt>
+            <tpAmb>1</tpAmb>
+            <verAplic>J-3.2.14</verAplic>
+            <chNFe>31240380795727000656550010001509871474578521</chNFe>
+            <dhRecbto>2024-03-27T07:29:44-03:00</dhRecbto>
+            <nProt>131245884096794</nProt>
+            <digVal>Tl7jBTjBQelmG/J+MP4q6eOvzAg=</digVal>
+            <cStat>100</cStat>
+            <xMotivo>Autorizado o uso da NF-e</xMotivo>
+        </infProt>
+    </protNFe>
+</nfeProc>

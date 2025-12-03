@@ -1,0 +1,323 @@
+[
+  {
+    "empresa_cnpj": "80795727000656",
+    "periodo": {
+      "inicio": "2023-01-16",
+      "fim": "2024-03-27"
+    },
+    "notas": [
+      {
+        "cabecalho_fiscal": {
+          "modelo": "55",
+          "tipo_nf": "0",
+          "natureza_operacao": "DEVOLUCAO",
+          "emit_uf": null,
+          "dest_uf": "MG"
+        },
+        "itens_fiscais": [
+          {
+            "n_item": "1",
+            "ncm": "27101921",
+            "cfop": "1661",
+            "icms_cst": "60",
+            "pis_cst": "07",
+            "cofins_cst": "07"
+          },
+          {
+            "n_item": "2",
+            "ncm": "27101259",
+            "cfop": "1661",
+            "icms_cst": "60",
+            "pis_cst": "07",
+            "cofins_cst": "07"
+          }
+        ],
+        "count": 1
+      },
+      {
+        "cabecalho_fiscal": {
+          "modelo": "55",
+          "tipo_nf": "1",
+          "natureza_operacao": "VENDA NO ESTADO",
+          "emit_uf": null,
+          "dest_uf": "MG"
+        },
+        "itens_fiscais": [
+          {
+            "n_item": "1",
+            "ncm": "27101259",
+            "cfop": "5655",
+            "icms_cst": "61",
+            "pis_cst": "04",
+            "cofins_cst": "04"
+          }
+        ],
+        "count": 1
+      },
+      {
+        "cabecalho_fiscal": {
+          "modelo": "55",
+          "tipo_nf": "1",
+          "natureza_operacao": "DEVOLUCAO DE EMPRESTIMO",
+          "emit_uf": null,
+          "dest_uf": "MG"
+        },
+        "itens_fiscais": [
+          {
+            "n_item": "1",
+            "ncm": "27101921",
+            "cfop": "5949",
+            "icms_cst": "61",
+            "pis_cst": "07",
+            "cofins_cst": "07"
+          }
+        ],
+        "count": 1
+      },
+      {
+        "cabecalho_fiscal": {
+          "modelo": "55",
+          "tipo_nf": "1",
+          "natureza_operacao": "TRANSFERENCIA",
+          "emit_uf": null,
+          "dest_uf": "SP"
+        },
+        "itens_fiscais": [
+          {
+            "n_item": "1",
+            "ncm": "38260000",
+            "cfop": "6659",
+            "icms_cst": "61",
+            "pis_cst": "07",
+            "cofins_cst": "07"
+          }
+        ],
+        "count": 1
+      },
+      {
+        "cabecalho_fiscal": {
+          "modelo": "55",
+          "tipo_nf": "1",
+          "natureza_operacao": "DEVOLUCAO DE COMPRA  UTILIZACAO NA PREST DE SERVIC",
+          "emit_uf": null,
+          "dest_uf": "MG"
+        },
+        "itens_fiscais": [
+          {
+            "n_item": "1",
+            "ncm": "85444900",
+            "cfop": "5210",
+            "icms_cst": "00",
+            "pis_cst": "07",
+            "cofins_cst": "07"
+          }
+        ],
+        "count": 1
+      },
+      {
+        "cabecalho_fiscal": {
+          "modelo": "55",
+          "tipo_nf": "1",
+          "natureza_operacao": "REMESSA P/ARMAZENAGEM",
+          "emit_uf": null,
+          "dest_uf": "MG"
+        },
+        "itens_fiscais": [
+          {
+            "n_item": "1",
+            "ncm": "38260000",
+            "cfop": "5663",
+            "icms_cst": "61",
+            "pis_cst": "07",
+            "cofins_cst": "07"
+          }
+        ],
+        "count": 1
+      },
+      {
+        "cabecalho_fiscal": {
+          "modelo": "55",
+          "tipo_nf": "1",
+          "natureza_operacao": "REMESSA P/ARMAZENAGEM",
+          "emit_uf": null,
+          "dest_uf": "MG"
+        },
+        "itens_fiscais": [
+          {
+            "n_item": "1",
+            "ncm": "27101259",
+            "cfop": "5663",
+            "icms_cst": "61",
+            "pis_cst": "07",
+            "cofins_cst": "07"
+          },
+          {
+            "n_item": "2",
+            "ncm": "27101921",
+            "cfop": "5663",
+            "icms_cst": "61",
+            "pis_cst": "07",
+            "cofins_cst": "07"
+          },
+          {
+            "n_item": "3",
+            "ncm": "27101921",
+            "cfop": "5663",
+            "icms_cst": "61",
+            "pis_cst": "07",
+            "cofins_cst": "07"
+          }
+        ],
+        "count": 1
+      },
+      {
+        "cabecalho_fiscal": {
+          "modelo": "55",
+          "tipo_nf": "1",
+          "natureza_operacao": "VENDA NO ESTADO",
+          "emit_uf": null,
+          "dest_uf": "MG"
+        },
+        "itens_fiscais": [
+          {
+            "n_item": "1",
+            "ncm": "27101259",
+            "cfop": "5656",
+            "icms_cst": "61",
+            "pis_cst": "04",
+            "cofins_cst": "04"
+          }
+        ],
+        "count": 1
+      },
+      {
+        "cabecalho_fiscal": {
+          "modelo": "55",
+          "tipo_nf": "1",
+          "natureza_operacao": "RETORNO DE COMODATO",
+          "emit_uf": null,
+          "dest_uf": "MG"
+        },
+        "itens_fiscais": [
+          {
+            "n_item": "1",
+            "ncm": "85072010",
+            "cfop": "5909",
+            "icms_cst": "41",
+            "pis_cst": "07",
+            "cofins_cst": "07"
+          },
+          {
+            "n_item": "2",
+            "ncm": "85369020",
+            "cfop": "5909",
+            "icms_cst": "41",
+            "pis_cst": "07",
+            "cofins_cst": "07"
+          },
+          {
+            "n_item": "3",
+            "ncm": "85311090",
+            "cfop": "5909",
+            "icms_cst": "41",
+            "pis_cst": "07",
+            "cofins_cst": "07"
+          },
+          {
+            "n_item": "4",
+            "ncm": "85177900",
+            "cfop": "5909",
+            "icms_cst": "41",
+            "pis_cst": "07",
+            "cofins_cst": "07"
+          },
+          {
+            "n_item": "5",
+            "ncm": "85291090",
+            "cfop": "5909",
+            "icms_cst": "41",
+            "pis_cst": "07",
+            "cofins_cst": "07"
+          },
+          {
+            "n_item": "6",
+            "ncm": "85044021",
+            "cfop": "5909",
+            "icms_cst": "41",
+            "pis_cst": "07",
+            "cofins_cst": "07"
+          },
+          {
+            "n_item": "7",
+            "ncm": "85291090",
+            "cfop": "5909",
+            "icms_cst": "41",
+            "pis_cst": "07",
+            "cofins_cst": "07"
+          }
+        ],
+        "count": 1
+      },
+      {
+        "cabecalho_fiscal": {
+          "modelo": "55",
+          "tipo_nf": "1",
+          "natureza_operacao": "RETORNO DE COMODATO",
+          "emit_uf": null,
+          "dest_uf": "SC"
+        },
+        "itens_fiscais": [
+          {
+            "n_item": "1",
+            "ncm": "85176199",
+            "cfop": "6909",
+            "icms_cst": "40",
+            "pis_cst": "07",
+            "cofins_cst": "07"
+          }
+        ],
+        "count": 1
+      },
+      {
+        "cabecalho_fiscal": {
+          "modelo": "55",
+          "tipo_nf": "1",
+          "natureza_operacao": "VENDA NO ESTADO",
+          "emit_uf": null,
+          "dest_uf": "MG"
+        },
+        "itens_fiscais": [
+          {
+            "n_item": "1",
+            "ncm": "27101921",
+            "cfop": "5655",
+            "icms_cst": "61",
+            "pis_cst": "04",
+            "cofins_cst": "04"
+          }
+        ],
+        "count": 1
+      },
+      {
+        "cabecalho_fiscal": {
+          "modelo": "55",
+          "tipo_nf": "1",
+          "natureza_operacao": "VENDA NO ESTADO",
+          "emit_uf": null,
+          "dest_uf": "MG"
+        },
+        "itens_fiscais": [
+          {
+            "n_item": "1",
+            "ncm": "22071090",
+            "cfop": "5655",
+            "icms_cst": "10",
+            "pis_cst": "03",
+            "cofins_cst": "03"
+          }
+        ],
+        "count": 1
+      }
+    ]
+  }
+]
