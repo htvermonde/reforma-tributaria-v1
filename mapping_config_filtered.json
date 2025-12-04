@@ -67,7 +67,8 @@
     "DEST_CPF": {
         "descricao": "CPF do destinatário",
         "caminho_xml": "infNFe/dest/CPF",
-        "secao": "Destinatário"
+        "secao": "Destinatário",
+        "opcional": true
     },
     "DEST_RAZAO_SOCIAL": {
         "descricao": "Razão social / nome do destinatário",
@@ -132,17 +133,20 @@
     "ITEM_ICMS_VBC": {
         "descricao": "Base de cálculo do ICMS",
         "caminho_xml": "infNFe/det/imposto/ICMS/*/vBC",
-        "secao": "Item - ICMS"
+        "secao": "Item - ICMS",
+        "opcional": true
     },
     "ITEM_ICMS_VICMS": {
         "descricao": "Valor de ICMS",
         "caminho_xml": "infNFe/det/imposto/ICMS/*/vICMS",
-        "secao": "Item - ICMS"
+        "secao": "Item - ICMS",
+        "opcional": true
     },
     "ITEM_ICMS_PICMS": {
         "descricao": "Alíquota de ICMS (%)",
         "caminho_xml": "infNFe/det/imposto/ICMS/*/pICMS",
-        "secao": "Item - ICMS"
+        "secao": "Item - ICMS",
+        "opcional": true
     },
     "ITEM_ICMS_CST": {
         "descricao": "CST do ICMS (regime normal)",
@@ -152,37 +156,44 @@
     "ITEM_ICMS_VBCST": {
         "descricao": "Base de cálculo do ICMS ST",
         "caminho_xml": "infNFe/det/imposto/ICMS/*/vBCST",
-        "secao": "Item - ICMS"
+        "secao": "Item - ICMS",
+        "opcional": true
     },
     "ITEM_ICMS_VICMSST": {
         "descricao": "Valor de ICMS ST",
         "caminho_xml": "infNFe/det/imposto/ICMS/*/vICMSST",
-        "secao": "Item - ICMS"
+        "secao": "Item - ICMS",
+        "opcional": true
     },
     "ITEM_ICMS_PICMSST": {
         "descricao": "Alíquota de ICMS ST (%)",
         "caminho_xml": "infNFe/det/imposto/ICMS/*/pICMSST",
-        "secao": "Item - ICMS"
+        "secao": "Item - ICMS",
+        "opcional": true
     },
     "ITEM_IPI_VBC": {
         "descricao": "Base de cálculo do IPI",
         "caminho_xml": "infNFe/det/imposto/IPI/*/vBC",
-        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+        "secao": "Item - IPI/PIS/COFINS/ISSQN",
+        "opcional": true
     },
     "ITEM_IPI_VIPI": {
         "descricao": "Valor de IPI",
         "caminho_xml": "infNFe/det/imposto/IPI/*/vIPI",
-        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+        "secao": "Item - IPI/PIS/COFINS/ISSQN",
+        "opcional": true
     },
     "ITEM_IPI_PIPI": {
         "descricao": "Alíquota de IPI (%)",
         "caminho_xml": "infNFe/det/imposto/IPI/*/pIPI",
-        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+        "secao": "Item - IPI/PIS/COFINS/ISSQN",
+        "opcional": true
     },
     "ITEM_IPI_CST": {
         "descricao": "CST do IPI (tributado ou isento)",
         "caminho_xml": "infNFe/det/imposto/IPI/*/CST",
-        "secao": "Item - IPI/PIS/COFINS/ISSQN"
+        "secao": "Item - IPI/PIS/COFINS/ISSQN",
+        "opcional": true
     },
     "TOTAL_VPIS": {
         "descricao": "Total de PIS",

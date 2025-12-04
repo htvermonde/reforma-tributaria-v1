@@ -96,6 +96,47 @@ def transform_note_to_output(note: Dict[str, Any]) -> Dict[str, Any]:
 # Função Principal de Análise
 # ==============================================================================
 
+def analyze_optional_fields(notes: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
+    """
+    Analisa a presença de campos opcionais nas notas.
+    Retorna estatísticas de quantas notas possuem cada campo opcional preenchido.
+    """
+    # Lista de campos opcionais conforme mapping_config_filtered.json
+    optional_fields = [
+        "DEST_CPF",
+        "ITEM_IPI_VBC",
+        "ITEM_IPI_VIPI",
+        "ITEM_IPI_PIPI",
+        "ITEM_IPI_CST",
+        "ITEM_ICMS_VBC",
+        "ITEM_ICMS_VICMS",
+        "ITEM_ICMS_PICMS",
+        "ITEM_ICMS_VBCST",
+        "ITEM_ICMS_VICMSST",
+        "ITEM_ICMS_PICMSST"
+    ]
+    
+    total_notes = len(notes)
+    field_stats = {}
+    
+    for field in optional_fields:
+        present_count = 0
+        for note in notes:
+            value = note.get(field)
+            # Considera presente se não for None e não for string vazia
+            if value is not None and value != "" and value != []:
+                present_count += 1
+        
+        percentage = (present_count / total_notes * 100) if total_notes > 0 else 0
+        field_stats[field] = {
+            "presente_em": present_count,
+            "total_notas": total_notes,
+            "percentual": round(percentage, 2)
+        }
+    
+    return field_stats
+
+
 def analyze_tax_data_by_company(input_path: str, output_path: str):
     """
     Carrega, agrupa por CNPJ Emitente e identifica conjuntos de dados únicos, 
@@ -131,7 +172,10 @@ def analyze_tax_data_by_company(input_path: str, output_path: str):
         # 2.1 Encontrar o período das notas
         period = find_date_range(notes)
         
-        # 2.2 Agrupar e contar os conjuntos de dados únicos
+        # 2.2 Analisar presença de campos opcionais
+        optional_fields_stats = analyze_optional_fields(notes)
+        
+        # 2.3 Agrupar e contar os conjuntos de dados únicos
         unique_sets_counts: Dict[Tuple, Dict[str, Any]] = {}
 
         for note in notes:
@@ -172,10 +216,17 @@ def analyze_tax_data_by_company(input_path: str, output_path: str):
         final_analysis[cnpj] = {
             "empresa_cnpj": cnpj,
             "periodo": period,
+            "campos_opcionais": optional_fields_stats,
             "notas": final_notes_structure
         }
         
         print(f"   -> Conjuntos únicos de dados fiscais encontrados: {len(final_notes_structure)}")
+        print(f"   -> Análise de campos opcionais:")
+        for field, stats in optional_fields_stats.items():
+            if stats["presente_em"] > 0:
+                print(f"      • {field}: presente em {stats['presente_em']} notas ({stats['percentual']}%)")
+            else:
+                print(f"      • {field}: ausente em todas as notas")
 
     # 4. Salvar o resultado final
     print(f"\n💾 Salvando a análise final em: {output_path}")

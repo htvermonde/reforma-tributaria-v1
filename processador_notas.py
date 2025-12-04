@@ -70,6 +70,7 @@ def process_xml_mapping(xml_path: str, mapping_path: str) -> Dict[str, Any]:
         for key, config in mapping_structure.items():
             raw_xpath = config.get("caminho_xml")
             target_field = config.get("target_field", key)
+            is_optional = config.get("opcional", False)
             
             if not raw_xpath:
                 continue
@@ -122,6 +123,8 @@ def process_xml_mapping(xml_path: str, mapping_path: str) -> Dict[str, Any]:
                         value = vals[0] if len(vals) == 1 else vals
                         break
             
+            # Se o campo é opcional e não foi encontrado, atribui None silenciosamente
+            # Se não é opcional e value é None, isso pode indicar um problema (mas não quebramos aqui)
             extracted_data[target_field] = value
 
         # print(f"Mapeamento concluído para {os.path.basename(xml_path)}.")
