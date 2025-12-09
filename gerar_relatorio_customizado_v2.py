@@ -32,24 +32,6 @@ TABELA_CFOP = {
     '6102': 'Venda de mercadoria adquirida ou recebida de terceiros',
 }
 
-# CST IPI
-TABELA_CST_IPI = {
-    '00': 'Entrada com recuperação de crédito',
-    '01': 'Entrada tributada com alíquota zero',
-    '02': 'Entrada isenta',
-    '03': 'Entrada não-tributada',
-    '04': 'Entrada imune',
-    '05': 'Entrada com suspensão',
-    '49': 'Outras entradas',
-    '50': 'Saída tributada',
-    '51': 'Saída tributada com alíquota zero',
-    '52': 'Saída isenta',
-    '53': 'Saída não-tributada',
-    '54': 'Saída imune',
-    '55': 'Saída com suspensão',
-    '99': 'Outras saídas',
-}
-
 # CST PIS/COFINS
 TABELA_CST_PIS_COFINS = {
     '01': 'Operação Tributável com Alíquota Básica',
@@ -83,10 +65,6 @@ def safe_get(data, index, default=''):
 def get_desc_cfop(cfop):
     """Retorna a descrição do CFOP."""
     return TABELA_CFOP.get(str(cfop), f'CFOP {cfop}')
-
-def get_desc_cst_ipi(cst):
-    """Retorna a descrição do CST IPI."""
-    return TABELA_CST_IPI.get(str(cst), f'CST {cst}')
 
 def get_desc_cst_pis_cofins(cst):
     """Retorna a descrição do CST PIS/COFINS."""
@@ -200,30 +178,6 @@ def get_natureza_operacao(nota: Dict[str, Any]) -> Dict[str, Any]:
     """Extrai Natureza de Operação."""
     return {'natureza_operacao': nota.get('NATUREZA_OPERACAO', '')}
 
-def get_ipi_status(nota: Dict[str, Any], item_index: int) -> Dict[str, Any]:
-    """Classifica IPI como tributado, isento ou sem aplicação."""
-    cst_ipi = safe_get(nota.get('ITEM_IPI_CST'), item_index, '')
-    
-    if not cst_ipi or cst_ipi == '':
-        status = 'SEM_IPI'
-        descricao = 'Não se aplica'
-    elif str(cst_ipi) in ['50', '51']:
-        status = 'TRIBUTADO'
-        descricao = get_desc_cst_ipi(cst_ipi)
-    elif str(cst_ipi) in ['52', '53', '54', '55', '99']:
-        status = 'ISENTO'
-        descricao = get_desc_cst_ipi(cst_ipi)
-    else:
-        status = 'OUTROS'
-        descricao = get_desc_cst_ipi(cst_ipi)
-    
-    return {
-        'ipi_status': status,
-        'ipi_descricao': descricao,
-        'cst_ipi': cst_ipi,
-        'valor_ipi': safe_get(nota.get('ITEM_IPI_VIPI'), item_index, '0.00'),
-    }
-
 def get_cofins_status(nota: Dict[str, Any], item_index: int) -> Dict[str, Any]:
     """ Classifica COFINS em 4 categorias."""
     cst_cofins = safe_get(nota.get('ITEM_COFINS_CST'), item_index, '')
@@ -256,7 +210,6 @@ def get_cofins_status(nota: Dict[str, Any], item_index: int) -> Dict[str, Any]:
 def aplicar_regras_negocio(nota: Dict[str, Any], item_index: int) -> Dict[str, Any]:
     """
     Aplica as regras de negócio chamando funções especializadas.
-    Mantém consistência arquitetural com funções separadas por regra.
     """
     resultado = {}
     
@@ -269,7 +222,6 @@ def aplicar_regras_negocio(nota: Dict[str, Any], item_index: int) -> Dict[str, A
     resultado.update(get_ncm(nota, item_index))             
     resultado.update(get_cfop_info(nota, item_index))       
     resultado.update(get_natureza_operacao(nota))           
-    resultado.update(get_ipi_status(nota, item_index))      
     resultado.update(get_cofins_status(nota, item_index))   
     resultado.update(get_info_adicionais(nota, item_index)) 
     
