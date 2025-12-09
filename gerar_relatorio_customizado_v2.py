@@ -7,7 +7,7 @@ from typing import Dict, Any, List
 # ==============================================================================
 
 ARQUIVO_JSON = 'output/resposta_notas.json'
-ARQUIVO_EXCEL = 'output/relatorio_customizado_v10.xlsx'
+ARQUIVO_EXCEL = 'output/relatorio_customizado_v11.xlsx'
 
 # ==============================================================================
 # TABELAS DE DE-PARA
@@ -279,6 +279,12 @@ def aplicar_regras_negocio(nota: Dict[str, Any], item_index: int) -> Dict[str, A
 # FUNÇÃO PRINCIPAL: EXPANDIR ITENS E GERAR RELATÓRIO
 # ==============================================================================
 
+def get_json_completo_nfe(nota: Dict[str, Any]) -> str:
+    """
+    Retorna o JSON completo da NFe formatado para exibição.
+    """
+    return json.dumps(nota, ensure_ascii=False, indent=2)
+
 def expandir_notas_para_linhas(notas: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """
     Expande cada nota em múltiplas linhas (uma por item).
@@ -299,6 +305,7 @@ def expandir_notas_para_linhas(notas: List[Dict[str, Any]]) -> List[Dict[str, An
             linha = {
                 # Dados básicos da nota
                 'arquivo_xml': nota.get('xml_filename', ''),
+                'json_completo_nfe': get_json_completo_nfe(nota),
                 'modelo': nota.get('MODELO', ''),
                 'serie': nota.get('SERIE', ''),
                 'numero_nf': nota.get('NUMERO_NF', ''),
@@ -342,6 +349,7 @@ def mapear_para_formato_relatorio(linhas: List[Dict[str, Any]]) -> pd.DataFrame:
         registro = {
             # Colunas do relatório fiscal
             'Arquivo XML': linha['arquivo_xml'],
+            'JSON': linha['json_completo_nfe'],
             'CNPJ/CPF Emissor': linha.get('emit_documento', ''),  
             'Razao Social Emissor': linha['emit_razao_social'],
             'CNPJ/CPF Destinatario': linha.get('dest_documento', ''),  
