@@ -1,2 +1,15 @@
+# Processamento de XML
 lxml==4.9.4
+
+# Análise de dados e Excel
+pandas==2.2.0
+openpyxl==3.1.2
+
+# Requisições HTTP
+requests==2.31.0
+
+# Variáveis de ambiente
+python-dotenv==1.0.1
+
+# Codificação Toon
 toon-python==0.1.0
