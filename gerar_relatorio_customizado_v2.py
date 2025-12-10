@@ -7,7 +7,8 @@ from typing import Dict, Any, List
 # ==============================================================================
 
 ARQUIVO_JSON = 'output/resposta_notas.json'
-ARQUIVO_EXCEL = 'output/relatorio_customizado_v11.xlsx'
+ARQUIVO_EXCEL = 'output/relatorio_customizado_v2.xlsx'
+
 
 # ==============================================================================
 # TABELAS DE DE-PARA

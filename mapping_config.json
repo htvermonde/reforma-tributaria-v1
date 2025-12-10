@@ -61,7 +61,7 @@
     },
     "EMIT_UF": {
         "descricao": "UF do emitente",
-        "caminho_xml": "infNFe/enderEmit/UF",
+        "caminho_xml": "infNFe/emit/enderEmit/UF",
         "secao": "Emissor"
     },
     "EMIT_IE": {
@@ -187,6 +187,21 @@
     "ITEM_ICMS_CSOSN": {
         "descricao": "CSOSN do ICMS (Simples Nacional)",
         "caminho_xml": "infNFe/det/imposto/ICMS/*/CSOSN",
+        "secao": "Item - ICMS"
+    },
+    "ICMS_QTD_BC_MONO_RET": {
+        "descricao": "Quantidade que serviu de base para o cálculo do imposto já retido.",
+        "caminho_xml": "infNFe/det/imposto/ICMS/*/qBCMonoRet",
+        "secao": "Item - ICMS"
+    },
+    "ICMS_ALIQUOTA_MONO_RET": {
+        "descricao": "Alíquota específica",
+        "caminho_xml": "infNFe/det/imposto/ICMS/*/adRemICMSRet",
+        "secao": "Item - ICMS"
+    },
+    "ICMS_VALOR_MONO_RET": {
+        "descricao": "O valor total do imposto que foi retido",
+        "caminho_xml": "infNFe/det/imposto/ICMS/*/vICMSMonoRet",
         "secao": "Item - ICMS"
     },
     "ITEM_ICMS_VBC": {
