@@ -449,7 +449,7 @@
         "caminho_xml": "infNFe/transp/veicTransp/UF",
         "secao": "Transporte"
     },
-    "INF_COMPLEMENTARES": {
+    "INF_CPL": {
         "descricao": "Informações complementares ao contribuinte",
         "caminho_xml": "infNFe/infAdic/infCpl",
         "secao": "Adicionais"
@@ -458,5 +458,10 @@
         "descricao": "Informações adicionais ao Fisco",
         "caminho_xml": "infNFe/infAdic/infFisco",
         "secao": "Adicionais"
+    },
+    "ITEM_INFO_ADICIONAL": {
+        "descricao": "Informações adicionais do item (infAdProd)",
+        "caminho_xml": "infNFe/det/infAdProd",
+        "secao": "Itens"
     }
 }

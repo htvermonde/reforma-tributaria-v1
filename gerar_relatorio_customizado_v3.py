@@ -66,6 +66,16 @@ TABELA_CST_PIS_COFINS = {
     '99': 'Outras Operações',
 }
 
+# Modalidades de Frete
+TABELA_MOD_FRETE = {
+    '0': 'Por Conta do Emitente',
+    '1': 'Por Conta do Destinatário',
+    '2': 'Por Conta de Terceiro',
+    '3': 'Por Conta de Terceiro (Comodato)',
+    '4': 'Sem Movimento Físico',
+    '9': 'Sem Frete',
+}
+
 # ==============================================================================
 # FUNÇÕES AUXILIARES
 # ==============================================================================
@@ -113,6 +123,82 @@ def get_consumidor_final(nota: Dict[str, Any]) -> Dict[str, Any]:
 def _get_desc_cfop(cfop):
     """Retorna a descrição do CFOP."""
     return TABELA_CFOP.get(str(cfop), f'CFOP {cfop}')
+
+def get_transporte_info(nota: Dict[str, Any]) -> Dict[str, Any]:
+    """Identifica modalidade de transporte e retorna a descrição."""
+    mod_frete = nota.get('TRANSP_MOD_FRETE')
+    
+    if mod_frete is None or mod_frete == '':
+        tem_transporte = 'Não Informado'
+    else:
+        tem_transporte = TABELA_MOD_FRETE.get(str(mod_frete), f'Modalidade {mod_frete}')
+    
+    return {'tem_transporte': tem_transporte}
+
+def get_info_adicionais(nota: Dict[str, Any], item: Dict[str, Any], item_index: int = 0) -> Dict[str, Any]:
+    """Consolida informações adicionais da nota (contribuinte/fisco) e do item."""
+    info_contrib = nota.get('INF_CPL') or nota.get('INF_COMPLEMENTARES')
+    info_fisco = nota.get('INF_FISCO')
+    info_item = item.get('INFO_ADICIONAL')
+
+    partes = []
+    if info_contrib:
+        partes.append(f"[CONTRIBUINTE]: {info_contrib}")
+    if info_fisco:
+        partes.append(f"[FISCO]: {info_fisco}")
+    if info_item:
+        item_num = item.get('NUMERO') or item_index + 1
+        partes.append(f"[ITEM {item_num}]: {info_item}")
+
+    return {'info_adicionais': ' | '.join(partes) if partes else ''}
+
+def get_outros_impostos(item: Dict[str, Any]) -> Dict[str, Any]:
+    """Identifica presença de impostos não convencionais e registra o nome da tag."""
+    # Lista padrão de impostos conhecidos (tags _BLOCO que devem existir)
+    impostos_padrao = {'ICMS_BLOCO', 'IPI_BLOCO', 'PIS_BLOCO', 'COFINS_BLOCO', 'ISSQN_BLOCO', 'ICMS_UFDEST_BLOCO'}
+    
+    # Coletar todos os campos _BLOCO presentes no item
+    impostos_presentes = set()
+    for key in item.keys():
+        if key.endswith('_BLOCO'):
+            impostos_presentes.add(key)
+    
+    # Identificar impostos não padrão
+    outros_impostos = impostos_presentes - impostos_padrao
+    
+    # Verificar campo OUTRO_IMPOSTO (se vier preenchido do processador)
+    outro_imposto_campo = item.get('OUTRO_IMPOSTO')
+    
+    if outros_impostos or outro_imposto_campo:
+        # Extrair nomes das tags (remover _BLOCO)
+        nomes_impostos = [imp.replace('_BLOCO', '') for imp in sorted(outros_impostos)]
+        
+        if nomes_impostos and outro_imposto_campo:
+            descricao = ', '.join(nomes_impostos) + f', {outro_imposto_campo}'
+        elif nomes_impostos:
+            descricao = ', '.join(nomes_impostos)
+        else:
+            descricao = outro_imposto_campo
+    else:
+        descricao = 'NAO'
+    
+    return {
+        'outros_impostos': descricao,
+    }
+
+def get_issqn_info(item: Dict[str, Any]) -> Dict[str, Any]:
+    """Identifica presença de ISSQN no item (serviço) retornando SIM/NAO."""
+    issqn_bloco = item.get('ISSQN_BLOCO')
+    tem_issqn_flag = item.get('TEM_ISSQN')
+
+    if issqn_bloco or tem_issqn_flag:
+        tem_issqn = 'SIM'
+    else:
+        tem_issqn = 'NAO'
+
+    return {
+        'tem_issqn': tem_issqn,
+    }
 
 def get_cfop_info(item: Dict[str, Any]) -> Dict[str, Any]:
     """Extrai CFOP e descrição."""
@@ -310,7 +396,7 @@ def montar_dataframe_notas(notas: List[Dict[str, Any]]) -> pd.DataFrame:
     for idx, nota in enumerate(notas, 1):
         items = nota.get('ITEMS', [])
         
-        for item in items:
+        for item_idx, item in enumerate(items):
             info_nota = {
                 'ID': index,
                 'Numero Nota': nota.get('NUMERO_NF', ''),
@@ -324,6 +410,7 @@ def montar_dataframe_notas(notas: List[Dict[str, Any]]) -> pd.DataFrame:
                 "UF Destinatário": nota.get('DEST_UF', ''),
                 "Operação": get_tipo_operacao(nota).get('tipo_operacao', ''),
                 "Consumidor Final": get_consumidor_final(nota).get('consumidor_final', ''),
+                "Tem Transporte": get_transporte_info(nota).get('tem_transporte', ''),
             }
             info_produto = {
                 'NCM': item.get('NCM', ''),
@@ -334,6 +421,9 @@ def montar_dataframe_notas(notas: List[Dict[str, Any]]) -> pd.DataFrame:
                 "IPI_CST": get_ipi_status(item).get('ipi_status', ''),
                 "CONFINS": get_cofins_status(item).get('tem_cofins', ''),
                 "DIFAL": identificar_difal(nota, item),
+                "Sujeito a ISS?": get_issqn_info(item).get('tem_issqn', ''),
+                "Outros Impostos": get_outros_impostos(item).get('outros_impostos', ''),
+                "Info Adicionais": get_info_adicionais(nota, item, item_idx).get('info_adicionais', ''),
             }
             
             # Análise ICMS
