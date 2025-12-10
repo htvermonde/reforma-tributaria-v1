@@ -66,6 +66,16 @@ TABELA_CST_PIS_COFINS = {
     '99': 'Outras Operações',
 }
 
+# Modalidades de Frete
+TABELA_MOD_FRETE = {
+    '0': 'Por Conta do Emitente',
+    '1': 'Por Conta do Destinatário',
+    '2': 'Por Conta de Terceiro',
+    '3': 'Por Conta de Terceiro (Comodato)',
+    '4': 'Sem Movimento Físico',
+    '9': 'Sem Frete',
+}
+
 # ==============================================================================
 # FUNÇÕES AUXILIARES
 # ==============================================================================
@@ -113,6 +123,17 @@ def get_consumidor_final(nota: Dict[str, Any]) -> Dict[str, Any]:
 def _get_desc_cfop(cfop):
     """Retorna a descrição do CFOP."""
     return TABELA_CFOP.get(str(cfop), f'CFOP {cfop}')
+
+def get_transporte_info(nota: Dict[str, Any]) -> Dict[str, Any]:
+    """Identifica modalidade de transporte e retorna a descrição."""
+    mod_frete = nota.get('TRANSP_MOD_FRETE')
+    
+    if mod_frete is None or mod_frete == '':
+        tem_transporte = 'Não Informado'
+    else:
+        tem_transporte = TABELA_MOD_FRETE.get(str(mod_frete), f'Modalidade {mod_frete}')
+    
+    return {'tem_transporte': tem_transporte}
 
 def get_cfop_info(item: Dict[str, Any]) -> Dict[str, Any]:
     """Extrai CFOP e descrição."""
@@ -274,6 +295,7 @@ def montar_dataframe_notas(notas: List[Dict[str, Any]]) -> pd.DataFrame:
                 "UF Destinatário": nota.get('DEST_UF', ''),
                 "Operação": get_tipo_operacao(nota).get('tipo_operacao', ''),
                 "Consumidor Final": get_consumidor_final(nota).get('consumidor_final', ''),
+                "Tem Transporte": get_transporte_info(nota).get('tem_transporte', ''),
             }
             info_produto = {
                 'NCM': item.get('NCM', ''),
