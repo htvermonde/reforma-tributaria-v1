@@ -135,6 +135,23 @@ def get_transporte_info(nota: Dict[str, Any]) -> Dict[str, Any]:
     
     return {'tem_transporte': tem_transporte}
 
+def get_info_adicionais(nota: Dict[str, Any], item: Dict[str, Any], item_index: int = 0) -> Dict[str, Any]:
+    """Consolida informações adicionais da nota (contribuinte/fisco) e do item."""
+    info_contrib = nota.get('INF_CPL') or nota.get('INF_COMPLEMENTARES')
+    info_fisco = nota.get('INF_FISCO')
+    info_item = item.get('INFO_ADICIONAL')
+
+    partes = []
+    if info_contrib:
+        partes.append(f"[CONTRIBUINTE]: {info_contrib}")
+    if info_fisco:
+        partes.append(f"[FISCO]: {info_fisco}")
+    if info_item:
+        item_num = item.get('NUMERO') or item_index + 1
+        partes.append(f"[ITEM {item_num}]: {info_item}")
+
+    return {'info_adicionais': ' | '.join(partes) if partes else ''}
+
 def get_cfop_info(item: Dict[str, Any]) -> Dict[str, Any]:
     """Extrai CFOP e descrição."""
     cfop = item.get('CFOP', '')
@@ -281,7 +298,7 @@ def montar_dataframe_notas(notas: List[Dict[str, Any]]) -> pd.DataFrame:
     for idx, nota in enumerate(notas, 1):
         items = nota.get('ITEMS', [])
         
-        for item in items:
+        for item_idx, item in enumerate(items):
             info_nota = {
                 'ID': index,
                 'Numero Nota': nota.get('NUMERO_NF', ''),
@@ -305,6 +322,7 @@ def montar_dataframe_notas(notas: List[Dict[str, Any]]) -> pd.DataFrame:
                 "ICMS CST": item.get('ICMS_CST', ''),
                 "IPI_CST": get_ipi_status(item).get('ipi_status', ''),
                 "CONFINS": get_cofins_status(item).get('tem_cofins', ''),
+                "Info Adicionais": get_info_adicionais(nota, item, item_idx).get('info_adicionais', ''),
             }
             
             # Análise ICMS
