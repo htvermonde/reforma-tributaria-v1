@@ -246,7 +246,57 @@ def get_cofins_status(item: Dict[str, Any]) -> Dict[str, Any]:
         'desc_cst_pis': _get_desc_cst_pis_cofins(cst_pis),
     }
 
+def identificar_difal(nota: Dict[str, Any], item: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Identifica a incidência do DIFAL (Diferencial de Alíquota)
+    com base nas regras:
+    1. Presença do bloco ICMSUFDest (regra 19a)
+    2. OU Se cumprir 3 requisitos (regra 19b):
+        a) Destinatário = consumidor final (indFinal = 1)
+        b) Operação interestadual (UF diferente)
+        c) Destinatário não contribuinte do ICMS (indIEDest = 9)
 
+    Args:
+        dados_nota_json (dict): Dicionário contendo os dados gerais da NF-e
+        e o bloco 'ITEMS'.
+
+    Returns:
+        bool: True se o DIFAL incide, False caso contrário.
+    """
+    
+    # --- REGRA 19a: Presença do bloco ICMSUFDest ---
+    
+    # 1.1 Verifica nos totais (indica que houve cálculo na nota)
+    # Procuramos por chaves que indicam a presença do cálculo de DIFAL no total.
+    if nota.get("DIFAL_CONS_FINAL") == "1" and nota.get("DIFAL_DEST_UF") != nota.get("DIFAL_EMIT_UF"):
+         return True
+    
+    # 1.2 Verifica por item (procurando o bloco em cada item)
+    # Verifica se o bloco de campos de DIFAL do item está preenchido
+    if item.get("ICMS_UFDEST_VBCUFDEST") or item.get("TEM_DIFAL") == "1":
+        return True
+
+    # --- REGRA 19b: Cumprimento dos 3 requisitos ---
+    
+    # 2.1 Verifica Destinatário = Consumidor Final
+    is_consumidor_final = nota.get("CONSUMIDOR_FINAL") == "1"
+    
+    # 2.2 Verifica Operação Interestadual (UF diferentes)
+    uf_emitente = nota.get("EMIT_UF")
+    uf_destinatario = nota.get("DEST_UF")
+    is_interestadual = uf_emitente is not None and uf_destinatario is not None and uf_emitente != uf_destinatario
+    
+    # 2.3 Verifica Destinatário Não Contribuinte (indIEDest = 9)
+    # A tag indIEDest no XML (linha 61) tem o valor '9' para não-contribuinte.
+    # No JSON você está usando "DEST_IND_IE_DEST".
+    is_nao_contribuinte = nota.get("DEST_IND_IE_DEST") == "9"
+    
+    # 2.4 Retorna TRUE se as 3 condições forem atendidas
+    if is_consumidor_final and is_interestadual and is_nao_contribuinte:
+        return True
+    
+    # --- Se nenhuma das regras for atendida ---
+    return False
 
 # ==============================================================================
 # FUNÇÃO PRINCIPAL: EXPANDIR ITENS E GERAR RELATÓRIO
@@ -283,6 +333,7 @@ def montar_dataframe_notas(notas: List[Dict[str, Any]]) -> pd.DataFrame:
                 "ICMS CST": item.get('ICMS_CST', ''),
                 "IPI_CST": get_ipi_status(item).get('ipi_status', ''),
                 "CONFINS": get_cofins_status(item).get('tem_cofins', ''),
+                "DIFAL": identificar_difal(nota, item),
             }
             
             # Análise ICMS
