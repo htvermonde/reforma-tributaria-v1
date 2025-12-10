@@ -6,7 +6,7 @@ from typing import Dict, Any, List
 # CONFIGURAÇÃO
 # ==============================================================================
 
-ARQUIVO_JSON = 'output/resposta_notas_v2_teste.json'
+ARQUIVO_JSON = 'output/resposta_notas_v2.json'
 ARQUIVO_EXCEL = 'output/relatorio_customizado_v3.xlsx'
 
 # ==============================================================================
@@ -186,6 +186,20 @@ def get_outros_impostos(item: Dict[str, Any]) -> Dict[str, Any]:
         'outros_impostos': descricao,
     }
 
+def get_issqn_info(item: Dict[str, Any]) -> Dict[str, Any]:
+    """Identifica presença de ISSQN no item (serviço) retornando SIM/NAO."""
+    issqn_bloco = item.get('ISSQN_BLOCO')
+    tem_issqn_flag = item.get('TEM_ISSQN')
+
+    if issqn_bloco or tem_issqn_flag:
+        tem_issqn = 'SIM'
+    else:
+        tem_issqn = 'NAO'
+
+    return {
+        'tem_issqn': tem_issqn,
+    }
+
 def get_cfop_info(item: Dict[str, Any]) -> Dict[str, Any]:
     """Extrai CFOP e descrição."""
     cfop = item.get('CFOP', '')
@@ -356,6 +370,7 @@ def montar_dataframe_notas(notas: List[Dict[str, Any]]) -> pd.DataFrame:
                 "ICMS CST": item.get('ICMS_CST', ''),
                 "IPI_CST": get_ipi_status(item).get('ipi_status', ''),
                 "CONFINS": get_cofins_status(item).get('tem_cofins', ''),
+                "Sujeito a ISS?": get_issqn_info(item).get('tem_issqn', ''),
                 "Outros Impostos": get_outros_impostos(item).get('outros_impostos', ''),
                 "Info Adicionais": get_info_adicionais(nota, item, item_idx).get('info_adicionais', ''),
             }
