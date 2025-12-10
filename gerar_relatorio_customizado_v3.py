@@ -155,7 +155,7 @@ def get_info_adicionais(nota: Dict[str, Any], item: Dict[str, Any], item_index: 
 def get_outros_impostos(item: Dict[str, Any]) -> Dict[str, Any]:
     """Identifica presença de impostos não convencionais e registra o nome da tag."""
     # Lista padrão de impostos conhecidos (tags _BLOCO que devem existir)
-    impostos_padrao = {'ICMS_BLOCO', 'IPI_BLOCO', 'PIS_BLOCO', 'COFINS_BLOCO', 'ISSQN_BLOCO', 'ICMS_UFDEST_BLOCO', 'II_BLOCO'}
+    impostos_padrao = {'ICMS_BLOCO', 'IPI_BLOCO', 'PIS_BLOCO', 'COFINS_BLOCO', 'ISSQN_BLOCO', 'ICMS_UFDEST_BLOCO'}
     
     # Coletar todos os campos _BLOCO presentes no item
     impostos_presentes = set()
