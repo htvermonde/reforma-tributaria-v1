@@ -6,7 +6,7 @@ from typing import Dict, Any, List
 # CONFIGURAÇÃO
 # ==============================================================================
 
-ARQUIVO_JSON = 'output/resposta_notas_v2.json'
+ARQUIVO_JSON = 'output/resposta_notas_v2_teste.json'
 ARQUIVO_EXCEL = 'output/relatorio_customizado_v3.xlsx'
 
 # ==============================================================================
@@ -151,6 +151,40 @@ def get_info_adicionais(nota: Dict[str, Any], item: Dict[str, Any], item_index: 
         partes.append(f"[ITEM {item_num}]: {info_item}")
 
     return {'info_adicionais': ' | '.join(partes) if partes else ''}
+
+def get_outros_impostos(item: Dict[str, Any]) -> Dict[str, Any]:
+    """Identifica presença de impostos não convencionais e registra o nome da tag."""
+    # Lista padrão de impostos conhecidos (tags _BLOCO que devem existir)
+    impostos_padrao = {'ICMS_BLOCO', 'IPI_BLOCO', 'PIS_BLOCO', 'COFINS_BLOCO', 'ISSQN_BLOCO', 'ICMS_UFDEST_BLOCO', 'II_BLOCO'}
+    
+    # Coletar todos os campos _BLOCO presentes no item
+    impostos_presentes = set()
+    for key in item.keys():
+        if key.endswith('_BLOCO'):
+            impostos_presentes.add(key)
+    
+    # Identificar impostos não padrão
+    outros_impostos = impostos_presentes - impostos_padrao
+    
+    # Verificar campo OUTRO_IMPOSTO (se vier preenchido do processador)
+    outro_imposto_campo = item.get('OUTRO_IMPOSTO')
+    
+    if outros_impostos or outro_imposto_campo:
+        # Extrair nomes das tags (remover _BLOCO)
+        nomes_impostos = [imp.replace('_BLOCO', '') for imp in sorted(outros_impostos)]
+        
+        if nomes_impostos and outro_imposto_campo:
+            descricao = ', '.join(nomes_impostos) + f', {outro_imposto_campo}'
+        elif nomes_impostos:
+            descricao = ', '.join(nomes_impostos)
+        else:
+            descricao = outro_imposto_campo
+    else:
+        descricao = 'NAO'
+    
+    return {
+        'outros_impostos': descricao,
+    }
 
 def get_cfop_info(item: Dict[str, Any]) -> Dict[str, Any]:
     """Extrai CFOP e descrição."""
@@ -322,6 +356,7 @@ def montar_dataframe_notas(notas: List[Dict[str, Any]]) -> pd.DataFrame:
                 "ICMS CST": item.get('ICMS_CST', ''),
                 "IPI_CST": get_ipi_status(item).get('ipi_status', ''),
                 "CONFINS": get_cofins_status(item).get('tem_cofins', ''),
+                "Outros Impostos": get_outros_impostos(item).get('outros_impostos', ''),
                 "Info Adicionais": get_info_adicionais(nota, item, item_idx).get('info_adicionais', ''),
             }
             
