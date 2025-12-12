@@ -32,11 +32,12 @@ def agrupar_cenarios_nfs(caminho_entrada, caminho_saida):
     # 2. Definir as colunas de agrupamento (cenário)
     colunas_agrupamento = [
         'Tipo', 'CNPJ/CPF Emissor', 'Razão Social Emissor', 
-        #'CNPJ/CPF Destinatário', 'Razão Social Destinatário', 
+        'CNPJ/CPF Destinatário', 'Razão Social Destinatário', 
         'UF Emissor', 'UF Destinatário', 'Operação', 'Consumidor Final', 
         'NCM', 'CFOP', 'Natureza', 'ICMS', 'ICMS CST', 'IPI_CST', 
         'CONFINS', 
-        # 'Transporte', 'Infos Adicionais', 'Imposto', 'ISSQN', 'DIFAL'
+        'Transporte', 'Outros Impostos', 'Sujeito a ISS?', 'DIFAL',
+        'Infos Adicionais'
     ]
     # Adicionar outras colunas relevantes conforme necessário 
     # 'Transporte', 'Infos Adicionais', 'Imposto', 'ISSQN', 'DIFAL'
