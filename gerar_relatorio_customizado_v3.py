@@ -410,7 +410,7 @@ def montar_dataframe_notas(notas: List[Dict[str, Any]]) -> pd.DataFrame:
                 "UF Destinatário": nota.get('DEST_UF', ''),
                 "Operação": get_tipo_operacao(nota).get('tipo_operacao', ''),
                 "Consumidor Final": get_consumidor_final(nota).get('consumidor_final', ''),
-                "Tem Transporte": get_transporte_info(nota).get('tem_transporte', ''),
+                "Transporte": get_transporte_info(nota).get('tem_transporte', ''),
             }
             info_produto = {
                 'NCM': item.get('NCM', ''),
@@ -420,10 +420,10 @@ def montar_dataframe_notas(notas: List[Dict[str, Any]]) -> pd.DataFrame:
                 "ICMS CST": item.get('ICMS_CST', ''),
                 "IPI_CST": get_ipi_status(item).get('ipi_status', ''),
                 "CONFINS": get_cofins_status(item).get('tem_cofins', ''),
-                "DIFAL": identificar_difal(nota, item),
                 "Sujeito a ISS?": get_issqn_info(item).get('tem_issqn', ''),
                 "Outros Impostos": get_outros_impostos(item).get('outros_impostos', ''),
-                "Info Adicionais": get_info_adicionais(nota, item, item_idx).get('info_adicionais', ''),
+                "Infos Adicionais": get_info_adicionais(nota, item, item_idx).get('info_adicionais', ''),
+                "DIFAL": identificar_difal(nota, item),
             }
             
             # Análise ICMS
