@@ -97,7 +97,7 @@ def agrupar_cenarios_nfs(caminho_entrada, caminho_saida):
         'NCM', 'CFOP', 'Natureza', 'ICMS', 'ICMS CST', 'IPI_CST', 
         'CONFINS', 
         'Transporte', 'Outros Impostos', 'Sujeito a ISS?', 'DIFAL',
-        'Infos Adicionais'
+        # 'Infos Adicionais'
     ]
     # Adicionar outras colunas relevantes conforme necessário 
     # 'Transporte', 'Infos Adicionais', 'Imposto', 'ISSQN', 'DIFAL'
@@ -117,7 +117,8 @@ def agrupar_cenarios_nfs(caminho_entrada, caminho_saida):
     # mais robusta para concatenar os números de notas únicos em uma string separada por vírgula.
     
     df_agrupado = df.groupby(colunas_agrupamento).agg(
-        nfs_agrupadas=('Numero Nota', lambda x: ', '.join(x.astype(str).unique()))
+        qtd_agrupamentos=('Numero Nota', 'count'),
+        nfs_agrupadas=('Numero Nota', lambda x: ', '.join([str(val) for val in x]))
     ).reset_index()
 
     # 4. Salvar o DataFrame agrupado em múltiplos formatos
