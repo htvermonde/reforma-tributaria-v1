@@ -1,0 +1,154 @@
+total_emitentes: 5
+emitentes[5]:
+  cnpj_emissor: "5620523000235"
+  razao_social_emissor: ATVOS BIOENERGIA ELDORADO S.A.
+  uf_emissor: MS
+  cenarios[1]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "6652"
+      natureza: Vda combustivel lubrificante prod.estab. dest.com.
+      transporte: Por Conta do Emitente
+    impostos:
+      icms: ICMS00
+      icms_cst: "0"
+      ipi_cst: ISENTO
+      confins: SIM
+      outros: NAO
+      sujeito_iss: NAO
+      difal: "False"
+    infos_adicionais: ""
+    nfs_agrupadas: "182831"
+  cnpj_emissor: "12613484000123"
+  razao_social_emissor: POTENCIAL AGRO S/A
+  uf_emissor: PR
+  cenarios[1]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5652"
+      natureza: Venda de combustível ou lubrificante de produção d
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms: ICMS53
+      icms_cst: "53"
+      ipi_cst: ISENTO
+      confins: SIM
+      outros: NAO
+      sujeito_iss: NAO
+      difal: "False"
+    infos_adicionais: ""
+    nfs_agrupadas: "282441"
+  cnpj_emissor: "29316596000115"
+  razao_social_emissor: INPASA AGROINDUSTRIAL S/A
+  uf_emissor: MT
+  cenarios[1]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001709"
+      razao_social: POTENCIAL PETROLEO LTDA
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "5652"
+      natureza: VENDA DE COMBUSTIVEL OU LUBRIFICANTE DE PRODUCAO DO ESTABELE
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms: ICMS20
+      icms_cst: "20"
+      ipi_cst: ISENTO
+      confins: SIM
+      outros: NAO
+      sujeito_iss: NAO
+      difal: "False"
+    infos_adicionais: ""
+    nfs_agrupadas: "267500"
+  cnpj_emissor: "33000167080970"
+  razao_social_emissor: PETROLEO BRASILEIRO S.A.
+  uf_emissor: PR
+  cenarios[2]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: Venda Contra Entrega (Produto Quotado)
+      transporte: Por Conta de Terceiro (Comodato)
+    impostos:
+      icms: ICMS15
+      icms_cst: "15"
+      ipi_cst: SEM_IPI
+      confins: SIM
+      outros: NAO
+      sujeito_iss: NAO
+      difal: "False"
+    infos_adicionais: ""
+    nfs_agrupadas: "391708"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5652"
+      natureza: Venda Contra Entrega (Produto Quotado)
+      transporte: Por Conta de Terceiro (Comodato)
+    impostos:
+      icms: ICMS15
+      icms_cst: "15"
+      ipi_cst: SEM_IPI
+      confins: SIM
+      outros: NAO
+      sujeito_iss: NAO
+      difal: "False"
+    infos_adicionais: ""
+    nfs_agrupadas: "391610"
+  cnpj_emissor: "45335934000112"
+  razao_social_emissor: ECE S.A
+  uf_emissor: SP
+  cenarios[1]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "6120"
+      natureza: VDA.MERC.ADREC.TERC.ENTR.DEST.PREM - VENDA ORDEM
+      transporte: Sem Frete
+    impostos:
+      icms: ICMS53
+      icms_cst: "53"
+      ipi_cst: ISENTO
+      confins: SIM
+      outros: NAO
+      sujeito_iss: NAO
+      difal: "False"
+    infos_adicionais: ""
+    nfs_agrupadas: "223829"
