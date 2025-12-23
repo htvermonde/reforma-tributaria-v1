@@ -66,6 +66,35 @@ TABELA_CST_PIS_COFINS = {
     '99': 'Outras Operações',
 }
 
+# CST ICMS (Regime Normal - NF-e/NFC-e)
+TABELA_CST_ICMS = {
+    '00': 'Tributada integralmente',
+    '10': 'Tributada e com cobrança do ICMS por substituição tributária',
+    '20': 'Com redução da base de cálculo',
+    '30': 'Isenta ou não tributada e com cobrança do ICMS por substituição tributária',
+    '40': 'Isenta',
+    '41': 'Não tributada',
+    '50': 'Suspensão',
+    '51': 'Diferimento',
+    '60': 'ICMS cobrado anteriormente por substituição tributária',
+    '70': 'Com redução de base de cálculo e cobrança do ICMS por substituição tributária',
+    '90': 'Outras',
+}
+
+# CSOSN ICMS (Simples Nacional)
+TABELA_CSOSN_ICMS = {
+    '101': 'Tributada pelo Simples Nacional com permissão de crédito',
+    '102': 'Tributada pelo Simples Nacional sem permissão de crédito',
+    '103': 'Isenção do ICMS no Simples Nacional para faixa de receita bruta',
+    '201': 'Tributada pelo Simples Nacional com permissão de crédito e com cobrança do ICMS por substituição tributária',
+    '202': 'Tributada pelo Simples Nacional sem permissão de crédito e com cobrança do ICMS por substituição tributária',
+    '203': 'Isenção do ICMS no Simples Nacional para faixa de receita bruta e com cobrança do ICMS por substituição tributária',
+    '300': 'Imune',
+    '400': 'Não tributada pelo Simples Nacional',
+    '500': 'ICMS cobrado anteriormente por substituição tributária (substituído) ou por antecipação',
+    '900': 'Outros (a critério da UF)',
+}
+
 # Modalidades de Frete
 TABELA_MOD_FRETE = {
     '0': 'Por Conta do Emitente',
@@ -275,6 +304,20 @@ def _get_desc_cst_ipi(cst):
     """Retorna a descrição do CST IPI."""
     return TABELA_CST_IPI.get(str(cst), f'CST {cst}')
 
+def _get_desc_cst_icms(cst):
+    """Retorna a descrição do CST ICMS (2 dígitos) ou CSOSN (3 dígitos)."""
+    if not cst:
+        return 'N/A'
+    
+    cst_str = str(cst)
+    
+    # Se tem 3 dígitos, é CSOSN (Simples Nacional)
+    if len(cst_str) == 3:
+        return TABELA_CSOSN_ICMS.get(cst_str, f'CSOSN {cst_str}')
+    # Se tem 2 dígitos, é CST (Regime Normal)
+    else:
+        return TABELA_CST_ICMS.get(cst_str, f'CST {cst_str}')
+
 def get_ipi_status(item: Dict[str, Any]) -> Dict[str, Any]:
     """Classifica IPI como tributado, isento ou sem aplicação."""
     cst_ipi = item.get('IPI_CST', '')
@@ -298,6 +341,23 @@ def get_ipi_status(item: Dict[str, Any]) -> Dict[str, Any]:
         'cst_ipi': cst_ipi,
         'valor_ipi': item.get('IPI_VIPI', '0.00'),
     }
+
+def get_tipi_aplicavel(item: Dict[str, Any]) -> Dict[str, Any]:
+    """Identifica se o produto está sujeito à TIPI (Tabela de Incidência do IPI)."""
+    ipi_bloco = item.get('IPI_BLOCO')
+    ipi_cst = item.get('IPI_CST', '')
+    
+    # Se não tem IPI_BLOCO, não está sujeito à TIPI
+    if not ipi_bloco:
+        tem_tipi = 'NAO'
+    # Se CST está em códigos de isento/suspenso, não é tributável
+    elif str(ipi_cst) in ['52', '53', '54', '55']:
+        tem_tipi = 'NAO'
+    # Se tem IPI_BLOCO e CST não é isento, está sujeito
+    else:
+        tem_tipi = 'SIM'
+    
+    return {'tipi': tem_tipi}
 
 def _get_desc_cst_pis_cofins(cst):
     """Retorna a descrição do CST PIS/COFINS."""
@@ -419,7 +479,9 @@ def montar_dataframe_notas(notas: List[Dict[str, Any]]) -> pd.DataFrame:
                 "Natureza": nota.get('NATUREZA_OPERACAO', ''),
                 "ICMS": item.get('ICMS_BLOCO', '0.00'),
                 "CST ICMS": item.get('ICMS_CST') or item.get('ICMS_CSOSN', ''),
+                "DESC CST ICMS": _get_desc_cst_icms(item.get('ICMS_CST') or item.get('ICMS_CSOSN', '')),
                 "IPI_CST": get_ipi_status(item).get('ipi_status', ''),
+                "TIPI": get_tipi_aplicavel(item).get('tipi', 'NAO'),
                 "CONFINS": get_cofins_status(item).get('tem_cofins', ''),
                 "Sujeito a ISS?": get_issqn_info(item).get('tem_issqn', ''),
                 "Outros Impostos": get_outros_impostos(item).get('outros_impostos', ''),
