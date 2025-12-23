@@ -414,10 +414,11 @@ def montar_dataframe_notas(notas: List[Dict[str, Any]]) -> pd.DataFrame:
             }
             info_produto = {
                 'NCM': item.get('NCM', ''),
+                'Material': item.get('XPROD', ''),
                 'CFOP': get_cfop_info(item).get('cfop', ''),
                 "Natureza": nota.get('NATUREZA_OPERACAO', ''),
                 "ICMS": item.get('ICMS_BLOCO', '0.00'),
-                "ICMS CST": item.get('ICMS_CST', ''),
+                "CST ICMS": item.get('ICMS_CST') or item.get('ICMS_CSOSN', ''),
                 "IPI_CST": get_ipi_status(item).get('ipi_status', ''),
                 "CONFINS": get_cofins_status(item).get('tem_cofins', ''),
                 "Sujeito a ISS?": get_issqn_info(item).get('tem_issqn', ''),
