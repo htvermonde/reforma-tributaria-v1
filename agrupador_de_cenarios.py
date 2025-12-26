@@ -93,10 +93,13 @@ def agrupar_cenarios_nfs(caminho_entrada, caminho_saida):
     colunas_agrupamento = [
         'Tipo', 'CNPJ/CPF Emissor', 'Razão Social Emissor', 
         'CNPJ/CPF Destinatário', 'Razão Social Destinatário', 
-        'UF Emissor', 'UF Destinatário', 'Operação', 'Consumidor Final', 
-        'NCM', 'CFOP', 'Natureza', 'ICMS', 'ICMS CST', 'IPI_CST', 
-        'CONFINS', 
-        'Transporte', 'Outros Impostos', 'Sujeito a ISS?', 'DIFAL',
+        'UF Emissor', 'UF Destinatário', 
+        'Operação', 'Consumidor Final', 'Transporte',
+        'NCM', 'Classificação/Produto', 'CFOP', 'DESC CFOP',
+        'CST ICMS', 'DESC CST ICMS', 
+        'CST IPI', 'ENQUADRAMENTO IPI', '%IPI', 'TIPI',
+        'CONFINS', 'DESC CST COFINS','Sujeito a ISS?',
+        'Outros Impostos', 'DIFAL'
         # 'Infos Adicionais'
     ]
     # Adicionar outras colunas relevantes conforme necessário 
@@ -177,7 +180,7 @@ def agrupar_cenarios_nfs(caminho_entrada, caminho_saida):
     print(f"Linhas no DataFrame agrupado: {len(df_agrupado)}")
 
 # --- Uso ---
-caminho_entrada_exemplo = 'output/relatorio_customizado_v3.xlsx'
-caminho_saida_exemplo = 'output/relatorio_customizado_agrupado_v2.xlsx'
+caminho_entrada_exemplo = 'output/relatorio_customizado.xlsx'
+caminho_saida_exemplo = 'output/relatorio_agrupado.xlsx'
 
 agrupar_cenarios_nfs(caminho_entrada_exemplo, caminho_saida_exemplo)
