@@ -6,9 +6,9 @@ from lxml import etree
 # CONFIGURAÇÕES
 # ==============================================================================
 
-PASTA_XMLS = 'reading_notes/compra_potencial'
+PASTA_XMLS = 'reading_notes/unificado'
 ARQUIVO_MAPEAMENTO = 'mapping_config.json'
-ARQUIVO_SAIDA = 'output/resposta_notas_v2.json'
+ARQUIVO_SAIDA = 'output/resposta_notas.json'
 
 # ==============================================================================
 # FUNÇÕES

@@ -6,31 +6,17 @@ from typing import Dict, Any, List
 # CONFIGURAÇÃO
 # ==============================================================================
 
-ARQUIVO_JSON = 'output/resposta_notas_v2.json'
-ARQUIVO_EXCEL = 'output/relatorio_customizado_v3.xlsx'
+ARQUIVO_JSON = 'output/resposta_notas.json'
+ARQUIVO_EXCEL = 'output/relatorio_customizado.xlsx'
+ARQUIVO_BASE_CFOP = 'base/base_cfop.xlsx'
+
+# Carregar base CFOP
+DF_BASE_CFOP = pd.read_excel(ARQUIVO_BASE_CFOP)
 
 # ==============================================================================
 # TABELAS DE DE-PARA
 # ==============================================================================
 
-# CFOP - Código Fiscal de Operações e Prestações
-TABELA_CFOP = {
-    # Entradas
-    '1101': 'Compra para industrialização',
-    '1102': 'Compra para comercialização',
-    '1411': 'Devolução de venda de produção do estabelecimento',
-    '1661': 'Devolução de venda de combustível',
-    '1949': 'Outra entrada de mercadoria ou prestação de serviço não especificada',
-    
-    # Saídas
-    '5101': 'Venda de produção do estabelecimento',
-    '5102': 'Venda de mercadoria adquirida ou recebida de terceiros',
-    '5405': 'Venda de mercadoria adquirida ou recebida de terceiros em operação com mercadoria sujeita ao regime de substituição tributária, na condição de contribuinte substituído',
-    '5411': 'Devolução de compra para industrialização',
-    '5949': 'Outra saída de mercadoria ou prestação de serviço não especificada',
-    '6101': 'Venda de produção do estabelecimento',
-    '6102': 'Venda de mercadoria adquirida ou recebida de terceiros',
-}
 
 # CST IPI
 TABELA_CST_IPI = {
@@ -151,7 +137,11 @@ def get_consumidor_final(nota: Dict[str, Any]) -> Dict[str, Any]:
 
 def _get_desc_cfop(cfop):
     """Retorna a descrição do CFOP."""
-    return TABELA_CFOP.get(str(cfop), f'CFOP {cfop}')
+    cfop_str = str(cfop)
+    resultado = DF_BASE_CFOP[DF_BASE_CFOP['Codigo CFOP'] == cfop_str]
+    if not resultado.empty:
+        return resultado.iloc[0]['Descricao']
+    return f'CFOP {cfop}'
 
 def get_transporte_info(nota: Dict[str, Any]) -> Dict[str, Any]:
     """Identifica modalidade de transporte e retorna a descrição."""
@@ -385,9 +375,9 @@ def get_cofins_status(item: Dict[str, Any]) -> Dict[str, Any]:
     cst_pis = item.get('PIS_CST', '')
     
     return {
+        'cst_cofins': cst_cofins,
         'tem_cofins': tem_cofins,
         'status_cofins': status,
-        'cst_cofins': cst_cofins,
         'cst_pis': cst_pis,
         'desc_cst_pis': _get_desc_cst_pis_cofins(cst_pis),
     }
@@ -474,15 +464,18 @@ def montar_dataframe_notas(notas: List[Dict[str, Any]]) -> pd.DataFrame:
             }
             info_produto = {
                 'NCM': item.get('NCM', ''),
-                'Material': item.get('XPROD', ''),
+                'Classificação/Produto': item.get('XPROD', ''),
+                "NATOP": nota.get('NATUREZA_OPERACAO', ''),
                 'CFOP': get_cfop_info(item).get('cfop', ''),
-                "Natureza": nota.get('NATUREZA_OPERACAO', ''),
-                "ICMS": item.get('ICMS_BLOCO', '0.00'),
+                'DESC CFOP': get_cfop_info(item).get('desc_cfop', ''),
                 "CST ICMS": item.get('ICMS_CST') or item.get('ICMS_CSOSN', ''),
                 "DESC CST ICMS": _get_desc_cst_icms(item.get('ICMS_CST') or item.get('ICMS_CSOSN', '')),
-                "IPI_CST": get_ipi_status(item).get('ipi_status', ''),
+                "CST IPI": get_ipi_status(item).get('cst_ipi', ''),
+                "ENQUADRAMENTO IPI": get_ipi_status(item).get('ipi_status', ''),
+                "%IPI": get_ipi_status(item).get('valor_ipi', ''),
                 "TIPI": get_tipi_aplicavel(item).get('tipi', 'NAO'),
-                "CONFINS": get_cofins_status(item).get('tem_cofins', ''),
+                "CONFINS": get_cofins_status(item).get('cst_cofins', ''),
+                "DESC CST COFINS": get_cofins_status(item).get('tem_cofins', ''),
                 "Sujeito a ISS?": get_issqn_info(item).get('tem_issqn', ''),
                 "Outros Impostos": get_outros_impostos(item).get('outros_impostos', ''),
                 "Infos Adicionais": get_info_adicionais(nota, item, item_idx).get('info_adicionais', ''),

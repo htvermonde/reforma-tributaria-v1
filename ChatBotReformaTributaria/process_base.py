@@ -58,34 +58,6 @@ class BaseProcessor:
             except Exception as e:
                 print(f"Erro ao remover {path}: {e}")
 
-    def unify_abap_codes(self, abap_codes_list):
-        """
-        Recebe uma lista de códigos base64, salva cada um como arquivo temporário, unifica em um único arquivo e retorna o base64 do arquivo unificado.
-        """
-        temp_files = []
-        for idx, abap_code_base64 in enumerate(abap_codes_list):
-            abap_code_base64 = self.fix_base64_padding(abap_code_base64)
-            abap_code_bytes = base64.b64decode(abap_code_base64)
-            temp_path = f"./temp_abap_code_unify_{idx}.txt"
-            with open(temp_path, "wb") as f:
-                f.write(abap_code_bytes)
-            temp_files.append(temp_path)
-
-        unified_path = "./temp_abap_code_unified.txt"
-        with open(unified_path, "wb") as unified_file:
-            for temp_path in temp_files:
-                with open(temp_path, "rb") as f:
-                    unified_file.write(f.read())
-
-        with open(unified_path, "rb") as f:
-            unified_bytes = f.read()
-        unified_base64 = base64.b64encode(unified_bytes).decode("utf-8")
-        print(f"Arquivo unificado salvo: {unified_path}")
-
-        # Remove arquivos temporários
-        self.delete_temp_files(temp_files + [unified_path])
-
-        return unified_base64
 
     def process_rag_code_z(self, temp_md_path):
         """
