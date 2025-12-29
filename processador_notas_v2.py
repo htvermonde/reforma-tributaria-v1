@@ -127,7 +127,133 @@ def elemento_para_dict(elemento):
     return None
 
 
-def processar_xml(caminho_xml, mapeamento):
+def extrair_todos_impostos(raiz):
+    """Extrai todos os impostos presentes no item"""
+    # Busca todos os itens da nota
+    itens = raiz.xpath('//infNFe/det')
+    
+    if not itens:
+        return None
+    
+    # Para cada item, verifica os impostos
+    resultados_por_item = []
+    for item in itens:
+        impostos = item.xpath('imposto/*')
+        impostos_do_item = []
+        
+        for imposto in impostos:
+            tag = imposto.tag
+            impostos_do_item.append(tag)
+        
+        # Adiciona resultado do item (None se não houver impostos)
+        resultados_por_item.append(', '.join(impostos_do_item) if impostos_do_item else None)
+    
+    # Retorna lista se múltiplos itens, ou valor único se apenas um item
+    return resultados_por_item if len(resultados_por_item) > 1 else (resultados_por_item[0] if resultados_por_item else None)
+
+
+def extrair_outros_impostos(raiz):
+    """Extrai impostos não convencionais do item (diferentes de ICMS, IPI, PIS, COFINS, ISSQN)"""
+    impostos_padrao = {'ICMS', 'IPI', 'PIS', 'COFINS', 'ISSQN'}
+    # impostos_padrao = {}
+    
+    # Busca todos os itens da nota
+    itens = raiz.xpath('//infNFe/det')
+    
+    if not itens:
+        return None
+    
+    # Para cada item, verifica os impostos
+    resultados_por_item = []
+    for item in itens:
+        impostos = item.xpath('imposto/*')
+        outros_do_item = []
+        
+        for imposto in impostos:
+            tag = imposto.tag
+            if tag not in impostos_padrao:
+                outros_do_item.append(tag)
+        
+        # Adiciona resultado do item (None se não houver outros impostos)
+        resultados_por_item.append(', '.join(outros_do_item) if outros_do_item else None)
+    
+    # Retorna lista se múltiplos itens, ou valor único se apenas um item
+    return resultados_por_item if len(resultados_por_item) > 1 else (resultados_por_item[0] if resultados_por_item else None)
+
+
+def verificar_difal(raiz, debug=False):
+    """
+    Verifica se incide DIFAL (Diferencial de Alíquota) por item.
+    
+    REGRA 1: Se existe tag ICMSUFDest no item → incide DIFAL
+    REGRA 2: Se cumprir os 3 requisitos simultaneamente:
+        - Destinatário = consumidor final (indFinal = 1)
+        - Operação interestadual (UF emitente != UF destinatário)
+        - Destinatário não contribuinte do ICMS (indIEDest = 9)
+    
+    Retorna lista de '1' (incide) ou '0' (não incide) para cada item
+    """
+    print(f"  [DIFAL DEBUG] Função chamada, debug={debug}")
+    
+    # Busca todos os itens da nota
+    itens = raiz.xpath('//infNFe/det')
+    
+    if not itens:
+        print(f"  [DIFAL DEBUG] Nenhum item encontrado!")
+        return None
+    
+    print(f"  [DIFAL DEBUG] {len(itens)} itens encontrados")
+    
+    # Extrai dados do nível da nota para REGRA 2
+    ind_final = extrair_valor(raiz, 'infNFe/ide/indFinal')
+    uf_emitente = extrair_valor(raiz, 'infNFe/emit/enderEmit/UF')
+    uf_destinatario = extrair_valor(raiz, 'infNFe/dest/enderDest/UF')
+    ind_ie_dest = extrair_valor(raiz, 'infNFe/dest/indIEDest')
+    
+    print(f"  [DIFAL] indFinal={ind_final}, UF_Emit={uf_emitente}, UF_Dest={uf_destinatario}, indIEDest={ind_ie_dest}")
+    
+    # Verifica REGRA 2 (aplica-se a todos os itens da nota)
+    cond1 = ind_final == '1'
+    cond2 = uf_emitente is not None
+    cond3 = uf_destinatario is not None
+    cond4 = uf_emitente != uf_destinatario
+    cond5 = ind_ie_dest == '9'
+    
+    print(f"  [DIFAL] Condições: indFinal=='1':{cond1}, UF_emit!=None:{cond2}, UF_dest!=None:{cond3}, UFs_diferentes:{cond4}, indIEDest=='9':{cond5}")
+    
+    regra2_atendida = cond1 and cond2 and cond3 and cond4 and cond5
+    
+    if debug:
+        print(f"  [DIFAL] REGRA 2 atendida: {regra2_atendida}")
+    
+    # Para cada item, verifica REGRA 1 ou REGRA 2
+    resultados_por_item = []
+    for idx, item in enumerate(itens, 1):
+        # REGRA 1: Verifica se existe ICMSUFDest no item
+        # Testa todos os caminhos possíveis
+        tem_icms_ufdest = bool(
+            item.xpath('imposto/ICMSUFDest') or 
+            item.xpath('.//ICMSUFDest') or
+            item.xpath('imposto/ICMS/ICMSUFDest') or
+            item.xpath('imposto/ICMS/*/ICMSUFDest')
+        )
+        
+        if debug and tem_icms_ufdest:
+            print(f"  [DIFAL] Item {idx}: Encontrou ICMSUFDest")
+        
+        if tem_icms_ufdest or regra2_atendida:
+            resultados_por_item.append('1')  # Incide DIFAL
+        else:
+            resultados_por_item.append('0')  # Não incide DIFAL
+    
+    if debug:
+        print(f"  [DIFAL] Resultado: {resultados_por_item}")
+    
+    # Retorna lista se múltiplos itens, ou valor único se apenas um item
+    return resultados_por_item if len(resultados_por_item) > 1 else (resultados_por_item[0] if resultados_por_item else None)
+
+
+def processar_xml(caminho_xml, mapeamento, debug_difal=True):
     """Processa um XML e extrai dados conforme mapeamento"""
     tree = etree.parse(caminho_xml)
     
@@ -151,6 +277,21 @@ def processar_xml(caminho_xml, mapeamento):
             continue
         elif campo == 'TIPO_DOCUMENTO':
             dados_nota[campo] = tipo_documento
+            continue
+        elif campo == 'ITEM_OUTROS_IMPOSTOS':
+            # Função especial para extrair outros impostos
+            valor = extrair_outros_impostos(raiz)
+            campos_item[campo] = valor
+            continue
+        elif campo == 'ITEM_TODOS_IMPOSTOS':
+            # Função especial para extrair todos impostos
+            valor = extrair_todos_impostos(raiz)
+            campos_item[campo] = valor
+            continue        
+        elif campo == 'ITEM_TEM_DIFAL':
+            # Função especial para verificar DIFAL por item
+            valor = verificar_difal(raiz, debug=debug_difal)
+            campos_item[campo] = valor
             continue
         
         xpath = config.get('caminho_xml', '')
@@ -213,7 +354,9 @@ def processar_pasta():
         print(f"[{i}/{len(arquivos)}] {arquivo}")
         
         try:
-            dados = processar_xml(caminho, mapeamento)
+            # Ativa debug apenas na primeira nota
+            debug_difal = (i == 1)
+            dados = processar_xml(caminho, mapeamento, debug_difal=debug_difal)
             dados['xml_filename'] = arquivo
             notas.append(dados)
         except Exception as e:
