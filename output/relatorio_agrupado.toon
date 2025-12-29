@@ -1,2 +1,7492 @@
-total_emitentes: 0
-emitentes[0]:
+total_emitentes: 14
+emitentes[14]:
+  cnpj_emissor: "80795727000222"
+  razao_social_emissor: POTENCIAL PETROLEO LTDA
+  uf_emissor: PR
+  cenarios[67]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "28736090000100"
+      razao_social: ZONTA COMERCIO DE COMBUSTIVEIS LTDA
+      uf: PR
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "648736"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "33258491000124"
+      razao_social: AUTO POSTO VERENKA 05 LTDA
+      uf: SC
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "2661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "657742"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "75690503000305"
+      razao_social: AUTO POSTO OCHOVE LTDA - FILIAL 003
+      uf: PR
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "648774"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "75690503000305"
+      razao_social: AUTO POSTO OCHOVE LTDA - FILIAL 003
+      uf: PR
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "648774"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "75690503000305"
+      razao_social: AUTO POSTO OCHOVE LTDA - FILIAL 003
+      uf: PR
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "10"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "648774"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001032"
+      razao_social: POTENCIAL PETROLEO LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "6659"
+      natureza: TRANSFERENCIA
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654394"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001032"
+      razao_social: POTENCIAL PETROLEO LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "6659"
+      natureza: TRANSFERENCIA
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654171"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001113"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 10
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5659"
+      natureza: TRANSFERENCIA
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "653991"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000907"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 06
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "6659"
+      natureza: TRANSFERENCIA
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "0"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654170"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "125318000107"
+      razao_social: AUTO POSTO AG10 LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654281"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "125318000107"
+      razao_social: AUTO POSTO AG10 LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654281"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "125318000107"
+      razao_social: AUTO POSTO AG10 LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654281"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "125318000107"
+      razao_social: AUTO POSTO AG10 LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654281"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "26186151000170"
+      razao_social: AUTO POSTO AG5 LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654343"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "26186151000170"
+      razao_social: AUTO POSTO AG5 LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654343"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "26186151000170"
+      razao_social: AUTO POSTO AG5 LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654343"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "26186151000170"
+      razao_social: AUTO POSTO AG5 LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654343"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "125318000107"
+      razao_social: AUTO POSTO AG10 LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "10"
+      ipi_cst: ""
+      pis_cst: "3"
+      cofins_cst: "3"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654281"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "23748979000186"
+      razao_social: SAO TOME MADEIRAS E TRANSPORTES LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5656"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "653168"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "4762288000192"
+      razao_social: AUTO POSTO SAO JOSE 2002 COM DE COMB  E LUBRIF LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654417"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "4762288000192"
+      razao_social: AUTO POSTO SAO JOSE 2002 COM DE COMB  E LUBRIF LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654417"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "4762288000192"
+      razao_social: AUTO POSTO SAO JOSE 2002 COM DE COMB  E LUBRIF LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654417"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "4762288000192"
+      razao_social: AUTO POSTO SAO JOSE 2002 COM DE COMB  E LUBRIF LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "10"
+      ipi_cst: ""
+      pis_cst: "3"
+      cofins_cst: "3"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654417"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38119090"
+      cfop: "5927"
+      natureza: "BAIXA POR PERDA, ROUBO"
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "604876"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5927"
+      natureza: "BAIXA POR PERDA, ROUBO"
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "628742"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3987364001096"
+      razao_social: ATEM'S DISTRIBUIDORA DE PETROLEO SA - FILIAL 09
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5661"
+      natureza: DEVOLUCAO DE COMPRA
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "645182"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "77696235000194"
+      razao_social: NIMOFAST BRASIL SA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5661"
+      natureza: DEVOLUCAO DE COMPRA
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "623434"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1804345000241"
+      razao_social: ESTRADA - DIST DE DERIVADOS DE PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5949"
+      natureza: DEVOLUCAO DE EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "629652"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "6240179000300"
+      razao_social: IMPERIAL DISTRIBUIDORA DE PETROLEO LTDA - FILIAL 02
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5949"
+      natureza: DEVOLUCAO DE EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "629653"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "12613484000123"
+      razao_social: POTENCIAL BIODIESEL LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "94031000"
+      cfop: "5908"
+      natureza: REMESSA COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "614186"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "12613484000123"
+      razao_social: POTENCIAL BIODIESEL LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "94033000"
+      cfop: "5908"
+      natureza: REMESSA COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "614186"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "12613484000123"
+      razao_social: POTENCIAL BIODIESEL LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "94033000"
+      cfop: "5908"
+      natureza: REMESSA COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "614186"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "5628047000118"
+      razao_social: MARCOS ALFREDO POZZEBON
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "6908"
+      natureza: REMESSA COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "640968"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "5628047000118"
+      razao_social: MARCOS ALFREDO POZZEBON
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "6908"
+      natureza: REMESSA COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "640968"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "20722340000133"
+      razao_social: ALEXSANDRE LIZ DE MOURA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "6915"
+      natureza: REMESSA CONSERTO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "50"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "620713"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "20722340000133"
+      razao_social: ALEXSANDRE LIZ DE MOURA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "6915"
+      natureza: REMESSA CONSERTO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "50"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "620713"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "711620000139"
+      razao_social: SADIPE - SERV. AUXILIARES DE DISTRIBUICAO DE PETROLEO LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "50"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654243"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "711620000139"
+      razao_social: SADIPE - SERV. AUXILIARES DE DISTRIBUICAO DE PETROLEO LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654113"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "711620000139"
+      razao_social: SADIPE - SERV. AUXILIARES DE DISTRIBUICAO DE PETROLEO LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654278"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "711620000139"
+      razao_social: SADIPE - SERV. AUXILIARES DE DISTRIBUICAO DE PETROLEO LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654277"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "711620000139"
+      razao_social: SADIPE - SERV. AUXILIARES DE DISTRIBUICAO DE PETROLEO LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "654238"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "33000167080970"
+      razao_social: PETROLEO BRASILEIRO S/A - PETROBRAS
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "0"
+      cfop: "5603"
+      natureza: RESSARCIMENTO ICMS
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "628735"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "2667694000574"
+      razao_social: TELMEX DO BRASIL SA - FILIAL 04
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "85176259"
+      cfop: "5909"
+      natureza: RETORNO DE COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "616517"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "6240179000300"
+      razao_social: IMPERIAL DISTRIBUIDORA DE PETROLEO LTDA - FILIAL 02
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5949"
+      natureza: SAIDA PARA EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "652061"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001628"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 15
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "0"
+      cfop: "6557"
+      natureza: TRANSF MERC P USO/CONSUM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "608443"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001032"
+      razao_social: POTENCIAL PETROLEO LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "32041920"
+      cfop: "6152"
+      natureza: TRANSFERENCIA
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "620002"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001113"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 10
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "32041920"
+      cfop: "5152"
+      natureza: TRANSFERENCIA
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "612369"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1124438000144"
+      razao_social: PAULO CESAR LOURENCO E CIA LTDA ME
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "5551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "610780"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1124438000144"
+      razao_social: PAULO CESAR LOURENCO E CIA LTDA ME
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "5551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "610780"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1124438000144"
+      razao_social: PAULO CESAR LOURENCO E CIA LTDA ME
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "5551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "610780"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1124438000144"
+      razao_social: PAULO CESAR LOURENCO E CIA LTDA ME
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "5551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "610780"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1124438000144"
+      razao_social: PAULO CESAR LOURENCO E CIA LTDA ME
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "5551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "610780"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1124438000144"
+      razao_social: PAULO CESAR LOURENCO E CIA LTDA ME
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "5551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "610780"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1317309000172"
+      razao_social: DISTRIBUIDORA DE PRODUTOS DE PETROLEO CHARRUA LTDA - MATRIZ
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "73090090"
+      cfop: "6551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "653099"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1317309000172"
+      razao_social: DISTRIBUIDORA DE PRODUTOS DE PETROLEO CHARRUA LTDA - MATRIZ
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "73090090"
+      cfop: "6551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "653099"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1317309000172"
+      razao_social: DISTRIBUIDORA DE PRODUTOS DE PETROLEO CHARRUA LTDA - MATRIZ
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "83100000"
+      cfop: "6551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "653099"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1317309000172"
+      razao_social: DISTRIBUIDORA DE PRODUTOS DE PETROLEO CHARRUA LTDA - MATRIZ
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "6551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "653099"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1317309000172"
+      razao_social: DISTRIBUIDORA DE PRODUTOS DE PETROLEO CHARRUA LTDA - MATRIZ
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "6551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "653099"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1317309000172"
+      razao_social: DISTRIBUIDORA DE PRODUTOS DE PETROLEO CHARRUA LTDA - MATRIZ
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "6551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "653099"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1317309000172"
+      razao_social: DISTRIBUIDORA DE PRODUTOS DE PETROLEO CHARRUA LTDA - MATRIZ
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "94056100"
+      cfop: "6551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "653099"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "19951933000435"
+      razao_social: L T NICHELE COMERCIO DE COMBUSTIVEIS LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "6551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "646948"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "19951933000435"
+      razao_social: L T NICHELE COMERCIO DE COMBUSTIVEIS LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "6551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "646948"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "2044526000794"
+      razao_social: SMALL DISTRIBUIDORA DE DERIVADOS DE PETROLEO LTDA - FILIAL 6
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "76129090"
+      cfop: "5551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "628026"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "2044526000794"
+      razao_social: SMALL DISTRIBUIDORA DE DERIVADOS DE PETROLEO LTDA - FILIAL 6
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "5551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "628026"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001032"
+      razao_social: POTENCIAL PETROLEO LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6659"
+      natureza: TRANSFERENCIA
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "653529"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001113"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 10
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "5659"
+      natureza: TRANSFERENCIA
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "653993"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "18594208000907"
+      razao_social: BRLOG LOGISTICA LTDA - FILIAL 08
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6656"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "True"
+    nfs_agrupadas: "647296"
+  cnpj_emissor: "80795727000656"
+  razao_social_emissor: POTENCIAL PETROLEO LTDA
+  uf_emissor: MG
+  cenarios[41]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "17290982000104"
+      razao_social: CELSO DE CARVALHO PASSOS E CIA LTDA
+      uf: MG
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "152301"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1652720000102"
+      razao_social: REDE SANTANA COMBUSTIVEIS CONTAGEM LTDA
+      uf: MG
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "60"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "132004"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1652720000102"
+      razao_social: REDE SANTANA COMBUSTIVEIS CONTAGEM LTDA
+      uf: MG
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "60"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "132004"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "17290982000104"
+      razao_social: CELSO DE CARVALHO PASSOS E CIA LTDA
+      uf: MG
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "60"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "152301"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000737"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 04
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "6659"
+      natureza: TRANSFERENCIA
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "148135"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "25406029000107"
+      razao_social: POSTO COLORADO LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "150699"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "41053989000189"
+      razao_social: GTF DISTRIBUIDORA DE COMBUSTIVEL LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "147415"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "55483564002087"
+      razao_social: SETTA COMBUSTIVEIS LTDA - FILIAL 19
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "3"
+      cofins_cst: "3"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "155558"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "6259897000159"
+      razao_social: COCAIS COMERCIO DE COMBUSTIVEIS AUTOMOTIVOS LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "153613"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "18087825000150"
+      razao_social: POSTO SAO PEDRO LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "10"
+      ipi_cst: ""
+      pis_cst: "3"
+      cofins_cst: "3"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "150987"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "18715425000142"
+      razao_social: MUNICIPIO DE VESPASIANO
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5656"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "150114"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "17155342001155"
+      razao_social: LOJA ELETRICA LTDA - FILIAL 10
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "85444900"
+      cfop: "5210"
+      natureza: DEVOLUCAO DE COMPRA UTILIZACAO NA PREST DE SERVIC
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "0"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "149277"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1349764001989"
+      razao_social: ROYAL FIC DISTRIBUIDORA DE DERIVADOS DE PETROLEO LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5949"
+      natureza: DEVOLUCAO DE EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "147741"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000141"
+      razao_social: POTENCIAL PETROLEO LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "40121200"
+      cfop: "6949"
+      natureza: OUTRAS SAIDAS NAO ESPEC.
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "0"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "155471"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000141"
+      razao_social: POTENCIAL PETROLEO LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "40121200"
+      cfop: "6949"
+      natureza: OUTRAS SAIDAS NAO ESPEC.
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "0"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "155471"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1349764001989"
+      razao_social: ROYAL FIC DISTRIBUIDORA DE DERIVADOS DE PETROLEO LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "149423"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "23314594003045"
+      razao_social: ALESAT COMBUSTIVEIS S A - FILIAL 29
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "149759"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "23314594003045"
+      razao_social: ALESAT COMBUSTIVEIS S A - FILIAL 29
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "149759"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "23314594003045"
+      razao_social: ALESAT COMBUSTIVEIS S A - FILIAL 29
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "149759"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "51685769000121"
+      razao_social: BTAR BETIM TERMINAL DE ARMAZENAGEM LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "155467"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "51685769000121"
+      razao_social: BTAR BETIM TERMINAL DE ARMAZENAGEM LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "0"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "154186"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "13072185001830"
+      razao_social: SIMPLES SOLUTIONS COMERCIO DE EQUIPAMENTOS ELETRONICOS LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "85258929"
+      cfop: "6915"
+      natureza: REMESSA P/CONSERTO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "50"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "True"
+    nfs_agrupadas: "155135"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "6113322001014"
+      razao_social: ABIX TECNOLOGIA LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "85044021"
+      cfop: "5909"
+      natureza: RETORNO DE COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "150510"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "6113322001014"
+      razao_social: ABIX TECNOLOGIA LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "85072010"
+      cfop: "5909"
+      natureza: RETORNO DE COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "150510"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "6113322001014"
+      razao_social: ABIX TECNOLOGIA LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "85177900"
+      cfop: "5909"
+      natureza: RETORNO DE COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "150510"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "6113322001014"
+      razao_social: ABIX TECNOLOGIA LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "85291090"
+      cfop: "5909"
+      natureza: RETORNO DE COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "150510"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "6113322001014"
+      razao_social: ABIX TECNOLOGIA LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "85291090"
+      cfop: "5909"
+      natureza: RETORNO DE COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "150510"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "6113322001014"
+      razao_social: ABIX TECNOLOGIA LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "85311090"
+      cfop: "5909"
+      natureza: RETORNO DE COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "150510"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "6113322001014"
+      razao_social: ABIX TECNOLOGIA LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "85369020"
+      cfop: "5909"
+      natureza: RETORNO DE COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "150510"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "6113322001286"
+      razao_social: ABIX TECNOLOGIA LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "85176199"
+      cfop: "6909"
+      natureza: RETORNO DE COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "40"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "150542"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "96350988000198"
+      razao_social: VALVULAS NAC INDUSTRIA E COMERCIO LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84814000"
+      cfop: "6913"
+      natureza: RETORNO DEMONSTRACAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "True"
+    nfs_agrupadas: "153426"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "55483564002087"
+      razao_social: SETTA COMBUSTIVEIS LTDA - FILIAL 19
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5949"
+      natureza: SAIDA PARA EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "155489"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000141"
+      razao_social: POTENCIAL PETROLEO LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84433113"
+      cfop: "6557"
+      natureza: TRANSFERENCIA DE MATERIAL DE USO OU CONSUMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "155455"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000141"
+      razao_social: POTENCIAL PETROLEO LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84715010"
+      cfop: "6557"
+      natureza: TRANSFERENCIA DE MATERIAL DE USO OU CONSUMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "155455"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000141"
+      razao_social: POTENCIAL PETROLEO LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84715010"
+      cfop: "6557"
+      natureza: TRANSFERENCIA DE MATERIAL DE USO OU CONSUMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "155455"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000141"
+      razao_social: POTENCIAL PETROLEO LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "85176262"
+      cfop: "6557"
+      natureza: TRANSFERENCIA DE MATERIAL DE USO OU CONSUMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "155455"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000141"
+      razao_social: POTENCIAL PETROLEO LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "90328990"
+      cfop: "6557"
+      natureza: TRANSFERENCIA DE MATERIAL DE USO OU CONSUMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "155455"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000141"
+      razao_social: POTENCIAL PETROLEO LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "94017900"
+      cfop: "6557"
+      natureza: TRANSFERENCIA DE MATERIAL DE USO OU CONSUMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "155455"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000141"
+      razao_social: POTENCIAL PETROLEO LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "94033000"
+      cfop: "6557"
+      natureza: TRANSFERENCIA DE MATERIAL DE USO OU CONSUMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "155455"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "17097551000118"
+      razao_social: RAPIDO RESENDE LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5656"
+      natureza: VENDA NO ESTADO
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "154285"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "17097551000118"
+      razao_social: RAPIDO RESENDE LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5656"
+      natureza: VENDA NO ESTADO
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "154285"
+  cnpj_emissor: "80795727000737"
+  razao_social_emissor: POTENCIAL PETROLEO LTDA
+  uf_emissor: SP
+  cenarios[19]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "4309269000105"
+      razao_social: AUTO POSTO MAILASQUI LTDA
+      uf: SP
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "81546"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "4309269000105"
+      razao_social: AUTO POSTO MAILASQUI LTDA
+      uf: SP
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "81546"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "5608610000277"
+      razao_social: AUTOMOTIVO ESPERANCA FRANCISCO MORATO LTDA - FILIAL 01
+      uf: SP
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "79930"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001113"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 10
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6659"
+      natureza: TRANSFERENCIA
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "82249"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001113"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 10
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6659"
+      natureza: TRANSFERENCIA
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "82417"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "10204914000128"
+      razao_social: COPERCANA DISTRIBUIDORA DE COMBUSTIVEIS LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "82968"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "4576763000136"
+      razao_social: PORTAL DE POA AUTO POSTO LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "83386"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "4576763000136"
+      razao_social: PORTAL DE POA AUTO POSTO LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "83386"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "4576763000136"
+      razao_social: PORTAL DE POA AUTO POSTO LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "83386"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "5794555000176"
+      razao_social: CENTRO AUTOMOTIVO LUIZ XII LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "10"
+      ipi_cst: ""
+      pis_cst: "3"
+      cofins_cst: "3"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "84537"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "9584935001370"
+      razao_social: LOGUM LOGISTICA S A
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "84520"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "2709449003506"
+      razao_social: PETROBRAS TRANSPORTES S A - TRANSPETRO
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "83116"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "2709449003506"
+      razao_social: PETROBRAS TRANSPORTES S A - TRANSPETRO
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "83360"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "6659"
+      natureza: TRANSFERENCIA
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "82537"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "5789777000109"
+      razao_social: SGS COMERCIO DE COMBUSTIVEIS LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "81774"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "5789777000109"
+      razao_social: SGS COMERCIO DE COMBUSTIVEIS LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "81774"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "54081617000108"
+      razao_social: AUTO POSTO FORMOSA LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "83266"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "54081617000108"
+      razao_social: AUTO POSTO FORMOSA LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "83266"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "54081617000108"
+      razao_social: AUTO POSTO FORMOSA LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "83266"
+  cnpj_emissor: "80795727000818"
+  razao_social_emissor: POTENCIAL PETROLEO LTDA
+  uf_emissor: SP
+  cenarios[24]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3868010000131"
+      razao_social: AUTO POSTO CUPIM LTDA
+      uf: SP
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "109982"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "64197221000184"
+      razao_social: AUTO POSTO MN LTDA
+      uf: MG
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "2661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "105897"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001113"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 10
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "6659"
+      natureza: TRANSFERENCIA
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "110140"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "34185949000125"
+      razao_social: PETROL COMBUSTIVEIS RANCHO GLORIA LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "111784"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "34185949000125"
+      razao_social: PETROL COMBUSTIVEIS RANCHO GLORIA LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "111784"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "9217900000160"
+      razao_social: MAGA CENTRO COMERCIO DE COMBUSTIVEIS E LUBRIFICANTES LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "113394"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "11306133000107"
+      razao_social: AUTO POSTO LUGABIDANI LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "10"
+      ipi_cst: ""
+      pis_cst: "3"
+      cofins_cst: "3"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "113425"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "10204914000128"
+      razao_social: COPERCANA DISTRIBUIDORA DE COMBUSTIVEIS LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "113563"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3016811000250"
+      razao_social: PETROLUZ DISTRIBUIDORA LTDA FILIAL 01
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "111713"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "466187000628"
+      razao_social: FELIX DISTRIBUIDORA DE COMBUSTIVEIS LTDA - FILIAL 5
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "113292"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "46730346000146"
+      razao_social: PM PETRO BOM SUCESSO DE ITARARE LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "111847"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "46730346000146"
+      razao_social: PM PETRO BOM SUCESSO DE ITARARE LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "111847"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "46730346000146"
+      razao_social: PM PETRO BOM SUCESSO DE ITARARE LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "111847"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "6346461000105"
+      razao_social: ITAJAI TRANSPORTES COLETIVOS LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5656"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "109906"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "5831321000151"
+      razao_social: AUTO POSTO FLORA DE SUMARE LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "10"
+      ipi_cst: ""
+      pis_cst: "3"
+      cofins_cst: "3"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "112083"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "36056795000105"
+      razao_social: B. S. COMBUSTIVEIS E CONVENIENCIA LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "112380"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "36056795000105"
+      razao_social: B. S. COMBUSTIVEIS E CONVENIENCIA LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "112380"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "36056795000105"
+      razao_social: B. S. COMBUSTIVEIS E CONVENIENCIA LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "112380"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "175884000204"
+      razao_social: PETROSUL DISTRIBUIDORA TRANSP E COM COMBUSTIVEIS LTDA FL01
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "110542"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "175884000204"
+      razao_social: PETROSUL DISTRIBUIDORA TRANSP E COM COMBUSTIVEIS LTDA FL01
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "113412"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "175884000204"
+      razao_social: PETROSUL DISTRIBUIDORA TRANSP E COM COMBUSTIVEIS LTDA FL01
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "111258"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "175884000204"
+      razao_social: PETROSUL DISTRIBUIDORA TRANSP E COM COMBUSTIVEIS LTDA FL01
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "111539"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "175884000204"
+      razao_social: PETROSUL DISTRIBUIDORA TRANSP E COM COMBUSTIVEIS LTDA FL01
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "111128"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "175884000204"
+      razao_social: PETROSUL DISTRIBUIDORA TRANSP E COM COMBUSTIVEIS LTDA FL01
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "51"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "112206"
+  cnpj_emissor: "80795727000907"
+  razao_social_emissor: POTENCIAL PETROLEO LTDA
+  uf_emissor: SC
+  cenarios[21]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3757955000186"
+      razao_social: AUTO POSTO BBC COMBUSTIVEIS LTDA
+      uf: SC
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "155690"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3757955000186"
+      razao_social: AUTO POSTO BBC COMBUSTIVEIS LTDA
+      uf: SC
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "155690"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "37256444000100"
+      razao_social: ROTA SUL COMERCIO DE COMBUSTIVEIS E LUBRIFICANTES LTDA
+      uf: SC
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "10"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "139692"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "19927991000180"
+      razao_social: AUTO POSTO DE COMBUSTIVEIS BORBA CORREIA E BEIRA LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "153788"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "19927991000180"
+      razao_social: AUTO POSTO DE COMBUSTIVEIS BORBA CORREIA E BEIRA LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "150730"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "19927991000180"
+      razao_social: AUTO POSTO DE COMBUSTIVEIS BORBA CORREIA E BEIRA LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "153788"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "19927991000180"
+      razao_social: AUTO POSTO DE COMBUSTIVEIS BORBA CORREIA E BEIRA LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "150730"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "19927991000180"
+      razao_social: AUTO POSTO DE COMBUSTIVEIS BORBA CORREIA E BEIRA LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "153788"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "19927991000180"
+      razao_social: AUTO POSTO DE COMBUSTIVEIS BORBA CORREIA E BEIRA LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "10"
+      ipi_cst: ""
+      pis_cst: "3"
+      cofins_cst: "3"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "150730"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "27986763000100"
+      razao_social: ENVELOPES EXPRESS - INDUSTRIA E COMERCIO DE EMBALAGENS LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "39232190"
+      cfop: "6556"
+      natureza: DEVOL. MATL. USO CONSUMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "0"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "True"
+    nfs_agrupadas: "151795"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "209895000250"
+      razao_social: REJAILE DISTRIBUIDORA DE PETROLEO LTDA - FILIAL 01
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "5949"
+      natureza: DEVOLUCAO DE EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "150842"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "10239067000137"
+      razao_social: POSTO CANARIO LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "0"
+      cfop: "5949"
+      natureza: NFE DE AJUSTE
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "60"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "155318"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "17527207000111"
+      razao_social: RDP ARMAZENAGEM E LOGISTICA LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "50"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "156201"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "17527207000111"
+      razao_social: RDP ARMAZENAGEM E LOGISTICA LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "151397"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "17527207000111"
+      razao_social: RDP ARMAZENAGEM E LOGISTICA LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "152937"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "17527207000111"
+      razao_social: RDP ARMAZENAGEM E LOGISTICA LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "155814"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "17527207000111"
+      razao_social: RDP ARMAZENAGEM E LOGISTICA LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "152201, 153271"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "75633560000182"
+      razao_social: CATTALINI TERMINAIS MARITIMOS SA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "True"
+    nfs_agrupadas: "155871"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "23314594004440"
+      razao_social: ALESAT COMBUSTIVEIS S.A.
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5949"
+      natureza: SAIDA PARA EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "155203"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6659"
+      natureza: TRANSFERENCIA
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "158009"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "5872409000111"
+      razao_social: DUMASZAK COMERCIO DE DERIVADOS DE PETROLEO LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "152296"
+  cnpj_emissor: "80795727001032"
+  razao_social_emissor: POTENCIAL PETROLEO LTDA
+  uf_emissor: SC
+  cenarios[23]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "40449297000191"
+      razao_social: LUNEDO COMBUSTIVEIS LTDA
+      uf: SC
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "45522"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "40449297000191"
+      razao_social: LUNEDO COMBUSTIVEIS LTDA
+      uf: SC
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "45522"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "40449297000191"
+      razao_social: LUNEDO COMBUSTIVEIS LTDA
+      uf: SC
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "45522"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "48707144000109"
+      razao_social: TRADICAO DIESEL LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "47849"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "83068734000130"
+      razao_social: AUTO POSTO RIZADINHA LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "48504"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "83068734000130"
+      razao_social: AUTO POSTO RIZADINHA LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "48504"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "83068734000130"
+      razao_social: AUTO POSTO RIZADINHA LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "48504"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "83068734000130"
+      razao_social: AUTO POSTO RIZADINHA LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "48504"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "25970205000120"
+      razao_social: COTRAOESTE LOGISTICA SA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "48722"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "326969000157"
+      razao_social: MAXSUL DISTRIBUIDORA DE COMBUSTIVEIS LTDA - MATRIZ
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5949"
+      natureza: DEVOLUCAO DE EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "47694"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "32041920"
+      cfop: "6949"
+      natureza: OUTRAS SAIDAS NAO ESPEC.
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "48326"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "326969000157"
+      razao_social: MAXSUL DISTRIBUIDORA DE COMBUSTIVEIS LTDA - MATRIZ
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "50"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "47811"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "326969000157"
+      razao_social: MAXSUL DISTRIBUIDORA DE COMBUSTIVEIS LTDA - MATRIZ
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "48766"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "326969000157"
+      razao_social: MAXSUL DISTRIBUIDORA DE COMBUSTIVEIS LTDA - MATRIZ
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "47502"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "326969000157"
+      razao_social: MAXSUL DISTRIBUIDORA DE COMBUSTIVEIS LTDA - MATRIZ
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "49032"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "326969000157"
+      razao_social: MAXSUL DISTRIBUIDORA DE COMBUSTIVEIS LTDA - MATRIZ
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "48682"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "326969000157"
+      razao_social: MAXSUL DISTRIBUIDORA DE COMBUSTIVEIS LTDA - MATRIZ
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "48627"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "7857168001058"
+      razao_social: SIM DISTRIBUIDORA DE COMBUSTIVEIS LTDA - FILIAL 09
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5949"
+      natureza: SAIDA PARA EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "47182"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000907"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 06
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "0"
+      cfop: "5602"
+      natureza: TRANSF.SALDO CREDOR ICMS
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "48183"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "6659"
+      natureza: TRANSFERENCIA
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "47768"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6659"
+      natureza: TRANSFERENCIA
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "47465"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001628"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 15
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6659"
+      natureza: TRANSFERENCIA
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "47921"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "619380000147"
+      razao_social: TRR GILIOLI LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "48119"
+  cnpj_emissor: "80795727001113"
+  razao_social_emissor: POTENCIAL PETROLEO LTDA
+  uf_emissor: PR
+  cenarios[23]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "9428424000126"
+      razao_social: POSTO ALDO MARINGA LTDA
+      uf: PR
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "80217"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "9428424000126"
+      razao_social: POSTO ALDO MARINGA LTDA
+      uf: PR
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "80217"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "9428424000126"
+      razao_social: POSTO ALDO MARINGA LTDA
+      uf: PR
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "10"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "80217"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "10888359000109"
+      razao_social: POSTO TOQUIO LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "81740"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "13051996000106"
+      razao_social: CATUAI ANDORINHAS COMERCIO DE COMBUSTIVEIS LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "80916"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "85491074000201"
+      razao_social: PETROALCOOL DISTRIBUIDORA DE PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "83993"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "10888359000109"
+      razao_social: POSTO TOQUIO LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "10"
+      ipi_cst: ""
+      pis_cst: "3"
+      cofins_cst: "3"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "81740"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "19984282000137"
+      razao_social: CENTRAL CONCRETOS E ARGAMASSAS LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5656"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "84105"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "19984282000137"
+      razao_social: CENTRAL CONCRETOS E ARGAMASSAS LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5656"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "84105"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "45269618000190"
+      razao_social: ASSOCIACAO BRASILEIRA DE APOIO AOS CONDUTORES DE APLICATIVO
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5656"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "83175"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3987364001096"
+      razao_social: ATEM'S DISTRIBUIDORA DE PETROLEO SA - FILIAL 09
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5661"
+      natureza: DEVOLUCAO DE COMPRA
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "81379"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "7520438000735"
+      razao_social: RODOIL DISTRIBUIDORA DE COMBUSTIVEIS SA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5949"
+      natureza: DEVOLUCAO DE EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "84177"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3836990000352"
+      razao_social: CPA ARMAZENS GERAIS LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "50"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "82995, 83230"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3836990000352"
+      razao_social: CPA ARMAZENS GERAIS LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "84154"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3836990000352"
+      razao_social: CPA ARMAZENS GERAIS LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "82995, 83230"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3836990000352"
+      razao_social: CPA ARMAZENS GERAIS LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "83230"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3836990000352"
+      razao_social: CPA ARMAZENS GERAIS LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "82995, 83230"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3836990000352"
+      razao_social: CPA ARMAZENS GERAIS LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "82995, 84154"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "0"
+      cfop: "5602"
+      natureza: TRANSF.SALDO CREDOR ICMS
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "83574"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "0"
+      cfop: "5602"
+      natureza: TRANSF.SALDO CREDOR ICMS
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "83574"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "0"
+      cfop: "5602"
+      natureza: TRANSF.SALDO CREDOR ICMS
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "83574"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5659"
+      natureza: TRANSFERENCIA
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "85275"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3349161000183"
+      razao_social: DONADEL DIESEL LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "82791"
+  cnpj_emissor: "80795727001709"
+  razao_social_emissor: POTENCIAL PETROLEO LTDA
+  uf_emissor: MT
+  cenarios[20]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "19815407000103"
+      razao_social: TRR CARRETAO PETROLEO LTDA
+      uf: MT
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "2406"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "26582684000170"
+      razao_social: COMERCIO DE DERIVADOS DE PETROLEO BALDUINO LTDA
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "2526"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3016811000179"
+      razao_social: PETROLUZ DISTRIBUIDORA LTDA
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "6"
+      cofins_cst: "6"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "2189"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "68110501001055"
+      razao_social: TOWER BRASIL PETROLEO LTDA
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "2294"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "7634857000102"
+      razao_social: AUTO POSTO SANTOS DUMONT EIRELI
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "60"
+      ipi_cst: ""
+      pis_cst: "6"
+      cofins_cst: "6"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "1946"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "7634857000102"
+      razao_social: AUTO POSTO SANTOS DUMONT EIRELI
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "60"
+      ipi_cst: ""
+      pis_cst: "6"
+      cofins_cst: "6"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "1946"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3016811000179"
+      razao_social: PETROLUZ DISTRIBUIDORA LTDA
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "2468"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3016811000179"
+      razao_social: PETROLUZ DISTRIBUIDORA LTDA
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "2615"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3016811000179"
+      razao_social: PETROLUZ DISTRIBUIDORA LTDA
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "2613"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3016811000179"
+      razao_social: PETROLUZ DISTRIBUIDORA LTDA
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "2432"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3016811000179"
+      razao_social: PETROLUZ DISTRIBUIDORA LTDA
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "51"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "2095"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3016811000179"
+      razao_social: PETROLUZ DISTRIBUIDORA LTDA
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "60"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "2456"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "2805889001858"
+      razao_social: LARCO COMERCIAL DE PRODUTOS DE PETROLEO LTDA
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5949"
+      natureza: SAIDA PARA EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "2496"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3987364000529"
+      razao_social: ATEM'S DISTRIBUIDORA DE PETROLEO S.A.
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5949"
+      natureza: SAIDA PARA EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "2345"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "68110501001055"
+      razao_social: TOWER BRASIL PETROLEO LTDA
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5949"
+      natureza: SAIDA PARA EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "2612"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "68110501001055"
+      razao_social: TOWER BRASIL PETROLEO LTDA
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5949"
+      natureza: SAIDA PARA EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "2182"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3128979001148"
+      razao_social: DISTRIBUIDORA EQUADOR DE PRODUTOS DE PETROLEO S.A.
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "5949"
+      natureza: SAIDA PARA EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "51"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "2088"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "32041920"
+      cfop: "6152"
+      natureza: TRANSFERENCIA
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "2330"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "17411982000107"
+      razao_social: M C O TRANSPORTES EIRELI
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5656"
+      natureza: VENDA NO ESTADO
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "60"
+      ipi_cst: ""
+      pis_cst: "6"
+      cofins_cst: "6"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "1882"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "17411982000107"
+      razao_social: M C O TRANSPORTES EIRELI
+      uf: MT
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5656"
+      natureza: VENDA NO ESTADO
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "60"
+      ipi_cst: ""
+      pis_cst: "6"
+      cofins_cst: "6"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "1882"
+  cnpj_emissor: "80795727000575"
+  razao_social_emissor: POTENCIAL PETROLEO LTDA
+  uf_emissor: RS
+  cenarios[10]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "93489243009172"
+      razao_social: COMERCIAL BUFFON COMBUSTIVEIS E TRANSPORTES LIMITADA
+      uf: RS
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "60"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "9181"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "87550588000216"
+      razao_social: COQUEIRO COMERCIO DE DIESEL E LUBRIFICANTES LTDA - FILIAL 01
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "9619"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "93489243001279"
+      razao_social: COMERCIAL BUFFON COMBUSTIVEIS E TRANSP. LIMITADA - FILIAL 11
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "9637"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "93489243001279"
+      razao_social: COMERCIAL BUFFON COMBUSTIVEIS E TRANSP. LIMITADA - FILIAL 11
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "9637"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "93489243009172"
+      razao_social: COMERCIAL BUFFON COMBUSTIVEIS E TRANSPORTES LTDA - FILIAL 90
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "9644"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "94845674000130"
+      razao_social: REFINARIA DE PETROLEO RIOGRANDENSE SA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "9613"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "94845674000130"
+      razao_social: REFINARIA DE PETROLEO RIOGRANDENSE SA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "9641"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "94845674000130"
+      razao_social: REFINARIA DE PETROLEO RIOGRANDENSE SA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "9604"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "6278750000459"
+      razao_social: SUL COMBUSTIVEIS LTDA - FILIAL 03
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5949"
+      natureza: SAIDA PARA EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "9659"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "87163900"
+      cfop: "6552"
+      natureza: TRANSF. ATIVO IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "9609"
+  cnpj_emissor: "80795727001202"
+  razao_social_emissor: POTENCIAL PETROLEO LTDA
+  uf_emissor: SP
+  cenarios[19]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "17043351000182"
+      razao_social: IGUATEMY AUTO POSTO LTDA
+      uf: MG
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "2661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "10"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "56748"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "40582935000148"
+      razao_social: POSTO ROTA BENTO QUIRINO LTDA
+      uf: SP
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "60"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "55753"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "44405389000120"
+      razao_social: POSTO E CHURRASCARIA BATATAIS LTDA
+      uf: SP
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "60"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "53786"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "17043351000182"
+      razao_social: IGUATEMY AUTO POSTO LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "63770"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "27177908000121"
+      razao_social: IGUATEMI AUTO POSTO PARAISO LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "63097"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "50946170000131"
+      razao_social: PSJ FRUTAL COMERCIO DE COMBUSTIVEIS LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "63150"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "4436336000152"
+      razao_social: SERGIO APARECIDO DE LIMA E CIA LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "10"
+      ipi_cst: ""
+      pis_cst: "3"
+      cofins_cst: "3"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "61599"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "51531930000102"
+      razao_social: AUTO POSTO BIFON LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "62028"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000141"
+      razao_social: POTENCIAL PETROLEO LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "40112090"
+      cfop: "6949"
+      natureza: OUTRAS SAIDAS NAO ESPEC.
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "61767"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000141"
+      razao_social: POTENCIAL PETROLEO LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "40112090"
+      cfop: "6949"
+      natureza: OUTRAS SAIDAS NAO ESPEC.
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "61767"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000141"
+      razao_social: POTENCIAL PETROLEO LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "40112090"
+      cfop: "6949"
+      natureza: OUTRAS SAIDAS NAO ESPEC.
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "61767"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000141"
+      razao_social: POTENCIAL PETROLEO LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "40112090"
+      cfop: "6949"
+      natureza: OUTRAS SAIDAS NAO ESPEC.
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "61767"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "756149001177"
+      razao_social: RUFF CJ DISTRIBUIDORA DE PETROLEO LTDA - FILIAL 10
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "61718"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "756149001177"
+      razao_social: RUFF CJ DISTRIBUIDORA DE PETROLEO LTDA - FILIAL 10
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "61885"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "756149001177"
+      razao_social: RUFF CJ DISTRIBUIDORA DE PETROLEO LTDA - FILIAL 10
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "62287"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "33000167001426"
+      razao_social: PETROLEO BRASILEIRO S A  PETROBRAS
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "0"
+      cfop: "5603"
+      natureza: RESSARCIMENTO ICMS
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "61636"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1196969000142"
+      razao_social: MARIO ROBERTO TRANSPORTADORA REVENDEDORA DE OLEO DIESEL LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "62697"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "59590760000149"
+      razao_social: PAINEIRAO POSTO E RESTAURANTE EIRELI
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "63383"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "45748308000158"
+      razao_social: PEDREGULHO AUTO POSTO SANTO ANTONIO LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071090"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "10"
+      ipi_cst: ""
+      pis_cst: "3"
+      cofins_cst: "3"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "62655"
+  cnpj_emissor: "80795727001628"
+  razao_social_emissor: POTENCIAL PETROLEO LTDA
+  uf_emissor: RS
+  cenarios[27]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "8407768000862"
+      razao_social: SUDBRACK LEONHARDT SUPERMERCADOS LTDA - FILIAL 07
+      uf: RS
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "60"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "47350"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "8407768000862"
+      razao_social: SUDBRACK LEONHARDT SUPERMERCADOS LTDA - FILIAL 07
+      uf: RS
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "60"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "47350"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "8407768000862"
+      razao_social: SUDBRACK LEONHARDT SUPERMERCADOS LTDA - FILIAL 07
+      uf: RS
+    fiscal:
+      operacao: ENTRADA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "1661"
+      natureza: DEVOLUCAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "60"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "47350"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001032"
+      razao_social: POTENCIAL PETROLEO LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6659"
+      natureza: TRANSFERENCIA
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "62580"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001032"
+      razao_social: POTENCIAL PETROLEO LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6659"
+      natureza: TRANSFERENCIA
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "64171"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001547"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 14
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "5659"
+      natureza: TRANSFERENCIA
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "66596"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001547"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 14
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5659"
+      natureza: TRANSFERENCIA
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "66456"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001547"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 14
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5659"
+      natureza: TRANSFERENCIA
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "66315"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001547"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 14
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5659"
+      natureza: TRANSFERENCIA
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "66315"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "32160784000101"
+      razao_social: VM COMBUSTIVEIS LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "62168"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "89279996000120"
+      razao_social: POSTO DE SERVICOS BALDISSERA LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "63384"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "89279996000120"
+      razao_social: POSTO DE SERVICOS BALDISSERA LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "63384"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "89279996000120"
+      razao_social: POSTO DE SERVICOS BALDISSERA LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "63384"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001628"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 15
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "32041920"
+      cfop: "5927"
+      natureza: BAIXA OBSOLEC./DETERIORA
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "65512"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1317309000849"
+      razao_social: DISTRIBUIDORA DE PRODUTOS DE PETROLEO CHARRUA LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5949"
+      natureza: DEVOLUCAO DE EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "61681"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1317309000849"
+      razao_social: DISTRIBUIDORA DE PRODUTOS DE PETROLEO CHARRUA LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5949"
+      natureza: DEVOLUCAO DE EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "63279"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000141"
+      razao_social: POTENCIAL PETROLEO LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "40112090"
+      cfop: "6949"
+      natureza: OUTRAS SAIDAS NAO ESPEC.
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "63338"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000141"
+      razao_social: POTENCIAL PETROLEO LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "40121200"
+      cfop: "6949"
+      natureza: OUTRAS SAIDAS NAO ESPEC.
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "63338"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000141"
+      razao_social: POTENCIAL PETROLEO LTDA - MATRIZ
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "40121200"
+      cfop: "6949"
+      natureza: OUTRAS SAIDAS NAO ESPEC.
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "63338"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "13674796000100"
+      razao_social: BEST BASE DE ARMAZENAMENTO DE COMBUSTIVEIS ESTEIO LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "61304"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "13674796000100"
+      razao_social: BEST BASE DE ARMAZENAMENTO DE COMBUSTIVEIS ESTEIO LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "60985, 62277"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "13674796000100"
+      razao_social: BEST BASE DE ARMAZENAMENTO DE COMBUSTIVEIS ESTEIO LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "60985, 62277"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "13674796000100"
+      razao_social: BEST BASE DE ARMAZENAMENTO DE COMBUSTIVEIS ESTEIO LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "60985, 62277"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "13674796000100"
+      razao_social: BEST BASE DE ARMAZENAMENTO DE COMBUSTIVEIS ESTEIO LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "60985"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "209895001221"
+      razao_social: REJAILE DISTRIBUIDORA DE PETROLEO LTDA - FILIAL 11
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5949"
+      natureza: SAIDA PARA EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "59774"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3250611000267"
+      razao_social: AUTO POSTO CIRIMBELLI EIRELI - FILIAL 01
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "64445"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "75790493000100"
+      razao_social: PETRONUNES TRANSP REV E RETALHISTA DE DERIVADOS DE PETROLEO
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6655"
+      natureza: VENDA FORA DO ESTADO
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "67035"
+  cnpj_emissor: "80795727001547"
+  razao_social_emissor: POTENCIAL PETROLEO LTDA
+  uf_emissor: RS
+  cenarios[15]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001032"
+      razao_social: POTENCIAL PETROLEO LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "6659"
+      natureza: TRANSFERENCIA
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "21180"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001032"
+      razao_social: POTENCIAL PETROLEO LTDA
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "6659"
+      natureza: TRANSFERENCIA
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "20866"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "11342355000185"
+      razao_social: AUTO POSTO CIDADE JARDIM LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19618"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "11342355000185"
+      razao_social: AUTO POSTO CIDADE JARDIM LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19618"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "9439792000170"
+      razao_social: COMERCIO DE COMBUSTIVEIS DALLEPIANE LTDA ME
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "20587"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "9439792000170"
+      razao_social: COMERCIO DE COMBUSTIVEIS DALLEPIANE LTDA ME
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "20124"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "87613246000117"
+      razao_social: AUGUSTO PESTANA PREFEITURA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5656"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "4"
+      cofins_cst: "4"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "20353"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1317309000768"
+      razao_social: DISTRIBUIDORA DE PRODUTOS DE PETROLEO CHARRUA LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "22071010"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19998, 20651"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1317309000768"
+      razao_social: DISTRIBUIDORA DE PRODUTOS DE PETROLEO CHARRUA LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101259"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "20651, 20803"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1317309000768"
+      razao_social: DISTRIBUIDORA DE PRODUTOS DE PETROLEO CHARRUA LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "20828"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1317309000768"
+      razao_social: DISTRIBUIDORA DE PRODUTOS DE PETROLEO CHARRUA LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "20651, 21153"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "1317309000768"
+      razao_social: DISTRIBUIDORA DE PRODUTOS DE PETROLEO CHARRUA LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "38260000"
+      cfop: "5663"
+      natureza: REMESSA P/ARMAZENAGEM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "20651"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "7520438001545"
+      razao_social: RODOIL DISTRIBUIDORA DE COMBUSTIVEIS SA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5949"
+      natureza: SAIDA PARA EMPRESTIMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19666"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "32041920"
+      cfop: "6152"
+      natureza: TRANSFERENCIA
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19864"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001628"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 15
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101921"
+      cfop: "5659"
+      natureza: TRANSFERENCIA
+      transporte: Sem Movimento Físico
+    impostos:
+      icms_cst: "61"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "20137"
+  cnpj_emissor: "80795727000141"
+  razao_social_emissor: POTENCIAL PETROLEO LTDA
+  uf_emissor: PR
+  cenarios[29]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "2505963000172"
+      razao_social: POSTO PARQUE DO BOSQUE LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27112100"
+      cfop: "5655"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Destinatário
+    impostos:
+      icms_cst: "60"
+      ipi_cst: ""
+      pis_cst: "1"
+      cofins_cst: "1"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19661"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "2505963000172"
+      razao_social: POSTO PARQUE DO BOSQUE LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101932"
+      cfop: "5652"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "10"
+      ipi_cst: ""
+      pis_cst: "1"
+      cofins_cst: "1"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19621"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "2505963000172"
+      razao_social: POSTO PARQUE DO BOSQUE LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "27101932"
+      cfop: "5652"
+      natureza: VENDA NO ESTADO
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "10"
+      ipi_cst: ""
+      pis_cst: "1"
+      cofins_cst: "1"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19621"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "77765840000170"
+      razao_social: CONTABILISTA - PAPELARIA E INFORMATICA LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "96121000"
+      cfop: "5210"
+      natureza: DEVOLUCAO UTIL PREST SER
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "0"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19627"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "78134731000702"
+      razao_social: CAPRIGEM COMERCIO DE AUTO PECAS LTDA - FILIAL 06
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "87089300"
+      cfop: "6210"
+      natureza: DEVOLUCAO UTIL PREST SER
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "0"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "True"
+    nfs_agrupadas: "19701"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000656"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 03
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "40112090"
+      cfop: "6949"
+      natureza: OUTRAS SAIDAS NAO ESPEC.
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "0"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19712"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000656"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 03
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "40112090"
+      cfop: "6949"
+      natureza: OUTRAS SAIDAS NAO ESPEC.
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "0"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19712"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000656"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 03
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "40112090"
+      cfop: "6949"
+      natureza: OUTRAS SAIDAS NAO ESPEC.
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "0"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19712"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000656"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 03
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "40112090"
+      cfop: "6949"
+      natureza: OUTRAS SAIDAS NAO ESPEC.
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "0"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19712"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001385"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 12
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "39233090"
+      cfop: "5949"
+      natureza: OUTRAS SAIDAS NAO ESPEC.
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19651"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001385"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 12
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "39235000"
+      cfop: "5949"
+      natureza: OUTRAS SAIDAS NAO ESPEC.
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19651"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "39853895000142"
+      razao_social: POSTO DE COMBUSTIVEIS RIO DOCE LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "6908"
+      natureza: REMESSA COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19668"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "39853895000142"
+      razao_social: POSTO DE COMBUSTIVEIS RIO DOCE LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "6908"
+      natureza: REMESSA COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19668"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "39853895000142"
+      razao_social: POSTO DE COMBUSTIVEIS RIO DOCE LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "6908"
+      natureza: REMESSA COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19668"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "39853895000142"
+      razao_social: POSTO DE COMBUSTIVEIS RIO DOCE LTDA
+      uf: MG
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "6908"
+      natureza: REMESSA COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19668"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "3509978000252"
+      razao_social: FACCHINI S/A
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "40112090"
+      cfop: "6901"
+      natureza: REMESSA P/ INDUSTRIALIZ.
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "50"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "True"
+    nfs_agrupadas: "19631"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "11045062000136"
+      razao_social: ATZ REFORMADORA DE PNEUS LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "40112090"
+      cfop: "5915"
+      natureza: REMESSA P/CONSERTO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "50"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19703"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "11045062000136"
+      razao_social: ATZ REFORMADORA DE PNEUS LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "40121200"
+      cfop: "5915"
+      natureza: REMESSA P/CONSERTO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "50"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19703"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "18355397000108"
+      razao_social: DEAL4B SOLUCOES EM TECNOLOGIA LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "96200000"
+      cfop: "6915"
+      natureza: REMESSA P/CONSERTO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "50"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "True"
+    nfs_agrupadas: "19653"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "2558157018703"
+      razao_social: TELEFONICA BRASIL SA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "85171300"
+      cfop: "5909"
+      natureza: RETORNO DE COMODATO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19719"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "76518356000183"
+      razao_social: PLONA EQUIPAMENTOS IND E COMPONENTES MECANICOS LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "76090000"
+      cfop: "5913"
+      natureza: RETORNO DEMONSTRACAO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "51"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19656"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000907"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 06
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "48171000"
+      cfop: "6557"
+      natureza: TRANSF MERC P USO/CONSUM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19625"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000907"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 06
+      uf: SC
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "49111090"
+      cfop: "6557"
+      natureza: TRANSF MERC P USO/CONSUM
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19625"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "0"
+      cfop: "5602"
+      natureza: TRANSF.SALDO CREDOR ICMS
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19707"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "0"
+      cfop: "5602"
+      natureza: TRANSF.SALDO CREDOR ICMS
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19707"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "0"
+      cfop: "5602"
+      natureza: TRANSF.SALDO CREDOR ICMS
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19707"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "19951933000435"
+      razao_social: L T NICHELE COMERCIO DE COMBUSTIVEIS LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "6551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19641"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "19951933000435"
+      razao_social: L T NICHELE COMERCIO DE COMBUSTIVEIS LTDA
+      uf: RS
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84131100"
+      cfop: "6551"
+      natureza: VENDA IMOBILIZADO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "41"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19641"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "82010794000139"
+      razao_social: IVONOR JESUS DA COSTA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "0"
+      cfop: "5949"
+      natureza: VENDA MATERIAL OBSOLETO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "0"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "19692"
+  cnpj_emissor: "80795727001385"
+  razao_social_emissor: POTENCIAL PETROLEO LTDA
+  uf_emissor: PR
+  cenarios[16]:
+    tipo: mercadoria
+    destinatario:
+      cnpj: "78473618000166"
+      razao_social: AUTO POSTO MARIENTAL LTDA
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "31021010"
+      cfop: "5101"
+      natureza: VENDA PROD. DO ESTAB.
+      transporte: Por Conta do Emitente
+    impostos:
+      icms_cst: "51"
+      ipi_cst: ""
+      pis_cst: "1"
+      cofins_cst: "1"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "115"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727001385"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 12
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "31021010"
+      cfop: "5949"
+      natureza: BAIXA P/ AUTO CONSUMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "80"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "68993641000802"
+      razao_social: AGIS EQUIPAMENTOS E SERVICOS DE INFORMATICA LTDA
+      uf: ES
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "84716052"
+      cfop: "6556"
+      natureza: DEVOL. MAT. USO CONSUMO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "0"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "True"
+    nfs_agrupadas: "94"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "4921401000135"
+      razao_social: INSTITUTO LAB SYSTEM DE PESQUISAS E ENSAIOS LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "31021010"
+      cfop: "6949"
+      natureza: OUTRAS SAIDAS NAO ESPEC.
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "0"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "True"
+    nfs_agrupadas: "135"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "27749773000121"
+      razao_social: JOSE GUILHERME SCHLAPAK
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "70179000"
+      cfop: "5915"
+      natureza: REMESSA P/ CONSERTO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "50"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "93"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "27749773000121"
+      razao_social: JOSE GUILHERME SCHLAPAK
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "90251990"
+      cfop: "5915"
+      natureza: REMESSA P/ CONSERTO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "50"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "93"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "27749773000121"
+      razao_social: JOSE GUILHERME SCHLAPAK
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "90258000"
+      cfop: "5915"
+      natureza: REMESSA P/ CONSERTO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "50"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "93"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "27749773000121"
+      razao_social: JOSE GUILHERME SCHLAPAK
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "90259010"
+      cfop: "5915"
+      natureza: REMESSA P/ CONSERTO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "50"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "93"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "12514837000138"
+      razao_social: ELUS SERVICOS TECNICOS LTDA
+      uf: SP
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "90275030"
+      cfop: "6915"
+      natureza: REMESSA P/CONSERTO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "50"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "True"
+    nfs_agrupadas: "83"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "0"
+      cfop: "5605"
+      natureza: TRANSF SD DEVEDOR ICMS
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "133"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "0"
+      cfop: "5605"
+      natureza: TRANSF SD DEVEDOR ICMS
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "133"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "0"
+      cfop: "5605"
+      natureza: TRANSF SD DEVEDOR ICMS
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "133"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "0"
+      cfop: "5602"
+      natureza: TRANSF.SALDO CREDOR ICMS
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "147"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "0"
+      cfop: "5602"
+      natureza: TRANSF.SALDO CREDOR ICMS
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "147"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "80795727000222"
+      razao_social: POTENCIAL PETROLEO LTDA - FILIAL 01
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "0"
+      cfop: "5602"
+      natureza: TRANSF.SALDO CREDOR ICMS
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "90"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "147"
+    tipo: mercadoria
+    destinatario:
+      cnpj: "10398658000157"
+      razao_social: SANTOS COMERCIO DE GRANULADO DE PLASTICO LTDA.
+      uf: PR
+    fiscal:
+      operacao: SAIDA
+      consumidor_final: NAO
+      ncm: "63053200"
+      cfop: "5949"
+      natureza: VENDA MATERIAL OBSOLETO
+      transporte: Sem Frete
+    impostos:
+      icms_cst: "51"
+      ipi_cst: ""
+      pis_cst: "7"
+      cofins_cst: "7"
+      outros: ""
+      sujeito_iss: NAO
+      difal: "False"
+    nfs_agrupadas: "160"

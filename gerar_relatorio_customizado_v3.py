@@ -100,16 +100,6 @@ def get_tipo_operacao(nota: Dict[str, Any]) -> Dict[str, Any]:
     tipo_nf = nota.get('TIPO_NF', '')
     return {'tipo_operacao': 'ENTRADA' if tipo_nf == '0' else 'SAIDA'}
 
-def get_documento_destinatario(nota: Dict[str, Any]) -> Dict[str, Any]:
-    """Extrai CNPJ/CPF e Razão Social do Destinatário."""
-    dest_cnpj = nota.get('DEST_CNPJ')
-    dest_cpf = nota.get('DEST_CPF')
-    return {
-        'dest_documento': dest_cnpj if dest_cnpj else dest_cpf,
-        'dest_tipo_pessoa': 'PJ' if dest_cnpj else 'PF',
-        'dest_razao_social': nota.get('DEST_RAZAO_SOCIAL', ''),
-    }
-
 def get_consumidor_final(nota: Dict[str, Any]) -> Dict[str, Any]:
   
     ind_final = nota.get('IND_FINAL', '')
@@ -135,14 +125,6 @@ def get_consumidor_final(nota: Dict[str, Any]) -> Dict[str, Any]:
         'desc_consumidor_final': 'Operação B2B (Modelo 55 ou 57, IND_FINAL=0)'
     }
 
-def _get_desc_cfop(cfop):
-    """Retorna a descrição do CFOP."""
-    cfop_str = str(cfop)
-    resultado = DF_BASE_CFOP[DF_BASE_CFOP['Codigo CFOP'] == cfop_str]
-    if not resultado.empty:
-        return resultado.iloc[0]['Descricao']
-    return f'CFOP {cfop}'
-
 def get_transporte_info(nota: Dict[str, Any]) -> Dict[str, Any]:
     """Identifica modalidade de transporte e retorna a descrição."""
     mod_frete = nota.get('TRANSP_MOD_FRETE')
@@ -153,6 +135,177 @@ def get_transporte_info(nota: Dict[str, Any]) -> Dict[str, Any]:
         tem_transporte = TABELA_MOD_FRETE.get(str(mod_frete), f'Modalidade {mod_frete}')
     
     return {'tem_transporte': tem_transporte}
+
+def _get_desc_cfop(cfop):
+    """Retorna a descrição do CFOP."""
+    if not cfop or cfop == '':
+        return 'CFOP não informado'
+    
+    cfop_str = str(cfop).strip()
+    # Compara convertendo ambos os lados para string e removendo espaços
+    resultado = DF_BASE_CFOP[DF_BASE_CFOP['Codigo CFOP'].astype(str).str.strip() == cfop_str]
+    if not resultado.empty:
+        return resultado.iloc[0]['Descricao']
+    return f'CFOP {cfop}'
+
+def get_cfop_info(item: Dict[str, Any]) -> Dict[str, Any]:
+    """Extrai CFOP e descrição."""
+    cfop = item.get('CFOP', '')
+    return {
+        'cfop': cfop,
+        'desc_cfop': _get_desc_cfop(cfop),
+    }
+
+def _get_desc_cst_icms(cst):
+    """Retorna a descrição do CST ICMS (2 dígitos) ou CSOSN (3 dígitos)."""
+    if not cst:
+        return 'N/A'
+    
+    cst_str = str(cst)
+    
+    # Se tem 3 dígitos, é CSOSN (Simples Nacional)
+    if len(cst_str) == 3:
+        return TABELA_CSOSN_ICMS.get(cst_str, f'CSOSN {cst_str}')
+    # Se tem 2 dígitos, é CST (Regime Normal)
+    else:
+        return TABELA_CST_ICMS.get(cst_str, f'CST {cst_str}')
+
+def _get_desc_cst_ipi(cst):
+    """Retorna a descrição do CST IPI."""
+    return TABELA_CST_IPI.get(str(cst), f'CST {cst}')
+
+def get_ipi_status(item: Dict[str, Any]) -> Dict[str, Any]:
+    """Classifica IPI como tributado, isento ou sem aplicação."""
+    cst_ipi = item.get('IPI_CST', '')
+    
+    if not cst_ipi or cst_ipi == '':
+        status = 'SEM_IPI'
+        descricao = 'Não se aplica'
+    elif str(cst_ipi) in ['50', '51']:
+        status = 'TRIBUTADO'
+        descricao = _get_desc_cst_ipi(cst_ipi)
+    elif str(cst_ipi) in ['52', '53', '54', '55', '99']:
+        status = 'ISENTO'
+        descricao = _get_desc_cst_ipi(cst_ipi)
+    else:
+        status = 'OUTROS'
+        descricao = _get_desc_cst_ipi(cst_ipi)
+    
+    return {
+        'ipi_status': status,
+        'ipi_descricao': descricao,
+        'cst_ipi': cst_ipi,
+        'valor_ipi': item.get('IPI_VIPI', '0.00'),
+    }
+
+def get_tipi_aplicavel(item: Dict[str, Any]) -> Dict[str, Any]:
+    """Identifica se o produto está sujeito à TIPI (Tabela de Incidência do IPI)."""
+    ipi_bloco = item.get('IPI_BLOCO')
+    ipi_cst = item.get('IPI_CST', '')
+    
+    # Se não tem IPI_BLOCO, não está sujeito à TIPI
+    if not ipi_bloco:
+        tem_tipi = 'NAO'
+    # Se CST está em códigos de isento/suspenso, não é tributável
+    elif str(ipi_cst) in ['52', '53', '54', '55']:
+        tem_tipi = 'NAO'
+    # Se tem IPI_BLOCO e CST não é isento, está sujeito
+    else:
+        tem_tipi = 'SIM'
+    
+    return {
+        'ipi_cst':ipi_cst,
+        'tipi': tem_tipi
+        }
+
+def _get_desc_cst_pis_cofins(cst):
+    """Retorna a descrição do CST PIS/COFINS."""
+    return TABELA_CST_PIS_COFINS.get(str(cst), f'CST {cst}')
+
+def get_cofins_status(item: Dict[str, Any]) -> Dict[str, Any]:
+    """ Classifica COFINS em 4 categorias."""
+    cst_cofins = item.get('COFINS_CST', '')
+    cofins_isento_list = ['07', '08', '09']
+    cofins_tributado_list = ['01', '02', '03', '04', '05', '06']
+    
+    if not cst_cofins:
+        tem_cofins = 'NAO'
+        status = 'Não mapeado'
+    elif str(cst_cofins) in cofins_isento_list:
+        tem_cofins = 'NAO'
+        status = _get_desc_cst_pis_cofins(cst_cofins) + ' (Isento/Suspenso)'
+    elif str(cst_cofins) in cofins_tributado_list:
+        tem_cofins = 'SIM'
+        status = _get_desc_cst_pis_cofins(cst_cofins)
+    else:
+        tem_cofins = 'OUTRO'
+        status = f'CST {cst_cofins} (não classificado)'
+    
+    cst_pis = item.get('PIS_CST', '')
+    
+    return {
+        'cst_cofins': cst_cofins,
+        'tem_cofins': tem_cofins,
+        'status_cofins': status,
+        'cst_pis': cst_pis,
+        'desc_cst_pis': _get_desc_cst_pis_cofins(cst_pis),
+    }
+
+def get_issqn_info(item: Dict[str, Any]) -> Dict[str, Any]:
+    """Identifica presença de ISSQN no item (serviço) retornando SIM/NAO."""
+    issqn_bloco = item.get('ISSQN_BLOCO')
+    tem_issqn_flag = item.get('TEM_ISSQN')
+
+    if issqn_bloco is not None or tem_issqn_flag is not None:
+        tem_issqn = 'SIM'
+    else:
+        tem_issqn = 'NAO'
+
+    return {
+        'tem_issqn': tem_issqn,
+    }
+
+def identificar_difal(nota: Dict[str, Any], item: Dict[str, Any]) -> Dict[str, Any]:
+    # 1. Inicializa a variável para evitar erro de escopo
+    tem_difal = False
+    motivo = "Sem incidência"
+
+    # Extração de dados com valores padrão para evitar None
+    ind_final = str(nota.get("CONSUMIDOR_FINAL", "0"))
+    ind_ie_dest = str(nota.get("DEST_IND_IE_DEST", ""))
+    uf_emit = nota.get("DIFAL_EMIT_UF")
+    uf_dest = nota.get("DIFAL_DEST_UF")
+    cfop = str(item.get("CFOP", ""))
+    
+    is_interestadual = uf_emit and uf_dest and uf_emit != uf_dest
+    is_saida = cfop.startswith("6") # Operações interestaduais de saída
+
+    # --- REGRA 1: Presença Explícita do Bloco (EC 87/2015) ---
+    if item.get("DIFAL_UFDEST_BLOCO") or item.get("TEM_DIFAL") == "1":
+        tem_difal = True
+        motivo = "Bloco ICMSUFDest presente no item"
+
+    # --- REGRA 2: Requisitos para Não Contribuinte ---
+    elif is_interestadual and is_saida and ind_final == "1" and ind_ie_dest == "9":
+        tem_difal = True
+        motivo = "Operação Interestadual, Consumidor Final Não Contribuinte"
+
+    # --- REGRA 3: Requisitos para Contribuinte (Uso/Consumo/Ativo) ---
+    # Nota: O DIFAL aqui pode estar no campo vICMSST
+    elif is_interestadual and is_saida and ind_final == "1" and ind_ie_dest == "1":
+        tem_difal = True
+        motivo = "DIFAL Contribuinte (Uso/Consumo ou Ativo Imobilizado)"
+
+    return {
+        "tem_difal": tem_difal,
+        "motivo": motivo,
+        "debug": {
+            "interestadual": is_interestadual,
+            "consumidor_final": ind_final,
+            "ind_ie_dest": ind_ie_dest,
+            "cfop": cfop
+        }
+    }
 
 def get_info_adicionais(nota: Dict[str, Any], item: Dict[str, Any], item_index: int = 0) -> Dict[str, Any]:
     """Consolida informações adicionais da nota (contribuinte/fisco) e do item."""
@@ -170,62 +323,6 @@ def get_info_adicionais(nota: Dict[str, Any], item: Dict[str, Any], item_index: 
         partes.append(f"[ITEM {item_num}]: {info_item}")
 
     return {'info_adicionais': ' | '.join(partes) if partes else ''}
-
-def get_outros_impostos(item: Dict[str, Any]) -> Dict[str, Any]:
-    """Identifica presença de impostos não convencionais e registra o nome da tag."""
-    # Lista padrão de impostos conhecidos (tags _BLOCO que devem existir)
-    impostos_padrao = {'ICMS_BLOCO', 'IPI_BLOCO', 'PIS_BLOCO', 'COFINS_BLOCO', 'ISSQN_BLOCO', 'ICMS_UFDEST_BLOCO'}
-    
-    # Coletar todos os campos _BLOCO presentes no item
-    impostos_presentes = set()
-    for key in item.keys():
-        if key.endswith('_BLOCO'):
-            impostos_presentes.add(key)
-    
-    # Identificar impostos não padrão
-    outros_impostos = impostos_presentes - impostos_padrao
-    
-    # Verificar campo OUTRO_IMPOSTO (se vier preenchido do processador)
-    outro_imposto_campo = item.get('OUTRO_IMPOSTO')
-    
-    if outros_impostos or outro_imposto_campo:
-        # Extrair nomes das tags (remover _BLOCO)
-        nomes_impostos = [imp.replace('_BLOCO', '') for imp in sorted(outros_impostos)]
-        
-        if nomes_impostos and outro_imposto_campo:
-            descricao = ', '.join(nomes_impostos) + f', {outro_imposto_campo}'
-        elif nomes_impostos:
-            descricao = ', '.join(nomes_impostos)
-        else:
-            descricao = outro_imposto_campo
-    else:
-        descricao = 'NAO'
-    
-    return {
-        'outros_impostos': descricao,
-    }
-
-def get_issqn_info(item: Dict[str, Any]) -> Dict[str, Any]:
-    """Identifica presença de ISSQN no item (serviço) retornando SIM/NAO."""
-    issqn_bloco = item.get('ISSQN_BLOCO')
-    tem_issqn_flag = item.get('TEM_ISSQN')
-
-    if issqn_bloco or tem_issqn_flag:
-        tem_issqn = 'SIM'
-    else:
-        tem_issqn = 'NAO'
-
-    return {
-        'tem_issqn': tem_issqn,
-    }
-
-def get_cfop_info(item: Dict[str, Any]) -> Dict[str, Any]:
-    """Extrai CFOP e descrição."""
-    cfop = item.get('CFOP', '')
-    return {
-        'cfop': cfop,
-        'desc_cfop': _get_desc_cfop(cfop),
-    }
 
 def analisar_icms_itens(item: Dict[str, Any]) -> Dict[str, Any]:
     """
@@ -290,149 +387,85 @@ def analisar_icms_itens(item: Dict[str, Any]) -> Dict[str, Any]:
 
     return resultado_item
 
-def _get_desc_cst_ipi(cst):
-    """Retorna a descrição do CST IPI."""
-    return TABELA_CST_IPI.get(str(cst), f'CST {cst}')
 
-def _get_desc_cst_icms(cst):
-    """Retorna a descrição do CST ICMS (2 dígitos) ou CSOSN (3 dígitos)."""
-    if not cst:
-        return 'N/A'
+def gerar_cenario(nota: Dict[str, Any], item: Dict[str, Any]) -> str:
+    """Gera uma descrição resumida do cenário da operação para visão geral rápida."""
+    partes = []
     
-    cst_str = str(cst)
+    # 1. Tipo de documento
+    tipo_doc = nota.get('TIPO_DOCUMENTO', 'N/A')
+    if tipo_doc:
+        partes.append(tipo_doc.upper())
     
-    # Se tem 3 dígitos, é CSOSN (Simples Nacional)
-    if len(cst_str) == 3:
-        return TABELA_CSOSN_ICMS.get(cst_str, f'CSOSN {cst_str}')
-    # Se tem 2 dígitos, é CST (Regime Normal)
-    else:
-        return TABELA_CST_ICMS.get(cst_str, f'CST {cst_str}')
+    # 2. Tipo de operação
+    tipo_op = get_tipo_operacao(nota).get('tipo_operacao', 'N/A')
+    partes.append(tipo_op)
+    
+    # 3. Consumidor final ou B2B
+    # cons_final = get_consumidor_final(nota).get('consumidor_final', 'NAO')
+    # partes.append('CONS.FINAL' if cons_final == 'SIM' else 'B2B')
+    
+    # 4. Transporte
+    transporte = get_transporte_info(nota).get('tem_transporte', '')
+    if transporte and transporte != 'Não Informado':
+        # Abrevia o tipo de transporte
+        if 'Emitente' in transporte:
+            partes.append('FRETE-EMIT')
+        elif 'Destinatário' in transporte:
+            partes.append('FRETE-DEST')
+        elif 'Terceiro' in transporte:
+            partes.append('FRETE-3º')
+        elif 'Sem Frete' in transporte:
+            partes.append('SEM-FRETE')
+    
+    # 5. NATOP (resumida)
+    natop = nota.get('NATUREZA_OPERACAO', '')
+    if natop:
+        # Pega as primeiras 20 caracteres da NATOP
+        natop_resumida = natop[:25] + '...' if len(natop) > 25 else natop
+        partes.append(natop_resumida)
+    
+    # 6. CFOP
+    # cfop = item.get('CFOP', '')
+    # if cfop:
+    #     partes.append(f"CFOP-{cfop}")
+    
+    # 7. Todos os impostos
+    todos_impostos = item.get('TODOS_IMPOSTOS', '')
+    if todos_impostos:
+        partes.append(f"[{todos_impostos}]")
+    
+    # 8. Regime tributário ICMS
+    cst_icms = item.get('ICMS_CST') or item.get('ICMS_CSOSN', '')
+    if cst_icms:
+        if str(cst_icms) in ['10', '60', '70']:
+            partes.append('ICMS-ST')
+        elif str(cst_icms) == '61':
+            partes.append('ICMS-MONO')
+        elif str(cst_icms) in ['40', '41', '50']:
+            partes.append('ICMS-ISENTO')
+        elif len(str(cst_icms)) == 3:  # CSOSN
+            partes.append('SIMPLES')
+        else:
+            partes.append('ICMS-NORMAL')
+    
+    # 9. IPI
+    # ipi_status = get_ipi_status(item).get('ipi_status', '')
+    # if ipi_status == 'TRIBUTADO':
+    #     partes.append('COM-IPI')
+    
+    # # 10. DIFAL
+    # tem_difal = identificar_difal(nota, item).get('tem_difal', False)
+    # if tem_difal:
+    #     partes.append('COM-DIFAL')
+    
+    # # 11. ISS
+    # tem_iss = get_issqn_info(item).get('tem_issqn', 'NAO')
+    # if tem_iss == 'SIM':
+    #     partes.append('COM-ISS')
+    
+    return ' | '.join(partes)
 
-def get_ipi_status(item: Dict[str, Any]) -> Dict[str, Any]:
-    """Classifica IPI como tributado, isento ou sem aplicação."""
-    cst_ipi = item.get('IPI_CST', '')
-    
-    if not cst_ipi or cst_ipi == '':
-        status = 'SEM_IPI'
-        descricao = 'Não se aplica'
-    elif str(cst_ipi) in ['50', '51']:
-        status = 'TRIBUTADO'
-        descricao = _get_desc_cst_ipi(cst_ipi)
-    elif str(cst_ipi) in ['52', '53', '54', '55', '99']:
-        status = 'ISENTO'
-        descricao = _get_desc_cst_ipi(cst_ipi)
-    else:
-        status = 'OUTROS'
-        descricao = _get_desc_cst_ipi(cst_ipi)
-    
-    return {
-        'ipi_status': status,
-        'ipi_descricao': descricao,
-        'cst_ipi': cst_ipi,
-        'valor_ipi': item.get('IPI_VIPI', '0.00'),
-    }
-
-def get_tipi_aplicavel(item: Dict[str, Any]) -> Dict[str, Any]:
-    """Identifica se o produto está sujeito à TIPI (Tabela de Incidência do IPI)."""
-    ipi_bloco = item.get('IPI_BLOCO')
-    ipi_cst = item.get('IPI_CST', '')
-    
-    # Se não tem IPI_BLOCO, não está sujeito à TIPI
-    if not ipi_bloco:
-        tem_tipi = 'NAO'
-    # Se CST está em códigos de isento/suspenso, não é tributável
-    elif str(ipi_cst) in ['52', '53', '54', '55']:
-        tem_tipi = 'NAO'
-    # Se tem IPI_BLOCO e CST não é isento, está sujeito
-    else:
-        tem_tipi = 'SIM'
-    
-    return {'tipi': tem_tipi}
-
-def _get_desc_cst_pis_cofins(cst):
-    """Retorna a descrição do CST PIS/COFINS."""
-    return TABELA_CST_PIS_COFINS.get(str(cst), f'CST {cst}')
-
-def get_cofins_status(item: Dict[str, Any]) -> Dict[str, Any]:
-    """ Classifica COFINS em 4 categorias."""
-    cst_cofins = item.get('COFINS_CST', '')
-    cofins_isento_list = ['07', '08', '09']
-    cofins_tributado_list = ['01', '02', '03', '04', '05', '06']
-    
-    if not cst_cofins:
-        tem_cofins = 'NAO'
-        status = 'Não mapeado'
-    elif str(cst_cofins) in cofins_isento_list:
-        tem_cofins = 'NAO'
-        status = _get_desc_cst_pis_cofins(cst_cofins) + ' (Isento/Suspenso)'
-    elif str(cst_cofins) in cofins_tributado_list:
-        tem_cofins = 'SIM'
-        status = _get_desc_cst_pis_cofins(cst_cofins)
-    else:
-        tem_cofins = 'OUTRO'
-        status = f'CST {cst_cofins} (não classificado)'
-    
-    cst_pis = item.get('PIS_CST', '')
-    
-    return {
-        'cst_cofins': cst_cofins,
-        'tem_cofins': tem_cofins,
-        'status_cofins': status,
-        'cst_pis': cst_pis,
-        'desc_cst_pis': _get_desc_cst_pis_cofins(cst_pis),
-    }
-
-def identificar_difal(nota: Dict[str, Any], item: Dict[str, Any]) -> Dict[str, Any]:
-    """
-    Identifica a incidência do DIFAL (Diferencial de Alíquota)
-    com base nas regras:
-    1. Presença do bloco ICMSUFDest (regra 19a)
-    2. OU Se cumprir 3 requisitos (regra 19b):
-        a) Destinatário = consumidor final (indFinal = 1)
-        b) Operação interestadual (UF diferente)
-        c) Destinatário não contribuinte do ICMS (indIEDest = 9)
-
-    Args:
-        dados_nota_json (dict): Dicionário contendo os dados gerais da NF-e
-        e o bloco 'ITEMS'.
-
-    Returns:
-        bool: True se o DIFAL incide, False caso contrário.
-    """
-    
-    # --- REGRA 19a: Presença do bloco ICMSUFDest ---
-    
-    # 1.1 Verifica nos totais (indica que houve cálculo na nota)
-    # Procuramos por chaves que indicam a presença do cálculo de DIFAL no total.
-    if nota.get("DIFAL_CONS_FINAL") == "1" and nota.get("DIFAL_DEST_UF") != nota.get("DIFAL_EMIT_UF"):
-         return True
-    
-    # 1.2 Verifica por item (procurando o bloco em cada item)
-    # Verifica se o bloco de campos de DIFAL do item está preenchido
-    if item.get("ICMS_UFDEST_VBCUFDEST") or item.get("TEM_DIFAL") == "1":
-        return True
-
-    # --- REGRA 19b: Cumprimento dos 3 requisitos ---
-    
-    # 2.1 Verifica Destinatário = Consumidor Final
-    is_consumidor_final = nota.get("CONSUMIDOR_FINAL") == "1"
-    
-    # 2.2 Verifica Operação Interestadual (UF diferentes)
-    uf_emitente = nota.get("EMIT_UF")
-    uf_destinatario = nota.get("DEST_UF")
-    is_interestadual = uf_emitente is not None and uf_destinatario is not None and uf_emitente != uf_destinatario
-    
-    # 2.3 Verifica Destinatário Não Contribuinte (indIEDest = 9)
-    # A tag indIEDest no XML (linha 61) tem o valor '9' para não-contribuinte.
-    # No JSON você está usando "DEST_IND_IE_DEST".
-    is_nao_contribuinte = nota.get("DEST_IND_IE_DEST") == "9"
-    
-    # 2.4 Retorna TRUE se as 3 condições forem atendidas
-    if is_consumidor_final and is_interestadual and is_nao_contribuinte:
-        return True
-    
-    # --- Se nenhuma das regras for atendida ---
-    return False
 
 # ==============================================================================
 # FUNÇÃO PRINCIPAL: EXPANDIR ITENS E GERAR RELATÓRIO
@@ -449,6 +482,7 @@ def montar_dataframe_notas(notas: List[Dict[str, Any]]) -> pd.DataFrame:
         for item_idx, item in enumerate(items):
             info_nota = {
                 'ID': index,
+                "Cenario": gerar_cenario(nota, item),
                 'Numero Nota': nota.get('NUMERO_NF', ''),
                 'JSON da nota': json.dumps(nota, ensure_ascii=False, indent=2),
                 "Tipo": nota.get('TIPO_DOCUMENTO', ''),
@@ -465,25 +499,45 @@ def montar_dataframe_notas(notas: List[Dict[str, Any]]) -> pd.DataFrame:
             info_produto = {
                 'NCM': item.get('NCM', ''),
                 'Classificação/Produto': item.get('XPROD', ''),
-                "NATOP": nota.get('NATUREZA_OPERACAO', ''),
+                "NATOP": nota.get('NATUREZA_OPERACAO', ''),               
                 'CFOP': get_cfop_info(item).get('cfop', ''),
                 'DESC CFOP': get_cfop_info(item).get('desc_cfop', ''),
+
                 "CST ICMS": item.get('ICMS_CST') or item.get('ICMS_CSOSN', ''),
                 "DESC CST ICMS": _get_desc_cst_icms(item.get('ICMS_CST') or item.get('ICMS_CSOSN', '')),
+                "%ICMS Normal": item.get('ICMS_PICMS', '0'),
+                "ICMS VBC": item.get('ICMS_VBC', '0'),
+                
                 "CST IPI": get_ipi_status(item).get('cst_ipi', ''),
                 "ENQUADRAMENTO IPI": get_ipi_status(item).get('ipi_status', ''),
                 "%IPI": get_ipi_status(item).get('valor_ipi', ''),
                 "TIPI": get_tipi_aplicavel(item).get('tipi', 'NAO'),
-                "CONFINS": get_cofins_status(item).get('cst_cofins', ''),
+
+                "CST PIS": item.get('PIS_CST', ''),
+                "DESC CST PIS": _get_desc_cst_pis_cofins(item.get('PIS_CST', '')),
+                "%PIS": item.get('PIS_PPIS', ''),
+                
+                "CST COFINS": get_cofins_status(item).get('cst_cofins', ''),
                 "DESC CST COFINS": get_cofins_status(item).get('tem_cofins', ''),
+                "%CONFINS": item.get('COFINS_PCOFINS', ''),
+                
                 "Sujeito a ISS?": get_issqn_info(item).get('tem_issqn', ''),
-                "Outros Impostos": get_outros_impostos(item).get('outros_impostos', ''),
+                
+                "DIFAL": identificar_difal(nota, item).get('tem_difal', False),
+                "DIFAL motivo": identificar_difal(nota, item).get('motivo', ''),
+                "DIFAL interestadual": identificar_difal(nota, item).get('debug', {}).get('interestadual', False),
+                "DIFAL consumidor final": identificar_difal(nota, item).get('debug', {}).get('consumidor_final', ''),
+                "DIFAL ind_ie_dest": identificar_difal(nota, item).get('debug', {}).get('ind_ie_dest', ''),
+                "DIFAL cfop": identificar_difal(nota, item).get('debug', {}).get('cfop', ''),
+                
+                "Outros Impostos": item.get('OUTROS_IMPOSTOS', ''),
+                "Todos Impostos": item.get('TODOS_IMPOSTOS', ''),
                 "Infos Adicionais": get_info_adicionais(nota, item, item_idx).get('info_adicionais', ''),
-                "DIFAL": identificar_difal(nota, item),
+                
             }
             
             # Análise ICMS
-            # info_icms = analisar_icms_itens(item)
+            # info_icms = analisar_icms_itens(item)S
             
             # resultado = {**info_nota, **info_produto, **info_icms}
             resultado = {**info_nota, **info_produto}
