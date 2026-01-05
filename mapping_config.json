@@ -483,5 +483,80 @@
         "descricao": "Informações adicionais do item (infAdProd)",
         "caminho_xml": "infNFe/det/infAdProd",
         "secao": "Itens"
+    },
+    "ITEM_IBSCBS_BLOCO": {
+        "descricao": "Bloco IBSCBS do item (Reforma Tributária)",
+        "caminho_xml": "infNFe/det/imposto/IBSCBS",
+        "secao": "Item - IBS/CBS/IS"
+    },
+    "ITEM_IBSCBS_CST": {
+        "descricao": "CST do IBSCBS",
+        "caminho_xml": "infNFe/det/imposto/IBSCBS/CST",
+        "secao": "Item - IBS/CBS/IS"
+    },
+    "ITEM_IBSCBS_CCLASSTRIB": {
+        "descricao": "Código da classificação tributária do IBSCBS",
+        "caminho_xml": "infNFe/det/imposto/IBSCBS/cClassTrib",
+        "secao": "Item - IBS/CBS/IS"
+    },
+    "ITEM_IBSCBS_VBC": {
+        "descricao": "Base de cálculo do IBS e CBS",
+        "caminho_xml": "infNFe/det/imposto/IBSCBS/gIBSCBS/vBC",
+        "secao": "Item - IBS/CBS/IS"
+    },
+    "ITEM_IBSCBS_PIBSUF": {
+        "descricao": "Alíquota do IBS da UF (%)",
+        "caminho_xml": "infNFe/det/imposto/IBSCBS/gIBSCBS/gIBSUF/pIBSUF",
+        "secao": "Item - IBS/CBS/IS"
+    },
+    "ITEM_IBSCBS_VIBSUF": {
+        "descricao": "Valor do IBS da UF",
+        "caminho_xml": "infNFe/det/imposto/IBSCBS/gIBSCBS/gIBSUF/vIBSUF",
+        "secao": "Item - IBS/CBS/IS"
+    },
+    "ITEM_IBSCBS_PIBSMUN": {
+        "descricao": "Alíquota do IBS do Município (%)",
+        "caminho_xml": "infNFe/det/imposto/IBSCBS/gIBSCBS/gIBSMun/pIBSMun",
+        "secao": "Item - IBS/CBS/IS"
+    },
+    "ITEM_IBSCBS_VIBSMUN": {
+        "descricao": "Valor do IBS do Município",
+        "caminho_xml": "infNFe/det/imposto/IBSCBS/gIBSCBS/gIBSMun/vIBSMun",
+        "secao": "Item - IBS/CBS/IS"
+    },
+    "ITEM_IBSCBS_VIBS": {
+        "descricao": "Valor total do IBS",
+        "caminho_xml": "infNFe/det/imposto/IBSCBS/gIBSCBS/vIBS",
+        "secao": "Item - IBS/CBS/IS"
+    },
+    "ITEM_IBSCBS_PCBS": {
+        "descricao": "Alíquota do CBS (%)",
+        "caminho_xml": "infNFe/det/imposto/IBSCBS/gIBSCBS/gCBS/pCBS",
+        "secao": "Item - IBS/CBS/IS"
+    },
+    "ITEM_IBSCBS_VCBS": {
+        "descricao": "Valor do CBS",
+        "caminho_xml": "infNFe/det/imposto/IBSCBS/gIBSCBS/gCBS/vCBS",
+        "secao": "Item - IBS/CBS/IS"
+    },
+    "ITEM_IS_BLOCO": {
+        "descricao": "Bloco IS (Imposto Seletivo) do item",
+        "caminho_xml": "infNFe/det/imposto/IS",
+        "secao": "Item - IBS/CBS/IS"
+    },
+    "ITEM_IS_CST": {
+        "descricao": "CST do Imposto Seletivo",
+        "caminho_xml": "infNFe/det/imposto/IS/CST",
+        "secao": "Item - IBS/CBS/IS"
+    },
+    "ITEM_IS_VIS": {
+        "descricao": "Valor do Imposto Seletivo",
+        "caminho_xml": "infNFe/det/imposto/IS/vIS",
+        "secao": "Item - IBS/CBS/IS"
+    },
+    "ITEM_IS_PIS": {
+        "descricao": "Alíquota do Imposto Seletivo (%)",
+        "caminho_xml": "infNFe/det/imposto/IS/pIS",
+        "secao": "Item - IBS/CBS/IS"
     }
 }
