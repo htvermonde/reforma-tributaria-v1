@@ -6,9 +6,9 @@ from lxml import etree
 # CONFIGURAÇÕES
 # ==============================================================================
 
-PASTA_XMLS = 'reading_notes/unificado'
+PASTA_XMLS = 'reading_notes/moet'
 ARQUIVO_MAPEAMENTO = 'mapping_config.json'
-ARQUIVO_SAIDA = 'output/resposta_notas.json'
+ARQUIVO_SAIDA = 'output/resposta_notas_moet.json'
 
 # ==============================================================================
 # FUNÇÕES
@@ -263,6 +263,11 @@ def processar_xml(caminho_xml, mapeamento, debug_difal=True):
     # Remove namespaces para facilitar XPath
     raiz = remover_namespace(tree.getroot())
     
+    # [NOVO] Verifica se é CT-e e pula se for
+    if raiz.xpath('//infCte'):
+        print("  [INFO] Arquivo identificado como CT-e -> Pulando...")
+        return None
+    
     # Extrai tipo de documento (passa namespace para análise)
     tipo_documento = extrair_tipo_documento(raiz, namespace)
     
@@ -357,6 +362,10 @@ def processar_pasta():
             # Ativa debug apenas na primeira nota
             debug_difal = (i == 1)
             dados = processar_xml(caminho, mapeamento, debug_difal=debug_difal)
+            
+            if dados is None:
+                continue
+                
             dados['xml_filename'] = arquivo
             notas.append(dados)
         except Exception as e:

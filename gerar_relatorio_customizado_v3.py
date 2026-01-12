@@ -6,8 +6,8 @@ from typing import Dict, Any, List
 # CONFIGURAÇÃO
 # ==============================================================================
 
-ARQUIVO_JSON = 'output/resposta_notas.json'
-ARQUIVO_EXCEL = 'output/relatorio_customizado.xlsx'
+ARQUIVO_JSON = 'output/resposta_notas_moet.json'
+ARQUIVO_EXCEL = 'output/relatorio_customizado_moet.xlsx'
 ARQUIVO_BASE_CFOP = 'base/base_cfop.xlsx'
 
 # Carregar base CFOP
@@ -431,9 +431,9 @@ def gerar_cenario(nota: Dict[str, Any], item: Dict[str, Any]) -> str:
     #     partes.append(f"CFOP-{cfop}")
     
     # 7. Todos os impostos
-    todos_impostos = item.get('TODOS_IMPOSTOS', '')
-    if todos_impostos:
-        partes.append(f"[{todos_impostos}]")
+    # todos_impostos = item.get('TODOS_IMPOSTOS', '')
+    # if todos_impostos:
+    #     partes.append(f"[{todos_impostos}]")
     
     # 8. Regime tributário ICMS
     cst_icms = item.get('ICMS_CST') or item.get('ICMS_CSOSN', '')
@@ -454,10 +454,10 @@ def gerar_cenario(nota: Dict[str, Any], item: Dict[str, Any]) -> str:
     # if ipi_status == 'TRIBUTADO':
     #     partes.append('COM-IPI')
     
-    # # 10. DIFAL
-    # tem_difal = identificar_difal(nota, item).get('tem_difal', False)
-    # if tem_difal:
-    #     partes.append('COM-DIFAL')
+    # 10. DIFAL
+    tem_difal = identificar_difal(nota, item).get('tem_difal', False)
+    if tem_difal:
+        partes.append('COM-DIFAL')
     
     # # 11. ISS
     # tem_iss = get_issqn_info(item).get('tem_issqn', 'NAO')

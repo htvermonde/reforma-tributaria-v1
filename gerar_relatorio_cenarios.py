@@ -33,6 +33,7 @@ def criar_estrutura_hierarquica(df_agrupado):
                 'consumidor_final': str(row.get('Consumidor Final', '')),
                 'ncm': str(row.get('NCM', '')),
                 'cfop': str(row.get('CFOP', '')),
+                'desc_cfop': str(row.get('DESC CFOP', '')),
                 'natureza': str(row.get('NATOP', '')), # Corrigido para NATOP conforme lista de colunas
                 'transporte': str(row.get('Transporte', ''))
             },
@@ -76,11 +77,13 @@ def agrupar_cenarios_nfs(caminho_entrada, caminho_saida):
         'CNPJ/CPF Destinatário', 'Razão Social Destinatário', 
         'UF Emissor', 'UF Destinatário', 'Operação', 'Consumidor Final', 
         'Transporte', 'NCM', 'Classificação/Produto', 'NATOP',
-        'CFOP', 'DESC CFOP', 'CST ICMS', 'DESC CST ICMS', "%ICMS Normal", "ICMS VBC",
+        'CFOP', 'DESC CFOP', 
+        'CST ICMS', 'DESC CST ICMS', "%ICMS Normal", "ICMS VBC",
         'CST IPI', 'ENQUADRAMENTO IPI', '%IPI', 'TIPI',
         'CST PIS', 'DESC CST PIS', '%PIS',
         'CST COFINS', 'DESC CST COFINS', '%CONFINS',
-        'Sujeito a ISS?', 'DIFAL', 
+        'Sujeito a ISS?', 
+        'DIFAL', "DIFAL motivo", "DIFAL interestadual", "DIFAL consumidor final","DIFAL ind_ie_dest", "DIFAL cfop"
         'Outros Impostos'
     ]
 
@@ -96,7 +99,7 @@ def agrupar_cenarios_nfs(caminho_entrada, caminho_saida):
     # 3. Agrupar
     df_agrupado = df_process.groupby(colunas_existentes, as_index=False, dropna=False).agg(
         qtd_agrupamentos=('Numero Nota', 'count'),
-        nfs_agrupadas=('Numero Nota', lambda x: ', '.join(x.astype(str).unique()))
+        nfs_agrupadas=('Numero Nota', lambda x: ', '.join(pd.to_numeric(x, errors='coerce').dropna().astype(int).astype(str).unique()))
     )
 
     # 4. Salvar Excel/CSV de conferência
@@ -124,8 +127,8 @@ def agrupar_cenarios_nfs(caminho_entrada, caminho_saida):
 
 # --- Execução ---
 if __name__ == "__main__":
-    entrada = 'output/relatorio_customizado.xlsx'
-    saida = 'output/relatorio_agrupado.xlsx'
+    entrada = 'output/relatorio_customizado_moet.xlsx'
+    saida = 'output/relatorio_agrupado_moet.xlsx'
     
     if os.path.exists(entrada):
         agrupar_cenarios_nfs(entrada, saida)
